@@ -45,9 +45,13 @@ export default function Aktualnosci() {
 					<br />
 
 					<p>
-						Pytania dotyczące zapisów prosimy kierować na adres email: <span><a href="mailto:szkolajezykapolskiegoslough@gmail.com?subject=Kontakt" className="link">szkolajezykapolskiegoslough@gmail.com</a></span>. Nasz szkolny numer telefonu jest również do Państwa dyspozycji od <strong>poniedziałku</strong> do <strong>piątku</strong> w godz. od <strong>17:30-20:00</strong>. Zapraszamy serdecznie!
+						Pytania dotyczące zapisów prosimy kierować na adres email: <span><a href="mailto:szkolajezykapolskiegoslough@gmail.com?subject=Formularz rejestracyjny" className="link">szkolajezykapolskiegoslough@gmail.com</a></span>. Nasz szkolny numer telefonu jest również do Państwa dyspozycji od <strong>poniedziałku</strong> do <strong>piątku</strong> w godz. od <strong>17:30-20:00</strong>. Zapraszamy serdecznie!
 					</p>
 
+				</section>
+
+				<section className="content-wrapper content-wrapper--center">
+					<img src="/aktualnosci/plakat-zapisy.jpg" alt="Plakat z informacjami o zapisach na nowy rok szkolny" className="img" />
 				</section>
 
 			</main>

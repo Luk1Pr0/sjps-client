@@ -38,39 +38,39 @@ export default function PartnerzySzkoly() {
 				<section className="content-wrapper content-wrapper--center grid-wrapper grid-wrapper--images">
 
 					<div className="grid-img">
-						<img src='/logo-edukator.jpg' alt="Logo of edukator" className="img" />
+						<img src='/partnerzy-szkoly/logo-edukator.jpg' alt="Logo of edukator" className="img" />
 					</div>
 
 					<div className="grid-img">
-						<img src='logo-everybouncecounts.png' alt="Logo of Every Bounce Counts" className="img" />
+						<img src='/partnerzy-szkoly/logo-everybouncecounts.png' alt="Logo of Every Bounce Counts" className="img" />
 					</div>
 
 					<div className="grid-img">
-						<img src='logo-lasuch.png' alt="Logo of Lasuch" className="img" />
+						<img src='/partnerzy-szkoly/logo-lasuch.png' alt="Logo of Lasuch" className="img" />
 					</div>
 
 					<div className="grid-img">
-						<img src='/logo-myqueen.jpg' alt="Logo of My Queen" className="img" />
+						<img src='/partnerzy-szkoly/logo-myqueen.jpg' alt="Logo of My Queen" className="img" />
 					</div>
 
 					<div className="grid-img">
-						<img src='logo-orpeg.png' alt="Logo of Orpeg" className="img" />
+						<img src='/partnerzy-szkoly/logo-orpeg.png' alt="Logo of Orpeg" className="img" />
 					</div>
 
 					<div className="grid-img">
-						<img src='/logo-pres.jpg' alt="Logo of PES" className="img" />
+						<img src='/partnerzy-szkoly/logo-pms.jpg' alt="Logo of PMS" className="img" />
 					</div>
 
 					<div className="grid-img">
-						<img src='/logo-polfolkuk.jpg' alt="Logo of PolFolkUk" className="img" />
+						<img src='/partnerzy-szkoly/logo-polfolkuk.jpg' alt="Logo of PolFolkUk" className="img" />
 					</div>
 
 					<div className="grid-img">
-						<img src='/logo-polska-ambasada-londyn.jpg' alt="Logo of Polish Ambassay London" className="img" />
+						<img src='/partnerzy-szkoly/logo-polska-ambasada-londyn.jpg' alt="Logo of Polish Ambassay London" className="img" />
 					</div>
 
 					<div className="grid-img">
-						<img src='/logo-vc.png' alt="Logo of VC" className="img" />
+						<img src='/partnerzy-szkoly/logo-vc.png' alt="Logo of VC" className="img" />
 					</div>
 
 				</section>
