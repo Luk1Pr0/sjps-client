@@ -104,6 +104,11 @@
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: auto;
 
+	&--images {
+		width: 60%;
+		gap: $space-m;
+	}
+
 	@media screen and (max-width: $tablet-screen) {
 		grid-template-columns: 1fr;
 		row-gap: $space-m;
