@@ -39,7 +39,7 @@ export default function SzkolneProjekty() {
 					<br />
 
 					<ul>
-						<li>Międzynarodowy projekt edukacyjny wspierający rozwój czytelnictwa w klasach I-III ",Czytam z klasą lekturki spod chmurki"</li>
+						<li>Międzynarodowy projekt edukacyjny wspierający rozwój czytelnictwa w klasach I-III &quot;,Czytam z klasą lekturki spod chmurki&quot;</li>
 					</ul>
 
 					<br />

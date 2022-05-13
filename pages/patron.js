@@ -40,7 +40,7 @@ export default function Patron() {
 					<br />
 
 					<p>
-						"Dzienniczek" należy do pereł literatury mistycznej. Święta Siostra Faustyna pisała go w Wilnie i Krakowie w latach 1934-38 na wyraźne polecenie Pana Jezusa i ze względu na nakaz swoich spowiedników ks. Michała Sopoćki i o. Józefa Andrasza SJ oraz za pozwoleniem przełożonych Zgromadzenia. Pierwsze zachowane zapiski pochodzą z lipca 1934 roku. Wiadomo ze pierwsze notatki Siostra Faustyna spaliła, gdyż pod nieobecność w Wilnie ks. Michała uległa namowom rzekomego anioła, którym był szatan. Potem wileński kierownik duchowy kazał jej odtworzyć to co zostało zniszczone, dlatego "Dzienniczek" w obecnym kształcie ma zaburzona chronologie, zwłaszcza w pierwszym zeszycie: w bieżące wydarzenia i przeżycia Autorka wplata relacje i opisy tych wydarzeń, które miały miejsce wcześniej.
+						&quot;Dzienniczek&quot; należy do pereł literatury mistycznej. Święta Siostra Faustyna pisała go w Wilnie i Krakowie w latach 1934-38 na wyraźne polecenie Pana Jezusa i ze względu na nakaz swoich spowiedników ks. Michała Sopoćki i o. Józefa Andrasza SJ oraz za pozwoleniem przełożonych Zgromadzenia. Pierwsze zachowane zapiski pochodzą z lipca 1934 roku. Wiadomo ze pierwsze notatki Siostra Faustyna spaliła, gdyż pod nieobecność w Wilnie ks. Michała uległa namowom rzekomego anioła, którym był szatan. Potem wileński kierownik duchowy kazał jej odtworzyć to co zostało zniszczone, dlatego &quot;Dzienniczek&quot; w obecnym kształcie ma zaburzona chronologie, zwłaszcza w pierwszym zeszycie: w bieżące wydarzenia i przeżycia Autorka wplata relacje i opisy tych wydarzeń, które miały miejsce wcześniej.
 					</p>
 
 					<br />
