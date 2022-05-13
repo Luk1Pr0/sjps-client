@@ -136,3 +136,13 @@
 		padding: $space-m;
 	}
 }
+
+.aktualnosci-wrapper {
+	border-top: 2px solid $color-highlight;
+	border-bottom: 2px solid $color-highlight;
+	padding: $space-xm 0;
+
+	@media screen and (max-width: $tablet-screen) {
+		padding: $space-m 0;
+	}
+}

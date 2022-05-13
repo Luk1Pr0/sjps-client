@@ -7,7 +7,8 @@ import Card from '../components/Card';
 import DokumentyImg from '../public/index/dokumenty-img.svg';
 import KalendarzImg from '../public/index/kalendarz-img.svg';
 import ZapisyImg from '../public/index/zapisy-img.svg';
-import Banner from '../public/index/banner.jpg';
+import Aktualnosci from '../components/AktualnosciItem';
+import AktualnosciList from '../components/AktualnosciList';
 
 export default function Home() {
 
@@ -65,17 +66,13 @@ export default function Home() {
 
 			<main className='main main--index'>
 
+				<AktualnosciList />
+
 				<section className="content-wrapper content-wrapper--center">
 
 					<h4>
 						Nasza misja - wychowanie dzieci i młodzieży w duchu wartości chrześcijańskich oraz, kultywowanie polskiej tożsamości a przede wszystkim nauczanie języka polskiego, historii Polskii z elementami geografii i religii. Chcemy pielęgnować polskie tradycje, obyczaje oraz piękną i bogatą kulture.
 					</h4>
-
-				</section>
-
-				<section className="content-wrapper content-wrapper--full-width">
-
-					<img src={Banner.src} alt="SJPS Banner with children, school slogan and school contact information" className="img img--half-width" />
 
 				</section>
 
