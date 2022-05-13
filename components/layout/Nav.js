@@ -148,6 +148,12 @@ export default function Nav() {
 							</li>
 						</Link>
 
+						<Link href='dekalogucznia'>
+							<li className="subnav-li" onClick={closeNavigation}>
+								<a className="subnav-a">Dekalog ucznia</a>
+							</li>
+						</Link>
+
 						<Link href='podreczniki'>
 							<li className="subnav-li" onClick={closeNavigation}>
 								<a className="subnav-a">Podręczniki</a>

@@ -144,42 +144,6 @@ export default function KodeksUcznia() {
 
 					</details>
 
-					<br />
-
-					<details>
-						<summary>
-							Dekalog Ucznia Szkoły im. św. Siostry Faustyny w Slough <em> (rozwin)</em>
-						</summary>
-
-						<br />
-
-						<ol>
-
-							<li>Jestem dumny z tego, że jestem Polakiem; szanuję flagę, godło, hymn i język ojczysty.
-							</li>
-							<li>Szanuje pamięć i odwagę moich przodków walczących za wolność Mojej Ojczyzny.
-							</li>
-							<li>Trwam i ciężko pracuje tak aby rozwijać i odkrywać moje talenty.
-							</li>
-							<li>Aktywnie uczestniczę w życiu mojej szkoły i jestem twórczy po to aby świat wokół mnie zmieniał się na lepsze.
-							</li>
-							<li>Zawsze pomagam innym, bo wiem że dobro zawsze powraca.
-							</li>
-							<li>Mam zawsze  uśmiech na twarzy, bo to najlepszy sposób aby zdobyć kolegów i przyjaciół.
-							</li>
-							<li>Jestem otwarty - jasno i szczerze wyrażam swoje zdanie, uważam aby nie ranić przy tym uczuć innych.
-							</li>
-							<li>Jestem kulturalny - używam trzech magicznych słów: proszę, dziękuję i  przepraszam.
-							</li>
-							<li>Uważam na siebie i innych w czasie pobytu w szkole, bo wszyscy chcą się tutaj czuć bezpiecznie.
-							</li>
-							<li>Szanuję wyposażenie każdego szkolnego pomieszczenia, tak aby mogło ono jak najdłużej służyć mnie i innym uczniom mojej szkoły.
-							</li>
-
-						</ol>
-
-					</details>
-
 				</section>
 
 				<section className="content-wrapper content-wrapper--center text--center">
