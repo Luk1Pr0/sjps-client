@@ -75,7 +75,7 @@ export default function Home() {
 
 				<section className="content-wrapper content-wrapper--full-width">
 
-					<img src={Banner.src} alt="" className="img img--half-width" />
+					<img src={Banner.src} alt="SJPS Banner with children, school slogan and school contact information" className="img img--half-width" />
 
 				</section>
 

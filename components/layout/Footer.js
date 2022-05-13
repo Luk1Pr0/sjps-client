@@ -4,24 +4,24 @@ export default function Footer() {
 	return (
 		<footer className='footer'>
 
-			<h3 className="footer-heading footer-heading--blurb">SZKOLA JEZYKA POLSKIEGO SLOUGH</h3>
+			<h3 className="footer-heading footer-heading--blurb">Szkoła Języka Polskiego Slough</h3>
 
 			<p className="footer-content footer-content--blurb">
-				GŁÓWNYM ZAŁOŻENIEM SZKOŁY JEST NAUCZANIE JĘZYKA POLSKIEGO, GEOGRAFII I HISTORII POLSKI ORAZ NAUCZANIE WIARY ZGODNIE Z ZAŁOŻENIEM KOŚCIOŁA KATOLICKIEGO. NAUCZANIE DZIECI I MŁODZIEŻY W DUCHU PATRIOTYZMU ORAZ MORALNOŚCI I KULTURY OSOBISTEJ.
+				Głównym zalożeniem szkoły jest nauczanie języka polskiego, geografii i historii Polski oraz nauczanie wiary zgodnie z założeniem kościoła katolickiego. Nauczanie dzieci i młodzieży w duchu patriotyzmu oraz moralności i kultury osobistej.
 			</p>
 
 			<h6 className="footer-heading footer-heading--copyright">
-				© 2022 SZKOLA JEZYKA POLSKIEGO SLOUGH
+				© 2022 Szkoła Języka Polskiego Slough
 			</h6>
 
-			<h3 className="footer-heading footer-heading--more">WIECEJ</h3>
+			<h3 className="footer-heading footer-heading--more">Więcej</h3>
 
 			<ul className="footer-content footer-content--more">
 
 				<Link href='/'>
 					<li>
 
-						<a>Strona glowna</a>
+						<a>Strona główna</a>
 
 					</li>
 				</Link>
@@ -104,7 +104,7 @@ export default function Footer() {
 				<Link href='/podreczniki'>
 					<li>
 
-						<a>Podreczniki</a>
+						<a>Podręczniki</a>
 
 					</li>
 				</Link>
@@ -112,7 +112,7 @@ export default function Footer() {
 				<Link href='/obowiazkirodzicow'>
 					<li>
 
-						<a>Obowiazki rodzicow</a>
+						<a>Obowiązki rodzicow</a>
 
 					</li>
 				</Link>
@@ -129,7 +129,7 @@ export default function Footer() {
 				<Link href='/oplaty'>
 					<li>
 
-						<a>Oplaty</a>
+						<a>Opłaty</a>
 
 					</li>
 				</Link>
@@ -137,7 +137,7 @@ export default function Footer() {
 				<Link href='/bezpieczenstwodzieci'>
 					<li>
 
-						<a>Bezpieczenstwo dzieci</a>
+						<a>Bezpieczeństwo dzieci</a>
 
 					</li>
 				</Link>
@@ -160,7 +160,7 @@ export default function Footer() {
 
 			</ul>
 
-			<h3 className="footer-heading footer-heading--social-media">MEDIA SPOLECZNOSCIOWE</h3>
+			<h3 className="footer-heading footer-heading--social-media">Media Społecznościowe</h3>
 
 			<ul className="footer-content footer-content--social-media">
 

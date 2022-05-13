@@ -31,7 +31,7 @@ export default function Podreczniki() {
 
 				<section className="content-wrapper content-wrapper--center">
 
-					<h2>Podreczniki</h2>
+					<h2>Podręczniki</h2>
 
 					<p>
 						Najlepszą formą pracy  dla polskich szkół sobotnich są materiały napisane specjalnie dla ich potrzeb. Taką serią jest właśnie seria podręczników Małgorzaty Pawlusiewicz, która doskonale sprawdza się w pracy z dziećmi polonijnymi.

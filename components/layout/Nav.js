@@ -32,7 +32,7 @@ export default function Nav() {
 					<label htmlFor="glownaToggle" className='toggle-label'>
 
 						<a className="nav-a">
-							Glowna
+							Główna
 							<i className="fa-solid fa-chevron-down"></i>
 						</a>
 
@@ -43,11 +43,11 @@ export default function Nav() {
 					<ul className="subnav-ul">
 
 						<Link href='/'>
-							<li className="subnav-li" onClick={closeNavigation}><a className="subnav-a">Glowna</a></li>
+							<li className="subnav-li" onClick={closeNavigation}><a className="subnav-a">Główna</a></li>
 						</Link>
 
 						<Link href='dlaczegonaszaszkola'>
-							<li className="subnav-li" onClick={closeNavigation}><a className="subnav-a">Dlaczego nasza szkola?</a></li>
+							<li className="subnav-li" onClick={closeNavigation}><a className="subnav-a">Dlaczego nasza szkoła?</a></li>
 						</Link>
 
 					</ul>
@@ -59,7 +59,7 @@ export default function Nav() {
 					<label htmlFor="szkolaToggle" className='toggle-label'>
 
 						<a className="nav-a">
-							Szkola
+							Szkoła
 							<i className="fa-solid fa-chevron-down"></i>
 						</a>
 
@@ -95,19 +95,19 @@ export default function Nav() {
 
 						<Link href='programnauczania'>
 							<li className="subnav-li" onClick={closeNavigation}>
-								<a className="subnav-a">Program Nauczania</a>
+								<a className="subnav-a">Program nauczania</a>
 							</li>
 						</Link>
 
 						<Link href='szkolneprojekty'>
 							<li className="subnav-li" onClick={closeNavigation}>
-								<a className="subnav-a">Szkolne Projekty</a>
+								<a className="subnav-a">Szkolne projekty</a>
 							</li>
 						</Link>
 
 						<Link href='partnerzyszkoly'>
 							<li className="subnav-li" onClick={closeNavigation}>
-								<a className="subnav-a">Partnerzy szkoly</a>
+								<a className="subnav-a">Partnerzy szkoły</a>
 							</li>
 						</Link>
 
@@ -138,7 +138,7 @@ export default function Nav() {
 
 						<Link href='podreczniki'>
 							<li className="subnav-li" onClick={closeNavigation}>
-								<a className="subnav-a">Podreczniki</a>
+								<a className="subnav-a">Podręczniki</a>
 							</li>
 						</Link>
 
@@ -163,7 +163,7 @@ export default function Nav() {
 
 						<Link href='obowiazkirodzicow'>
 							<li className="subnav-li" onClick={closeNavigation}>
-								<a className="subnav-a">Obowiazki Rodzicow</a>
+								<a className="subnav-a">Obowiązki rodziców</a>
 							</li>
 						</Link>
 
@@ -175,13 +175,13 @@ export default function Nav() {
 
 						<Link href='oplaty'>
 							<li className="subnav-li" onClick={closeNavigation}>
-								<a className="subnav-a">Oplaty</a>
+								<a className="subnav-a">Opłaty</a>
 							</li>
 						</Link>
 
 						<Link href='bezpieczenstwodzieci'>
 							<li className="subnav-li" onClick={closeNavigation}>
-								<a className="subnav-a">Bezpieczenstwo dzieci</a>
+								<a className="subnav-a">Bezpieczeństwo dzieci</a>
 							</li>
 						</Link>
 

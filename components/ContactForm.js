@@ -78,7 +78,7 @@ export default function ContactForm() {
 			<form id='form' className="form form--contact" onSubmit={handleSubmit}>
 
 				<label htmlFor="fullName" className='label'>
-					Imie i nazwisko *
+					Imię i nazwisko *
 					<input id='fullName' name='fullName' type="text" className='input' placeholder='Imie i nazwisko' required onChange={handleChange} value={formData.fullName} />
 				</label>
 
@@ -88,13 +88,13 @@ export default function ContactForm() {
 				</label>
 
 				<label htmlFor="message" className='label'>
-					Wiadomosc *
+					Wiadomość *
 					<textarea id='message' name='message' type="text" className='textarea' placeholder='Tresc wiadomosci' required onChange={handleChange} value={formData.message} />
 				</label>
 
 				<div className="btn-container">
 
-					<button type="submit">Wyslij</button>
+					<button type="submit">Wyślij</button>
 
 					<button type="reset">Anuluj</button>
 

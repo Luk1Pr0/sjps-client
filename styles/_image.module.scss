@@ -29,6 +29,10 @@
 
 	&--half-width {
 		width: 50%;
+
+		@media screen and (max-width: $tablet-screen) {
+			width: 100%;
+		}
 	}
 }
 
