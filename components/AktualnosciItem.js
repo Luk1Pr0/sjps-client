@@ -5,7 +5,7 @@ export default function Aktualnosci() {
 		<>
 			<section className="content-wrapper content-wrapper--center">
 
-				<div className="aktualnosci-wrapper">
+				<div className="aktualnosci-item-wrapper">
 
 					<strong><h2>Aktualności</h2></strong>
 

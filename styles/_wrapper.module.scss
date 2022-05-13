@@ -137,7 +137,11 @@
 	}
 }
 
-.aktualnosci-wrapper {
+.aktualnosci-list-wrapper {
+	background: initial;
+}
+
+.aktualnosci-item-wrapper {
 	border-top: 2px solid $color-highlight;
 	border-bottom: 2px solid $color-highlight;
 	padding: $space-xm 0;
