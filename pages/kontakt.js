@@ -46,20 +46,22 @@ export default function Kontakt() {
 
 				<section className="content-wrapper content-wrapper--center content-wrapper--full-width flex--column">
 
-					<h3>Gdzie nas znalesc?</h3>
+					<h3>Gdzie nas znaleść?</h3>
 
 					<h5>
-						Znajdujemy sie w Polskim kosciele pod adresem:
+						Znajdujemy się w Polskim kościele pod adresem:
 					</h5>
+
 					<br />
+
 					<p>
-						48 PITTS ROAD
+						48 Pitts Road
 						<br />
-						SLOUGH
+						Slough
 						<br />
 						SL1 3XH
 						<br />
-						BERKSHIRE
+						Berkshire
 					</p>
 
 					<br />

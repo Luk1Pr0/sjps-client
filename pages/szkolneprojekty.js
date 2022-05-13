@@ -34,12 +34,12 @@ export default function SzkolneProjekty() {
 
 					<h2>Szkolne Projekty</h2>
 
-					<h4>W NOWYM ROKU SZKOLNYM NASZA SZKOŁA BĘDZIE ZAANGAŻOWANA W NASTĘPUJĄCE PROJEKTY SZKOLNE:</h4>
+					<h4>W nowym roku szkolnym nasza szkoła będzie zaangażowana w następujące projekty szkolne:</h4>
 
 					<br />
 
 					<ul>
-						<li>MIĘDZYNARODOWY PROJEKT EDUKACYJNY WSPIERAJĄCY ROZWÓJ CZYTELNICTWA W KLASACH I-III ,,CZYTAM Z KLASĄ LEKTURKI SPOD CHMURKI''</li>
+						<li>Międzynarodowy projekt edukacyjny wspierający rozwój czytelnictwa w klasach I-III ",Czytam z klasą lekturki spod chmurki"</li>
 					</ul>
 
 					<br />

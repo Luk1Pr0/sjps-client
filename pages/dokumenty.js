@@ -63,7 +63,7 @@ export default function Dokumenty() {
 
 					<div className="grid-item">
 
-						<a href='dokumenty/podstawa-programowa.pdf' target='_blank'>
+						<a href='dokumenty/podstawa-programowa.pdf' id='podstawaprogramowa' target='_blank'>
 							<h4>Podstawa programowa</h4>
 						</a>
 

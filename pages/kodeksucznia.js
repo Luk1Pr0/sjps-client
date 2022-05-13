@@ -33,7 +33,7 @@ export default function KodeksUcznia() {
 					<h2>Kodeks Ucznia</h2>
 
 					<p>
-						KODEKS UCZNIA ZAWIERA PRAWA I OBOWIĄZKI UCZNIÓW W SZKOLE JĘZYKA POLSKIEGO IM. ŚW. SIOSTRY FAUSTYNY W SLOUGH. ZOBOWIĄZUJE ICH DO RZETELNEJ NAUKI, TWORZENIA PRZYJAZNEJ ATMOSFERY W SZKOLE, OKAZYWANIA SZACUNKU DOROSŁYM I KOLEGOM. ZACHĘCA DO STAWIANIA SOBIE NAJWYŻSZYCH WYMAGAŃ NA MIARĘ WŁASNYCH MOŻLIWOŚCI I SKŁANIA DO REALIZOWANIA AMBITNYCH CELÓW W KAŻDEJ DZIEDZINIE ŻYCIA.
+						Kodeks ucznia zawiera prawa i obowiązki uczniów w Szkole Języka Polskiego  im. św. Siostry Faustyny w Slough. Zobowiązuje ich do rzetelnej nauki, tworzenia przyjaznej atmosfery w szkole, okazywania szacunku dorosłym i kolegom. Zachęca do stawiania sobie najwyższych wymagań na miarę własnych możliwości i skłania do realizowania ambitnych celów w każdej dziedzinie życia.
 					</p>
 
 				</section>
@@ -42,24 +42,24 @@ export default function KodeksUcznia() {
 
 					<details>
 						<summary>
-							UCZEŃ MA PRAWO DO <em>(rozwin)</em>
+							Uczeń ma prawo do <em>(rozwin)</em>
 						</summary>
 
 						<br />
 
 						<ul>
 
-							<li>POSZANOWANIA SWOJEJ GODNOŚCI, SWEGO DOBREGO IMIENIA ORAZ SWEJ WŁASNOŚCI OSOBISTEJ;
+							<li>do poszanowania swojej godności, swego dobrego imienia oraz swej własności osobistej;
 							</li>
-							<li>NAUKI W KLASIE, PRZY WYKORZYSTANIU STOSOWNYCH PODRĘCZNIKÓW I PROGRAMÓW;</li>
-							<li>OCHRONY PRZED WSZELKĄ AGRESJĄ;</li>
-							<li>SWOBODNEGO WYRAŻANIA WŁASNEGO ZDANIA, OCEN, OPINII WE WSZYSTKICH SPRAWACH – O ILE NIE NARUSZA TO PRAW I GODNOŚCI INNYCH UCZNIÓW/OSÓB W JEGO OTOCZENIU</li>
-							<li>AKTYWNEGO UCZESTNICTWA W ŻYCIU SZKOŁY,</li>
-							<li>ZWRACANIA SIĘ O POMOC W TRUDNYCH SPRAWACH OSOBISTYCH DO WYCHOWAWCY, DYREKCJI SZKOŁY, INNYCH NAUCZYCIELI</li>
-							<li>RZETELNEJ I SPRAWIEDLIWEJ OCENY</li>
-							<li>REPREZENTOWANIA SZKOŁY W RÓŻNEGO RODZAJU KONKURSACH SZKOLNYCH I POZASZKOLNYCH</li>
-							<li>PROSIĆ O WYTŁUMACZENIE, JEŚLI CZEGOŚ NIE ROZUMIE</li>
-							<li>NAUKI RELIGII W SZKOLE.</li>
+							<li>nauki w klasie, przy wykorzystaniu stosownych podręczników i programów;</li>
+							<li>ochrony przed wszelką agresją;</li>
+							<li>do swobodnego wyrażania własnego zdania, ocen, opinii we wszystkich sprawach - o ile nie narusza to praw i godności innych uczniów/osób w jego otoczeniu </li>
+							<li>aktywnego uczestnictwa w życiu Szkoły,</li>
+							<li>zwracania się o pomoc w trudnych sprawach osobistych do wychowawcy, dyrekcji szkoły, innych nauczycieli</li>
+							<li>rzetelnej i sprawiedliwej oceny</li>
+							<li>do reprezentowania szkoły w różnego rodzaju konkursach szkolnych i pozaszkolnych</li>
+							<li>prosić o wytłumaczenie, jeśli czegoś nie rozumie</li>
+							<li>nauki religii w szkole.</li>
 
 						</ul>
 
@@ -69,23 +69,23 @@ export default function KodeksUcznia() {
 
 					<details>
 						<summary>
-							UCZEŃ MA OBOWIĄZEK <em>(rozwin)</em>
+							Uczeń ma obowiązek <em>(rozwin)</em>
 						</summary>
 
 						<br />
 
 						<ul>
 
-							<li>SUMIENNIE PRZYGOTOWYWAĆ SIĘ DO ZAJĘĆ LEKCYJNYCH ORAZ DBAĆ O PODRĘCZNIKI, POMOCE NAUKOWE,</li>
-							<li>SAMODZIELNIE ODRABIAĆ PRACE DOMOWE,</li>
-							<li>RZETELNEGO PRZYSWAJANIA WIEDZY I PUNKTUALNEGO UCZESTNICTWA W ZAJĘCIACH SZKOLNYCH,</li>
-							<li>ODNOSIĆ SIĘ Z SZACUNKIEM DO NAUCZYCIELI, INNYCH PRACOWNIKÓW SZKOŁY I KOLEGÓW,</li>
-							<li>STOSOWAĆ SIĘ DO POLECEŃ NAUCZYCIELI,</li>
-							<li>DBAĆ O BEZPIECZEŃSTWO I ZDROWIE WŁASNE I INNYCH,</li>
-							<li>DBAĆ O CZYSTOŚĆ I PORZĄDEK NA TERENIE SZKOŁY,</li>
-							<li>PRZESTRZEGANIA ZAKAZU O NIE PRZYNOSZENIU DO SZKOŁY TELEFONÓW KOMÓRKOWYCH ORAZ INNEGO SPRZĘTU ELEKTRONICZNEGO,</li>
-							<li>PRZESTRZEGANIA ZAKAZU O WNOSZENIA NA TEREN SZKOŁY ŚRODKÓW ZAGRAŻAJĄCYCH ŻYCIU I ZDROWIU,</li>
-							<li>REAGOWANIA I PRZECIWSTAWIANIE SIĘ PRZEMOCY SŁOWNEJ LUB FIZYCZNEJ ORAZ WSZELKIM INNYM FORMOM AGRESJI NA TERENIE SZKOŁY</li>
+							<li>sumiennie przygotowywać się do zajęć lekcyjnych oraz dbać o podręczniki, pomoce naukowe,</li>
+							<li>samodzielnie odrabiać prace domowe,</li>
+							<li>rzetelnego przyswajania wiedzy i punktualnego uczestnictwa w zajęciach szkolnych,</li>
+							<li>odnosić się z szacunkiem do nauczycieli, innych pracowników szkoły i kolegów,</li>
+							<li>stosować się do poleceń nauczycieli</li>
+							<li>dbać o bezpieczeństwo i zdrowie własne i innych;</li>
+							<li>dbać o czystość i porządek na terenie szkoły;</li>
+							<li>przestrzegania zakazu o nie przynoszeniu  do szkoły telefonów komórkowych oraz innego sprzętu elektronicznego,</li>
+							<li>przestrzegania zakazu o wnoszenia na teren szkoły środków zagrażających życiu i zdrowiu,</li>
+							<li>reagowania i przeciwstawianie się przemocy słownej lub fizycznej oraz wszelkim innym formom agresji na terenie szkoły</li>
 
 						</ul>
 
@@ -93,28 +93,28 @@ export default function KodeksUcznia() {
 
 					<br />
 
-					<h4>POCHWAŁY</h4>
+					<h4>Pochwały</h4>
 
 					<p>
-						UCZEŃ MOŻE BYĆ NAGRODZONY ZA WYBITNE OSIĄGNIĘCIA W NAUCE, ZAANGAŻOWANIE W DZIAŁALNOŚĆ NA RZECZ SZKOŁY I POZA NIĄ.
+						Uczeń może być nagrodzony za wybitne osiągnięcia w nauce, zaangażowanie w działalność na rzecz szkoły i poza nią.
 					</p>
 
 					<br />
 
 					<details>
 						<summary>
-							RODZAJE NAGRÓD <em>(rozwin)</em>
+							Rodzaje nagród <em>(rozwin)</em>
 						</summary>
 
 						<br />
 
 						<ul>
 
-							<li>POCHWAŁA WYCHOWAWCY NA FORUM KLASY I RODZICÓW,</li>
-							<li>POCHWAŁA DYREKTORA SZKOŁY WOBEC SPOŁECZNOŚCI UCZNIOWSKIEJ I GRONA PEDAGOGICZNEGO,</li>
-							<li>LIST GRATULACYJNY DLA RODZICÓW,</li>
-							<li>POCHWALA UCZNIA DO SZKOŁY ANGIELSKIEJ</li>
-							<li>NAGRODA RZECZOWA</li>
+							<li>pochwała wychowawcy na forum klasy i rodziców,</li>
+							<li>pochwała Dyrektora szkoły wobec społeczności uczniowskiej i grona pedagogicznego,</li>
+							<li>list gratulacyjny dla rodziców,</li>
+							<li>pochwała ucznia do szkoły angielskiej</li>
+							<li>nagroda rzeczowa</li>
 
 						</ul>
 
@@ -124,20 +124,20 @@ export default function KodeksUcznia() {
 
 					<details>
 						<summary>
-							ŁAMANIE KODEKSU UCZNIA MOŻE SKUTKOWAĆ <em>(rozwin)</em>
+							Łamanie kodeksu ucznia może skutkować <em>(rozwin)</em>
 						</summary>
 
 						<br />
 
 						<ul>
 
-							<li>UPOMNIENIEM USTNYM PRZEZ NAUCZYCIELA / DYREKTORA
+							<li>upomnieniem ustnym przez nauczyciela / Dyrektora
 							</li>
-							<li>PISEMNEGO UPOMNIENIA, POWIADOMIENIA RODZICÓW
+							<li>pisemnego upomnienia, powiadomienia rodziców
 							</li>
-							<li>ZAWIESZENIA W PRAWACH UCZNIA NA USTALONY WCZEŚNIEJ OKRES CZASU
+							<li>zawieszenia w prawach ucznia na ustalony wcześniej okres czasu
 							</li>
-							<li>SKREŚLENIEM Z LISTY UCZNIÓW
+							<li>skreśleniem z listy uczniów
 							</li>
 
 						</ul>
@@ -148,33 +148,32 @@ export default function KodeksUcznia() {
 
 					<details>
 						<summary>
-							DEKALOG UCZNIA SZKOŁY IM. ŚW. SIOSTRY FAUSTYNY W SLOUGH
-							<em> (rozwin)</em>
+							Dekalog Ucznia Szkoły im. św. Siostry Faustyny w Slough <em> (rozwin)</em>
 						</summary>
 
 						<br />
 
 						<ol>
 
-							<li>JESTEM DUMNY Z TEGO, ŻE JESTEM POLAKIEM; SZANUJĘ FLAGĘ, GODŁO, HYMN I JĘZYK OJCZYSTY.
+							<li>Jestem dumny z tego, że jestem Polakiem; szanuję flagę, godło, hymn i język ojczysty.
 							</li>
-							<li>SZANUJE PAMIĘĆ I ODWAGĘ MOICH PRZODKÓW WALCZĄCYCH ZA WOLNOŚĆ MOJEJ OJCZYZNY.
+							<li>Szanuje pamięć i odwagę moich przodków walczących za wolność Mojej Ojczyzny.
 							</li>
-							<li>TRWAM I CIĘŻKO PRACUJE TAK ABY ROZWIJAĆ I ODKRYWAĆ MOJE TALENTY.
+							<li>Trwam i ciężko pracuje tak aby rozwijać i odkrywać moje talenty.
 							</li>
-							<li>AKTYWNIE UCZESTNICZĘ W ŻYCIU MOJEJ SZKOŁY I JESTEM TWÓRCZY PO TO ABY ŚWIAT WOKÓŁ MNIE ZMIENIAŁ SIĘ NA LEPSZE.
+							<li>Aktywnie uczestniczę w życiu mojej szkoły i jestem twórczy po to aby świat wokół mnie zmieniał się na lepsze.
 							</li>
-							<li>ZAWSZE POMAGAM INNYM, BO WIEM ŻE DOBRO ZAWSZE POWRACA.
+							<li>Zawsze pomagam innym, bo wiem że dobro zawsze powraca.
 							</li>
-							<li>MAM ZAWSZE UŚMIECH NA TWARZY, BO TO NAJLEPSZY SPOSÓB ABY ZDOBYĆ KOLEGÓW I PRZYJACIÓŁ.
+							<li>Mam zawsze  uśmiech na twarzy, bo to najlepszy sposób aby zdobyć kolegów i przyjaciół.
 							</li>
-							<li>JESTEM OTWARTY - JASNO I SZCZERZE WYRAŻAM SWOJE ZDANIE, UWAŻAM ABY NIE RANIĆ PRZY TYM UCZUĆ INNYCH.
+							<li>Jestem otwarty - jasno i szczerze wyrażam swoje zdanie, uważam aby nie ranić przy tym uczuć innych.
 							</li>
-							<li>JESTEM KULTURALNY - UŻYWAM TRZECH MAGICZNYCH SŁÓW: PROSZĘ, DZIĘKUJĘ I PRZEPRASZAM
+							<li>Jestem kulturalny - używam trzech magicznych słów: proszę, dziękuję i  przepraszam.
 							</li>
-							<li>UWAŻAM NA SIEBIE I INNYCH W CZASIE POBYTU W SZKOLE, BO WSZYSCY CHCĄ SIĘ TUTAJ CZUĆ BEZPIECZNIE.
+							<li>Uważam na siebie i innych w czasie pobytu w szkole, bo wszyscy chcą się tutaj czuć bezpiecznie.
 							</li>
-							<li>SZANUJĘ WYPOSAŻENIE KAŻDEGO SZKOLNEGO POMIESZCZENIA, TAK ABY MOGŁO ONO JAK NAJDŁUŻEJ SŁUŻYĆ MNIE I INNYM UCZNIOM MOJEJ SZKOŁY.
+							<li>Szanuję wyposażenie każdego szkolnego pomieszczenia, tak aby mogło ono jak najdłużej służyć mnie i innym uczniom mojej szkoły.
 							</li>
 
 						</ol>
@@ -195,7 +194,7 @@ export default function KodeksUcznia() {
 
 						<br />
 
-						<h4><em>*UCZEŃ I JEGO RODZICE PONOSZĄ ODPOWIEDZIALNOŚĆ ZA ZNISZCZONE MIENIE SZKOŁY.</em></h4>
+						<h4><em>Uczeń i jego rodzice ponoszą odpowiedzialność za zniszczone mienie szkoły.</em></h4>
 
 					</strong>
 

@@ -31,34 +31,34 @@ export default function Patron() {
 
 				<section className="content-wrapper content-wrapper--center">
 
-					<h2>Patron</h2>
+					<h2>Święta Faustyna Kowalska patronką</h2>
 
 					<p>
-						URODZIŁA SIĘ 25 SIERPNIA 1905 ROKU WE WSI GŁOGOWIEC JAKO TRZECIE SPOŚRÓD DZIESIĘCIORGA DZIECI W RODZINIE STANISŁAWA I MARIANNY KOWALSKICH. DWA DNI PÓŹNIEJ NA CHRZCIE ŚWIĘTYM W KOŚCIELE W ŚWINICACH WARCKICH OTRZYMAŁA IMIĘ HELENA. W WIEKU 9 LAT PRZYSTĄPIŁA DO KOMUNII ŚWIĘTEJ, DO SZKOŁY UCZĘSZCZAŁA NIECAŁE TRZY LATA, A POTEM POSZŁA NA SŁUŻBĘ DO ZAMOŻNYCH RODZIN W ALEKSANDROWIE LUDZKIM I ŁODZI. OD SIÓDMEGO ROKU ŻYCIA ODCZUWAŁA WEZWANIE DO SŁUŻBY BOŻEJ, ALE RODZICE NIE WYRAŻALI ZGODY NA JEJ WSTĄPIENIE DO KLASZTORU. PRZYNAGLONA JEDNAK WIZJĄ CIERPIĄCEGO CHRYSTUSA W LIPCU 1924 ROKU WYJECHAŁA DO WARSZAWY, BY SZUKAĆ MIEJSCA W KLASZTORZE.
+						Urodziła się 25 sierpnia 1905 roku we wsi Głogowiec jako trzecie spośród dziesięciorga dzieci w rodzinie Stanisława i Marianny Kowalskich. Dwa dni później  na chrzcie świętym w kościele w Świnicach Warckich otrzymała imię Helena. W wieku 9 lat przystąpiła do komunii Świętej, do szkoły uczęszczała niecałe trzy lata, a potem poszła na służbę do zamożnych rodzin  w Aleksandrowie Ludzkim i Łodzi. Od siódmego roku życia odczuwała wezwanie do służby Bożej, ale rodzice nie wyrażali zgody na jej wstąpienie do klasztoru. Przynaglona jednak wizją cierpiącego Chrystusa w lipcu 1924 roku wyjechała do Warszawy, by szukać miejsca w klasztorze.
 					</p>
 
 					<br />
 
 					<p>
-						DZIENNICZEK NALEŻY DO PEREŁ LITERATURY MISTYCZNEJ. ŚWIĘTA SIOSTRA FAUSTYNA PISAŁA GO W WILNIE I KRAKOWIE W LATACH 1934-38 NA WYRAŹNE POLECENIE PANA JEZUSA I ZE WZGLĘDU NA NAKAZ SWOICH SPOWIEDNIKÓW KS. MICHAŁA SOPOĆKI I O. JÓZEFA ANDRASZA SJ ORAZ ZA POZWOLENIEM PRZEŁOŻONYCH ZGROMADZENIA. PIERWSZE ZACHOWANE ZAPISKI POCHODZĄ Z LIPCA 1934 ROKU. WIADOMO ZE PIERWSZE NOTATKI SIOSTRA FAUSTYNA SPALIŁA, GDYŻ POD NIEOBECNOŚĆ W WILNIE KS. MICHAŁA ULEGŁA NAMOWOM RZEKOMEGO ANIOŁA, KTÓRYM BYŁ SZATAN. POTEM WILEŃSKI KIEROWNIK DUCHOWY KAZAŁ JEJ ODTWORZYĆ TO CO ZOSTAŁO ZNISZCZONE, DLATEGO, DZIENNICZEK W OBECNYM KSZTAŁCIE MA ZABURZONA CHRONOLOGIE, ZWŁASZCZA W PIERWSZYM ZESZYCIE: W BIEŻĄCE WYDARZENIA I PRZEŻYCIA AUTORKA WPLATA RELACJE I OPISY TYCH WYDARZEŃ, KTÓRE MIAŁY MIEJSCE WCZEŚNIEJ.
+						"Dzienniczek" należy do pereł literatury mistycznej. Święta Siostra Faustyna pisała go w Wilnie i Krakowie w latach 1934-38 na wyraźne polecenie Pana Jezusa i ze względu na nakaz swoich spowiedników ks. Michała Sopoćki i o. Józefa Andrasza SJ oraz za pozwoleniem przełożonych Zgromadzenia. Pierwsze zachowane zapiski pochodzą z lipca 1934 roku. Wiadomo ze pierwsze notatki Siostra Faustyna spaliła, gdyż pod nieobecność w Wilnie ks. Michała uległa namowom rzekomego anioła, którym był szatan. Potem wileński kierownik duchowy kazał jej odtworzyć to co zostało zniszczone, dlatego "Dzienniczek" w obecnym kształcie ma zaburzona chronologie, zwłaszcza w pierwszym zeszycie: w bieżące wydarzenia i przeżycia Autorka wplata relacje i opisy tych wydarzeń, które miały miejsce wcześniej.
 					</p>
 
 					<br />
 
 					<p>
-						Z CHARYZMATU ŚW. SIOSTRY FAUSTYNY WYROSŁA NIE TYLKO NOWA SZKOŁA DUCHOWOŚCI, ALE TAKŻE APOSTOLSKI RUCH BOŻEGO MIŁOSIERDZIA, KTÓRY NA RÓŻNE SPOSOBY PODEJMUJE JEJ MISJE GŁOSZENIA ŚWIATU MIŁOSIERDZIA BOŻEGO POPRZEZ ŚWIADECTWO ŻYCIA, CZYNY SŁOWA I MODLITWĘ.
+						Z charyzmatu  św. Siostry Faustyny wyrosła nie tylko  nowa szkoła duchowości, ale także Apostolski Ruch Bożego Miłosierdzia, który na różne sposoby podejmuje jej misje głoszenia światu miłosierdzia Bożego poprzez świadectwo życia, czyny słowa i modlitwę.
 					</p>
 
 					<br />
 
 					<p>
-						IDEA TEGO RUCHU ZOSTAŁA OBJAWIONA SIOSTRZE FAUSTYNIE W WILNIE W 1935 R. GDY JEZUS PRZEKAZAŁ JEJ SWE PRAGNIENIA DOTYCZĄCE ZAŁOŻENIA TAKIEGO ZGROMADZENIA, KTÓRE BY GŁOSIŁO MIŁOSIERDZIE BOGA ŚWIATU I WYPRASZAŁO JE DLA ŚWIATA. (DZ.436) POCZĄTKOWO SĄDZIŁA, ŻE MA OPUŚCIĆ ZGROMADZENIE I ZAŁOŻYĆ KLASZTOR KONTEMPLACYJNY, DLA KTÓREGO NAPISAŁA NAWET STRESZCZENIE REGUŁY ZAKONNEJ.
+						Idea tego Ruchu została objawiona Siostrze Faustynie w Wilnie w 1935 r. gdy Jezus przekazał jej swe pragnienia dotyczące założenia takiego zgromadzenia, które by głosiło miłosierdzie Boga światu i wypraszało je dla świata. (Dz.436) Początkowo sądziła, że ma opuścić Zgromadzenie i założyć klasztor kontemplacyjny, dla którego napisała nawet streszczenie reguły zakonnej.
 					</p>
 
 					<br />
 
 					<p>
-						SIOSTRA FAUSTYNA PRAGNĘŁA BYĆ WIELKĄ ŚWIĘTĄ, WYNIESIONĄ DO CHWAŁY OŁTARZY (POR.DZ.150) WIELE RAZY PISAŁA NIE TYLKO O PRAGNIENIU ŚWIĘTOŚCI DLA SIEBIE, ALE TAKŻE Z NIEZWYKŁĄ KONSEKWENCJĄ DĄŻYŁA DO NIEJ. JEZU MÓJ PISAŁA -TY WIESZ, ŻE OD NAJWCZEŚNIEJSZYCH LAT PRAGNĘŁAM ZOSTAĆ WIELKĄ ŚWIĘTĄ, TO JEST, ŻE PRAGNĘŁAM CIĘ KOCHAĆ TAK WIELKĄ MIŁOŚCIĄ JAK CIĘ JESZCZE DOTYCHCZAS ŻADNA DUSZA NIE KOCHAŁA (DZ.1372)
+						Siostra Faustyna pragnęła być wielką świętą, wyniesioną do chwały ołtarzy (por.Dz.150) Wiele razy pisała nie tylko o pragnieniu świętości dla siebie, ale także z niezwykłą konsekwencją dążyła do niej. Jezu mój pisała -Ty wiesz,  że od najwcześniejszych lat pragnęłam zostać wielką świętą, to jest, że pragnęłam Cię kochać tak wielką miłością jak Cię jeszcze dotychczas żadna dusza nie kochała (Dz.1372)
 					</p>
 
 				</section>

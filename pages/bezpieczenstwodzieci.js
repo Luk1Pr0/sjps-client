@@ -21,7 +21,7 @@ export default function BezpieczenstwoDzieci() {
 
 				<aside className="heading-wrapper">
 					<h1>
-						Bezpieczenstwo Dzieci
+						Bezpieczeństwo dzieci
 					</h1>
 				</aside>
 
@@ -32,27 +32,26 @@ export default function BezpieczenstwoDzieci() {
 
 				<section className="content-wrapper content-wrapper--center">
 
-					<h2>Bezpieczenstwo dzieci</h2>
+					<h2>Bezpieczeństwo dzieci</h2>
 
 					<div className="text--left">
 
-						<h5><strong>1.</strong> Przywozenie i odbior dzieci</h5>
+						<h5><strong>1.</strong> Przywożenie i odbiór dzieci</h5>
 
 						<br />
 
-						<h5><strong>1.1</strong> Przywozenie</h5>
+						<h5><strong>1.1</strong> Przywożenie</h5>
 
 						<p>
-							DZIECI PONIŻEJ 11-GO ROKU ŻYCIA POWINNY BYĆ PRZYPROWADZANE DO SZKOŁY POD OPIEKĄ OSOBY DOROSŁEJ. RODZICE LUB OSOBA UPOWAŻNIONA PRZEZ RODZICA JEST ODPOWIEDZIALNA ZA BEZPIECZNE PRZYBYCIE DZIECKA DO SZKOŁY, ORAZ ZA UPEWNIENIE SIĘ, ŻE DZIECKO ZNAJDUJE SIĘ W KLASIE ALBO W BUDYNKU SZKOLNYM. RODZICE POZOSTAJĄ ODPOWIEDZIALNI ZA BEZPIECZEŃSTWO DZIECI DO ROZPOCZĘCIA LEKCJI.
+							Dzieci poniżej 11-go roku życia powinny być przyprowadzane do szkoły pod opieką osoby dorosłej. Rodzice lub osoba upoważniona przez rodzica jest odpowiedzialna za bezpieczne przybycie dziecka do szkoły, oraz za upewnienie się, że dziecko znajduje się w klasie albo w budynku szkolnym. Rodzice pozostają odpowiedzialni za bezpieczeństwo dzieci do rozpoczęcia lekcji.
 						</p>
 
 						<br />
 
-						<h5><strong>1.2</strong> Odbior</h5>
+						<h5><strong>1.2</strong> Odbiór</h5>
 
 						<p>
-							RODZICE MAJĄ OBOWIĄZEK PUNKTUALNEGO ODBIERANIA DZIECI Z TERENU SZKOŁY PO ZAKOŃCZONYCH ZAJĘCIACH SZKOLNYCH. RODZIC MA PRAWO UPOWAŻNIENIA INNEJ OSOBY DOROSŁEJ DO ODBIORU DZIECKA, W KTÓRYM TO PRZYPADKU RODZIC JEST ODPOWIEDZIALNY ZA POWIADOMIENIE NAUCZYCIELA DZIECKA, O TYM FAKCIE I PODANIE NAZWISKA OSOBY UPOWAŻNIONEJ. DZIECI POWINNY BYĆ ODBIERANE ZE SZKOŁY PUNKTUALNIE GDY ZAKOŃCZĄ SIĘ ZAJĘCIA.
-							W PRZYPADKU KIEDY RODZIC PRZEWIDUJE SPÓŹNIENIE JEST ON ZOBOWIĄZANY DO NIEZWŁOCZNEGO POINFORMOWANIA O TYM SZKOŁY TELEFONUJĄC NA SZKOLNY NUMER TEL.
+							Rodzice mają obowiązek punktualnego odbierania dzieci z terenu szkoły po zakończonych zajęciach szkolnych. Rodzic ma prawo upoważnienia innej osoby dorosłej do odbioru dziecka, w którym to przypadku rodzic jest odpowiedzialny za powiadomienie nauczyciela dziecka, o tym fakcie i podanie nazwiska osoby upoważnionej. Dzieci powinny być odbierane ze szkoły punktualnie  gdy zakończą się zajęcia. W przypadku kiedy rodzic przewiduje spóźnienie jest on zobowiązany do niezwłocznego poinformowania o tym szkoły telefonując na szkolny numer tel.
 						</p>
 
 						<br />
@@ -60,25 +59,26 @@ export default function BezpieczenstwoDzieci() {
 						<h5><strong>1.3</strong> Brak Kontaktu</h5>
 
 						<p>
-							W PRZYPADKU GDY KONTAKT Z RODZICEM JEST NIEMOŻLIWY, NAUCZYCIEL / DYREKCJA BĘDZIE KONTAKTOWAŁ SIĘ Z OSOBAMI (RODZINĄ LUB PRZYJACIÓŁMI RODZICÓW DZIECKA) KTÓRYCH NUMERY TELEFONÓW ZOSTAŁY PODANE NA FORMULARZU REJESTRACYJNYM.
-							W PRZYPADKU GDY NIE MOŻNA SIĘ SKONTAKTOWAĆ Z ŻADNĄ Z WYŻEJ WYMIENIONYCH OSÓB PO UPŁYWIE 1 GODZINY, DYREKCJA SZKOŁY MOŻE SKONTAKTOWAĆ SIĘ Z POLICJĄ LUB PO PORADĘ LUB POMOC.
-							DZIECKO NIE BĘDZIE TRANSPORTOWANE PRZEZ NAUCZYCIELI ANI INNYCH RODZICÓW BEZ UPRZEDNIEJ ZGODY RODZICÓW.
+							W przypadku gdy kontakt z rodzicem jest niemożliwy, nauczyciel / dyrekcja będzie kontaktował się z osobami (rodziną lub przyjaciółmi rodziców dziecka) których numery telefonów zostały podane na formularzu rejestracyjnym.
+							W przypadku gdy nie można się skontaktować z żadną z wyżej wymienionych osób po upływie 1 godziny, dyrekcja szkoły może skontaktować się z policją lub   po poradę lub pomoc.
+							Dziecko nie będzie transportowane przez nauczycieli ani innych rodziców bez uprzedniej zgody rodziców.
+
 						</p>
 
 						<br />
 
-						<h5><strong>2</strong> Nieobecnosc</h5>
+						<h5><strong>2</strong> Nieobecność</h5>
 
 						<p>
-							UCZĘSZCZANIE DO SOBOTNIEJ SZKOŁY JEST DOBROWOLNE I NIE MA USTAWOWEGO OBOWIĄZKU POSYŁANIA TAM DZIECI. JEDNAKŻE OCZEKUJE SIĘ, ŻE SZKOŁA BĘDZIE POINFORMOWANA O PRZEWIDYWALNEJ NIEOBECNOŚCI DZIECKA LUB TEŻ O DECYZJI WYCOFANIA DZIECKA ZE SZKOŁY. W PRZYPADKU KIEDY DZIECKO JEST NIEOBECNE W SZKOLE I JEŻELI POWSTANĄ OBAWY O BEZPIECZEŃSTWO DZIECKA, SZKOŁA BĘDZIE KONTAKTOWAŁA SIĘ Z RODZICAMI. JEŻELI BĘDZIE TO KONIECZNE, SZKOŁA MOŻE POINFORMOWAĆ O SWOICH OBAWACH ODPOWIEDNI URZĄD.
+							Uczęszczanie do sobotniej szkoły jest dobrowolne i nie ma ustawowego obowiązku posyłania tam dzieci. Jednakże oczekuje się, że szkoła będzie poinformowana o przewidywalnej nieobecności dziecka lub też o decyzji wycofania dziecka ze szkoły. W przypadku kiedy dziecko jest nieobecne w szkole i jeżeli powstaną obawy o bezpieczeństwo dziecka, szkoła będzie kontaktowała się z rodzicami. Jeżeli będzie to konieczne, szkoła może poinformować o swoich obawach odpowiedni urząd.
 						</p>
 
 						<br />
 
-						<h5><strong>3</strong> Nagle przypadki i zdrowie</h5>
+						<h5><strong>3</strong> Nagłe przypadki i zdrowie</h5>
 
 						<p>
-							W PRZYPADKU GDYBY DZIECKO ULEGŁO WYPADKOWI, RODZICE DZIECKA BĘDĄ O TYM NATYCHMIASTOWO POINFORMOWANI. PRZY MAŁYCH OBRAŻENIACH OSOBA LUB NAUCZYCIEL PRZESZKOLONY W UDZIELANIU PIERWSZEJ POMOCY, UDZIELI DZIECKU PIERWSZEJ POMOCY W SZKOLE. DZIECKO POZOSTAJE POD OPIEKĄ NAUCZYCIELA DO MOMENTU, GDY JEST GOTOWE ŻEBY WRÓCIĆ DO KLASY LUB DO CZASU ODBIORU PRZEZ RODZICA. PRZY OBRAŻENIACH WYMAGAJĄCYCH POMOCY LEKARSKIEJ, ZOSTANIE WEZWANA KARETKA POGOTOWIA. ŻADNE LEKARSTWA NIE BĘDĄ PODAWANE DZIECKU BEZ UPRZEDNIEJ ZGODY RODZICÓW. RODZICE SĄ ZOBOWIĄZANI ZADEKLAROWAĆ NA POCZĄTKU KAŻDEGO ROKU SZKOLNEGO JAKIEKOLWIEK PRZEWLEKŁE CHOROBY NA KTÓRE DZIECKO CHORUJE (NP.. ASTMA, PADACZKA, ALERGIE). SZKOŁA NIE JEST W STANIE PONOSIĆ ODPOWIEDZIALNOŚCI ZA UDZIELANIE POMOCY MEDYCZNEJ DZIECIOM CHORUJĄCYM NA PRZEWLEKŁE CHOROBY, JEDNAKŻE W WYJĄTKOWYCH PRZYPADKACH PO UPRZEDNIM UZGODNIENIU I PISEMNYM OŚWIADCZENIU RODZICÓW, DYREKCJA MOŻE ZGODZIĆ SIĘ NA PODANIE W SYTUACJACH NAGŁYCH ODPOWIEDNICH LEKÓW DZIECKU.
+							W przypadku gdyby dziecko uległo wypadkowi, rodzice dziecka będą o tym natychmiastowo poinformowani. Przy małych obrażeniach osoba lub nauczyciel przeszkolony w udzielaniu pierwszej pomocy, udzieli dziecku pierwszej pomocy w szkole. Dziecko pozostaje pod opieką nauczyciela do momentu, gdy jest gotowe żeby wrócić do klasy lub do czasu odbioru przez rodzica. Przy obrażeniach wymagających pomocy lekarskiej, zostanie wezwana karetka pogotowia. Żadne lekarstwa nie będą podawane dziecku bez uprzedniej zgody rodziców. Rodzice są zobowiązani zadeklarować na początku każdego roku szkolnego jakiekolwiek przewlekłe choroby na które dziecko choruje (np.. astma, padaczka, alergie). Szkoła nie jest w stanie ponosić odpowiedzialności za udzielanie pomocy medycznej dzieciom chorującym na przewlekłe choroby, jednakże w wyjątkowych przypadkach po uprzednim uzgodnieniu i pisemnym oświadczeniu  rodziców, dyrekcja może zgodzić się na podanie w sytuacjach nagłych odpowiednich leków dziecku.
 						</p>
 
 						<br />
@@ -86,7 +86,7 @@ export default function BezpieczenstwoDzieci() {
 						<h5><strong>4</strong> Fotografowanie</h5>
 
 						<p>
-							SZKOŁA BĘDZIE UBIEGAŁA SIĘ O ZGODĘ RODZICÓW NA ROBIENIE DZIECIOM ZDJĘĆ PODCZAS ZAJĘĆ LUB UROCZYSTOŚCI SZKOLNYCH I UMIESZCZANIE ICH NA STRONIE INTERNETOWEJ SZKOŁY BĄDŹ MEDIACH SPOŁECZNOŚCIOWYCH (PATRZ FORMULARZ ZGŁOSZENIOWY)
+							Szkoła będzie ubiegała się o zgodę rodziców na robienie dzieciom zdjęć podczas zajęć lub uroczystości szkolnych i umieszczanie ich na stronie internetowej szkoły bądź mediach społecznościowych (patrz formularz zgłoszeniowy)
 						</p>
 
 						<br />
@@ -94,15 +94,16 @@ export default function BezpieczenstwoDzieci() {
 						<h5><strong>5</strong> Podejrzenie o molestowanie lub zaniedbywanie</h5>
 
 						<p>
-							JAKIEKOLWIEK ZNAKI WSKAZUJĄCE NA TO, ŻE DZIECKU DZIEJE SIĘ KRZYWDA LUB ŻE JEST ZANIEDBYWANE, BĘDĄ TRAKTOWANE BARDZO POWAŻNIE. W TAKIEJ SYTUACJI SZKOŁA BĘDZIE SIĘ DOKŁADNIE TRZYMAŁA WSKAZÓWEK ZAWARTYCH W OBOWIĄZUJĄCYM DOKUMENCIE GMINY LOKALNEJ SLOUGH I SKONTAKTUJE Z ODPOWIEDNIMI ORGANAMI.
+							Jakiekolwiek znaki wskazujące na to, że dziecku dzieje się krzywda lub że jest zaniedbywane, będą traktowane bardzo poważnie. W takiej sytuacji szkoła będzie się dokładnie trzymała wskazówek zawartych w obowiązującym dokumencie gminy lokalnej Slough i skontaktuje z odpowiednimi organami.
 						</p>
 
 						<br />
 
-						<h5><strong>6</strong> Narkotyki, lekarstwa ktore mozna nabyc bez recepty i uzywki</h5>
+						<h5><strong>6</strong> Narkotyki, lekarstwa które można nabyć bez recepty i używki</h5>
 
 						<p>
-							NARKOTYKI ORAZ UŻYWKI JAKIEGOKOLWIEK RODZAJU SĄ NIEDOZWOLONE NA TERENIE SZKOŁY. DZIECKO, KTÓRE ZAŻYWA LUB SPRZEDAJE NARKOTYKI, NAWET JEŻELI ZDARZYŁO SIĘ TO PO RAZ PIERWSZY ZOSTANIE WYDALONE ZE SZKOŁY. PICIE I POSIADANIE ALKOHOLU, PALENIE I POSIADANIE PAPIEROSÓW PRZEZ UCZNIÓW NA TERENIE SZKOŁY JEST SUROWO ZABRONIONE.
+							Narkotyki oraz używki jakiegokolwiek rodzaju są niedozwolone na terenie szkoły. Dziecko, które zażywa lub sprzedaje narkotyki, nawet jeżeli zdarzyło się to po raz pierwszy zostanie wydalone ze szkoły.
+							Picie i posiadanie alkoholu, palenie i posiadanie papierosów przez uczniów na terenie szkoły jest surowo zabronione.
 						</p>
 
 						<br />

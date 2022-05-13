@@ -38,14 +38,16 @@ export default function Misja() {
 					<br />
 
 					<p>
-						PRAGNIEMY BYĆ ZARÓWNO ATRAKCYJNYM JAK I BEZPIECZNYM MIEJSCEM DLA DZIECI. GORĄCO WIERZYMY, ŻE WSZYSCY TWÓRCY NASZEJ SZKOŁY – NAUCZYCIELE, UCZNIOWIE I RODZICE BĘDĄ MIELI WPŁYW NA JEJ FUNKCJONOWANIE. CHCEMY ABY PANOWAŁA W NIEJ ATMOSFERA POSZANOWANIA I WZAJEMNEJ AKCEPTACJI.
+						Nasza misja to wychowanie dzieci i młodzieży w duchu wartości chrześcijańskich oraz, kultywowanie polskiej tożsamości a przede wszystkim nauczanie języka polskiego, historii polski z elementami geografii oraz religii. Pielęgnowanie polskich tradycji, obyczajów i pięknej bogatej kultury.
 					</p>
 
 					<br />
 
 					<p>
-						NASZE RELACJE OPIERAMY NA WSPÓLNEJ INTEGRACJI NAUCZYCIELI, UCZNIÓW I RODZICÓW PO TO BY TWORZYLI ONI WSPÓLNOTĘ SZKOLNA. NASZA MŁODA KADRA PEDAGOGICZNA OPRÓCZ NOWOCZESNYCH METOD NAUCZANIA WPROWADZA METODY AKTYWIZUJĄCE, KTÓRE ROZWIJAJĄ KREATYWNOŚĆ I SAMODZIELNOŚĆ UCZNIÓW.
+						Naszym założeniem jest bycie szkołą współczesną, której działalność opierać się będzie na ścisłej współpracy z uczniami i ich rodzicami na zasadzie partnerstwa. Głównym naszym zamysłem jest wizerunek uczniów dla których nauka będzie pasja i którzy z entuzjazmem będą wkraczali w piękny świat wiedzy poszerzając swoje horyzonty. Chcielibyśmy aby rodzice również współtworzyli jej jakość i chętnie posyłali do niej swoje dzieci.
 					</p>
+
+					{/* 
 
 					<br />
 
@@ -57,7 +59,7 @@ export default function Misja() {
 
 					<p>
 						SZKOŁA IM. ŚW. SIOSTRY FAUSTYNY UMOŻLIWIA UCZNIOM PODTRZYMYWANIE POCZUCIA TOŻSAMOŚCI NARODOWEJ I JĘZYKOWEJ, WARTOŚCI CHRZEŚCIJAŃSKICH, NAUKĘ JĘZYKA POLSKIEGO ORAZ HISTORII I KULTURY POLSKIEJ.
-					</p>
+					</p> */}
 
 				</section>
 

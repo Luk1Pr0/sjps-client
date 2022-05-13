@@ -34,19 +34,13 @@ export default function Wizja() {
 					<h2>Nasza Wizja</h2>
 
 					<p>
-						PRAGNIEMY BYĆ ZARÓWNO ATRAKCYJNYM JAK I BEZPIECZNYM MIEJSCEM DLA DZIECI. GORĄCO WIERZYMY, ŻE WSZYSCY TWÓRCY NASZEJ SZKOŁY - NAUCZYCIELE, UCZNIOWIE I RODZICE BĘDĄ MIELI WPŁYW NA JEJ FUNKCJONOWANIE. CHCEMY ABY PANOWAŁA W NIEJ ATMOSFERA POSZANOWANIA I WZAJEMNEJ AKCEPTACJI. W MIARĘ ROZWOJU SZKOŁY BĘDZIEMY WYCHODZIĆ NA PRZECIW WYZWANIOM EDUKACYJNYM UCZNIÓW I RODZICÓW.
+						Pragniemy być zarówno atrakcyjnym jak i bezpiecznym  miejscem dla dzieci. Gorąco wierzymy, że wszyscy  twórcy Naszej Szkoły - nauczyciele , uczniowie i rodzice będą mieli wpływ na jej funkcjonowanie. Chcemy aby panowała w niej atmosfera poszanowania i wzajemnej akceptacji.
 					</p>
 
 					<br />
 
 					<p>
-						REALIZUJĄC ICH POTRZEBY I OCZEKIWANIA PRAGNIEMY ROZWIJAĆ NASZA OFERTĘ EDUKACYJNA TAK ABY KAŻDY UCZEŃ ZNALAZŁ TU ODPOWIEDNI KLIMAT I PRACOWAŁ EFEKTYWNIE. NASZE RELACJE OPIERAMY NA WSPÓLNEJ INTEGRACJI NAUCZYCIELI, UCZNIÓW I RODZICÓW PO TO BY TWORZYLI ONI WSPÓLNOTĘ SZKOLNA. NASZA MŁODA KADRA PEDAGOGICZNA OPRÓCZ NOWOCZESNYCH METOD NAUCZANIA WPROWADZA METODY AKTYWIZUJĄCE, KTÓRE ROZWIJAJĄ KREATYWNOŚĆ I SAMODZIELNOŚĆ UCZNIÓW.
-					</p>
-
-					<br />
-
-					<p>
-						CHCIELIBYŚMY ABY RODZICE WRAZ Z NAUCZYCIELAMI MOTYWOWALI UCZNIÓW DO NAUKI, DO PODEJMOWANIA NOWYCH WYZWAŃ I INICJATYW PO TO ABY AKTYWNIE UCZESTNICZYLI ONI W ŻYCIU KLASY, SZKOŁY I CAŁEJ PARAFII. W NASZEJ SZKOLE UCZYMY SZACUNKU DO TRADYCJI I KULTURY, TOLERANCJI I OTWARTOŚCI. SZKOŁA IM. ŚW. SIOSTRY FAUSTYNY UMOŻLIWIA UCZNIOM PODTRZYMYWANIE POCZUCIA TOŻSAMOŚCI NARODOWEJ I JĘZYKOWEJ ,WARTOŚCI CHRZEŚCIJAŃSKICH, NAUKĘ JĘZYKA POLSKIEGO ORAZ HISTORII I KULTURY POLSKIEJ.
+						Chcielibyśmy aby rodzice wraz z nauczycielami motywowali uczniów do nauki, do podejmowania nowych wyzwań i inicjatyw po to aby aktywnie uczestniczyli oni w życiu klasy, szkoły i całej Parafii. W naszej szkole uczymy szacunku do tradycji i kultury, tolerancji i otwartości. Szkoła im. św. Siostry Faustyny umożliwia uczniom podtrzymywanie poczucia tożsamości narodowej i językowej ,wartości chrześcijańskich, naukę języka polskiego oraz historii i kultury polskiej.
 					</p>
 
 				</section>

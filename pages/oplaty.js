@@ -21,7 +21,7 @@ export default function Oplaty() {
 
 				<aside className="heading-wrapper">
 					<h1>
-						Oplaty
+						Opłaty
 					</h1>
 				</aside>
 
@@ -31,21 +31,21 @@ export default function Oplaty() {
 
 				<section className="content-wrapper content-wrapper--center">
 
-					<h2>CZESNE I TERMINY PŁATNOŚCI</h2>
+					<h2>Czesne i Terminy Płatności</h2>
 
 					<div className='text--left'>
-						<h4>OPŁATY ZA SZKOŁE W ROKU SZKOLNYM 2021/22 WYNOSZĄ:</h4>
+						<h4>Opłaty za szkołę w roku szkolnym 2022/23 wynoszą:</h4>
 					</div>
 
 					<br />
 
 					<ul>
 
-						<li>PIERWSZE DZIECKO <strong>£285 / ROK</strong>
+						<li>Pierwsze dziecko <strong>£295 / rok</strong>
 						</li>
-						<li>DRUGIE DZIECKO <strong>£210 / ROK</strong>
+						<li>Drugie dziecko <strong>£250 / rok</strong>
 						</li>
-						<li>TRZECIE I KAŻDE KOLEJNE DZIECKO <strong>£160 / ROK</strong>
+						<li>Trzecie i każde kolejne dziecko <strong>£200 / rok</strong>
 						</li>
 
 					</ul>
@@ -53,22 +53,22 @@ export default function Oplaty() {
 					<br />
 
 					<p>
-						ZAPISUJĄC DZIECKO DO SZKOŁY NALEŻY WPŁACIĆ DEPOZYT W WYSOKOŚCI £50 DO 20 SIERPNIA 2021 ROKU, OPŁATA ZA CZESNE BĘDZIE POMNIEJSZONA O KWOTE WCZESNIEJ WPŁACONEGO DEPOZYTU.
+						Zapisując dziecko do szkoły należy wpłacić depozyt w wysokości £50 do 20 sierpnia 2022 roku, opłata za czesne będzie pomniejszona o kwotę wcześniej wpłaconego depozytu.
 					</p>
 
 					<br />
 
 					<p>
-						WARUNKIEM KONTYNUOWANIA NAUKI W SZKOLE JEST UREGULOWANIE CAŁEJ KWOTY ZA PIERWSZE DZIECKO DO KOŃCA WRZESNIA 2021, A ZA DRUGIE I TRZECIE DZIECKO DO 31 PAŹDZIERNIKA 2021. W PRZYPADKU REZYGNACJI ZE SZKOŁY W TRAKCIE ROKU SZKOLNEGO, OPŁATY NIE BEDĄ ZWRACANE.
+						Warunkiem kontynuowania nauki w szkole jest uregulowanie całej kwoty za pierwsze dziecko do końca września 2022, a za drugie i trzecie dziecko do 31 października 2022. W przypadku rezygnacji ze szkoły w trakcie roku szkolnego, opłaty nie będą zwracane.
 					</p>
 
 					<br />
 
-					<p>W PRZYPADKU JAKICHKOLWIEK WĄTPLIWOŚCI, PROSIMY O KONTAKT NA ADRES E-MAIL: <a href="mailto:szkolajezykapolskiegoslough@gmail.com?subject=Oplaty za szkole" className="link">szkolajezykapolskiegoslough@gmail.com</a></p>
+					<p>W przypadku jakichkolwiek wątpliwości, prosimy o kontakt na adres e-mail: <a href="mailto:szkolajezykapolskiegoslough@gmail.com?subject=Oplaty za szkole" className="link">szkolajezykapolskiegoslough@gmail.com</a></p>
 
 					<br />
 
-					<p><em>*KOSZT PODRĘCZNIKOW SZKOLNYCH NIE JEST WLICZANY W OPŁATE ZA SZKOŁE.</em></p>
+					<p><em>*Koszt podręczników szkolnych nie jest wliczany w opłatę za szkołę.</em></p>
 
 				</section>
 
@@ -99,7 +99,7 @@ export default function Oplaty() {
 						<br />
 
 						<p>
-							<strong>Czesne tytulem:</strong> IMIE I NAZWISKO UCZNIA + AKTUALNA KLASA + CZESNE / DEPOZYT (NP. ANNA NOWAK KL.2 CZESNE)
+							<strong>Czesne tytulem:</strong> : imię i nazwisko ucznia + aktualna klasa + czesne / depozyt (np. Anna Nowak kl.2 czesne).
 						</p>
 
 					</div>

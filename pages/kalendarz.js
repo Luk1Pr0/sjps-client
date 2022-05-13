@@ -57,7 +57,9 @@ export default function Kalendarz() {
 					<h2>KALENDARZ 2021/22</h2>
 
 					<p>
-						ZAJĘCIA W ROKU SZKOLNYM <strong>2021/22</strong> ROZPOCZYNAMY <strong>11 WRZEŚNIA 2021</strong>. ZAJĘCIA NA GRUPĘ PORANNĄ ROZPOCZYNAJĄ SIĘ O GODZ. <strong>8:50</strong>, A KOŃCZĄ O <strong>12:20</strong>. W NOWYM ROKU SZKOLNYM MAMY 35 SOBÓT. KALENDARZ NA ROK SZKOLNY 2020/21 ZAMIESZCZAMY PONIŻEJ.
+						Zajęcia w roku szkolnym <strong>2021/22 </strong> rozpoczynamy <strong> 11 września 2021 r. </strong>
+						Zajęcia na grupę poranną rozpoczynają się o godz. <strong>8:50</strong>, a kończą o <strong>12:20</strong>. W nowym roku szkolnym mamy 35 sobót. Kalendarz na rok szkolny 2020/21 zamieszczamy poniżej.
+
 					</p>
 
 				</section>

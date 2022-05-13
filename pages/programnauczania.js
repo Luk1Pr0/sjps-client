@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 
 export default function ProgramNauczania() {
 	return (
@@ -34,32 +35,26 @@ export default function ProgramNauczania() {
 					<h2>Program Nauczania</h2>
 
 					<p>
-						POZA KRAJEM DORASTA I UCZY SIĘ W MIEJSCOWYCH SZKOŁACH WIELE POLSKICH DZIECI. CZĘŚĆ UCZNIÓW ORAZ ICH RODZINY, ZACHOWUJĄC SZACUNEK WOBEC KULTURY I TRADYCJI KRAJU ZAMIESZKANIA, PRAGNIE UTRWALAĆ, POSZERZAĆ I DOSKONALIĆ ZNAJOMOŚĆ JĘZYKA POLSKIEGO ORAZ KULTURY POLSKIEJ. ZADANIE TO UŁATWIAJĄ IM SZKOŁY POLONIJNE, FUNKCJONUJĄCE W WIELU KRAJACH.
+						Poza krajem dorasta i uczy się w miejscowych szkołach wiele polskich dzieci. Część uczniów oraz ich rodziny, zachowując szacunek wobec kultury i tradycji kraju zamieszkania, pragnie utrwalać, poszerzać i doskonalić znajomość języka polskiego oraz kultury polskiej. Zadanie to ułatwiają im szkoły polonijne, funkcjonujące w wielu krajach.
 					</p>
 
 					<br />
 
 					<p>
-						Z MYŚLĄ O NAUCZYCIELACH I UCZNIACH TYCH SZKÓŁ MINISTERSTWO EDUKACJI NARODOWEJ RZECZYPOSPOLITEJ POLSKIEJ W 2010 R. PRZYGOTOWAŁO PODSTAWĘ PROGRAMOWĄ DLA UCZNIÓW POLSKICH UCZĄCYCH SIĘ ZA GRANICĄ. WERSJA PODSTAWY PROGRAMOWEJ Z 2020 R.
+						Z myślą o nauczycielach i uczniach tych szkół Ministerstwo Edukacji Narodowej Rzeczypospolitej Polskiej w 2010 r. przygotowało Podstawę programową dla uczniów polskich uczących się za granicą. Wersja Podstawy programowej z 2020 r. jest drugim tego rodzaju dokumentem powstałym na gruncie polskiej edukacji. Jest propozycją dla tych nauczycieli z polskich szkół i polskich ośrodków edukacyjnych działających za granicą, którzy chcieliby w szerszym zakresie uczyć polskie dzieci ich ojczystego języka, literatury, historii, geografii i kultury Polski.
 					</p>
 
 					<br />
 
 					<p>
-						JEST DRUGIM TEGO RODZAJU DOKUMENTEM POWSTAŁYM NA GRUNCIE POLSKIEJ EDUKACJI. JEST PROPOZYCJĄ DLA TYCH NAUCZYCIELI Z POLSKICH SZKÓŁ I POLSKICH OŚRODKÓW EDUKACYJNYCH DZIAŁAJĄCYCH ZA GRANICĄ, KTÓRZY CHCIELIBY W SZERSZYM ZAKRESIE UCZYĆ POLSKIE DZIECI ICH OJCZYSTEGO JĘZYKA, LITERATURY, HISTORII, GEOGRAFII I KULTURY POLSKI.
+						Podstawa programowa dla uczniów polskich uczących się za granicą z 2020 r. zawiera uwspółcześnione treści kształcenia językowego, literackiego, kulturowego. Podstawa zbudowana jest tak, by pokazać, co uczeń powinien wiedzieć i umieć na zakończenie danego etapu kształcenia: edukacji wczesnoszkolnej, szkoły podstawowej, liceum. Zasadniczą kompetencją na każdym etapie są umiejętności językowe, istotne w poznawaniu literatury, historii i kultury polskiej.
 					</p>
 
 					<br />
 
-					<p>
-						PODSTAWA PROGRAMOWA DLA UCZNIÓW POLSKICH UCZĄCYCH SIĘ ZA GRANICĄ Z 2020 R. ZAWIERA UWSPÓŁCZEŚNIONE TREŚCI KSZTAŁCENIA JĘZYKOWEGO, LITERACKIEGO, KULTUROWEGO. PODSTAWA ZBUDOWANA JEST TAK, BY POKAZAĆ, CO UCZEŃ POWINIEN WIEDZIEĆ I UMIEĆ NA ZAKOŃCZENIE DANEGO ETAPU KSZTAŁCENIA: EDUKACJI WCZESNOSZKOLNEJ, SZKOŁY PODSTAWOWEJ, LICEUM.
-					</p>
-
-					<br />
-
-					<p>
-						ZASADNICZĄ KOMPETENCJĄ NA KAŻDYM ETAPIE SĄ UMIEJĘTNOŚCI JĘZYKOWE, ISTOTNE W POZNAWANIU LITERATURY, HISTORII I KULTURY POLSKIEJ.
-					</p>
+					<a href='dokumenty/podstawa-programowa.pdf' className='link' id='podstawaprogramowa' target='_blank'>
+						Podstawa programowa <em>(Otwiera w nowej karcie)</em>
+					</a>
 
 				</section>
 

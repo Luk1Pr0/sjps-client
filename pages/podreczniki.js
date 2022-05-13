@@ -21,7 +21,7 @@ export default function Podreczniki() {
 
 				<aside className="heading-wrapper">
 					<h1>
-						Podreczniki
+						Podręczniki
 					</h1>
 				</aside>
 
@@ -34,25 +34,26 @@ export default function Podreczniki() {
 					<h2>Podreczniki</h2>
 
 					<p>
-						NAJLEPSZĄ FORMĄ PRACY DLA POLSKICH SZKÓŁ SOBOTNICH SĄ MATERIAŁY NAPISANE SPECJALNIE DLA ICH POTRZEB. TAKĄ SERIĄ JEST WŁAŚNIE SERIA PODRĘCZNIKÓW MAŁGORZATY PAWLUSIEWICZ, KTÓRA DOSKONALE SPRAWDZA SIĘ W PRACY Z DZIEĆMI POLONIJNYMI.
+						Najlepszą formą pracy  dla polskich szkół sobotnich są materiały napisane specjalnie dla ich potrzeb. Taką serią jest właśnie seria podręczników Małgorzaty Pawlusiewicz, która doskonale sprawdza się w pracy z dziećmi polonijnymi.
 					</p>
 
 					<br />
 
 					<p>
-						NAJWIĘKSZĄ ZALETĄ TEJ SERII JEST DOSTOSOWANIE ILOŚCI MATERIAŁU I JEDNOSTEK LEKCYJNYCH DO ILOŚCI ZAJĘĆ W SZKOLE SOBOTNIEJ (32 - 35 ZAJĘĆ ROCZNIE, 3-4 GODZINY TYGODNIOWO). PODRĘCZNIKI TE ZAPEWNIAJĄ UCZNIOM CIĄGŁOŚCI NAUCZANIA, PONIEWAŻ KAŻDY PODRĘCZNIK JEST KONTYNUACJĄ POPRZEDNIEJ CZĘŚCI.
+						Największą zaletą tej serii jest dostosowanie ilości materiału i jednostek lekcyjnych do ilości zajęć w szkole sobotniej (32 - 35 zajęć rocznie, 3-4 godziny tygodniowo). Podręczniki te zapewniają uczniom ciągłości nauczania, ponieważ każdy podręcznik jest kontynuacją poprzedniej części.
 					</p>
 
 					<br />
 
 					<p>
-						TEJ SERII UŻYWAJĄ SZKOŁY POLONIJNE NA CAŁYM ŚWIECIE, W TYM PONAD 200 SZKÓŁ W WIELKIEJ BRYTANII I W EUROPIE. AUTORKA PODRĘCZNIKÓW, MAŁGORZATA PAWLUSIEWICZ, MA WIELOLETNIE DOŚWIADCZENIE W NAUCZANIU DZIECI NA EMIGRACJI ORAZ W KSZTAŁCENIU NAUCZYCIELI POLONIJNYCH.
+						Tej serii używają szkoły polonijne na całym świecie, w tym ponad 200 szkół w Wielkiej Brytanii i w Europie. Autorka podręczników, Małgorzata Pawlusiewicz, ma wieloletnie doświadczenie w nauczaniu dzieci na emigracji oraz w kształceniu nauczycieli polonijnych.
 					</p>
 
 					<br />
 
 					<p>
-						MATERIAŁY TE SĄ WYKORZYSTYWANE RÓWNIEŻ PRZEZ RODZICÓW, KTÓRZY SAMI UCZĄ DZIECI JĘZYKA POLSKIEGO, A CHCĄ ROBIĆ TO SYSTEMATYCZNIE, Z POMOCĄ SPRAWDZONYCH I RZETELNIE PRZYGOTOWANYCH MATERIAŁÓW. W NASZEJ SZKOLE KORZYSTAMY WŁAŚNIE Z TYCH PODRĘCZNIKÓW.
+						Materiały te są wykorzystywane również przez rodziców, którzy sami uczą dzieci języka polskiego, a chcą robić to systematycznie, z pomocą sprawdzonych i rzetelnie przygotowanych materiałów.
+						W Naszej Szkole korzystamy właśnie z tych podręczników.
 					</p>
 
 				</section>

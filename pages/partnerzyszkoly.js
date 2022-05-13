@@ -21,7 +21,7 @@ export default function PartnerzySzkoly() {
 
 				<aside className="heading-wrapper">
 					<h1>
-						Partnerzy Szkoly
+						Partnerzy Szkoły
 					</h1>
 				</aside>
 
@@ -31,7 +31,7 @@ export default function PartnerzySzkoly() {
 
 				<section className="content-wrapper content-wrapper--center">
 
-					<h2>ZACHĘCAMY WSZYSTKIE INSTYTUCJE I FIRMY DO WSPARCIA NASZEJ SZKOŁY.</h2>
+					<h2>Zachęcamy wszystkie instytucje i firmy do wsparcia naszej szkoły.</h2>
 
 				</section>
 

@@ -21,7 +21,7 @@ export default function DlaczegoNaszaSzkola() {
 
 				<aside className="heading-wrapper">
 					<h1>
-						Dlaczego nasza szkola
+						Dlaczego nasza szkoła
 					</h1>
 				</aside>
 
@@ -31,7 +31,7 @@ export default function DlaczegoNaszaSzkola() {
 
 				<section className='content-wrapper content-wrapper--center'>
 
-					<h2>Dlaczego nasza szkola?</h2>
+					<h2>Dlaczego nasza szkoła?</h2>
 
 					<ol>
 

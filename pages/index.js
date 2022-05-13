@@ -56,7 +56,7 @@ export default function Home() {
 
 				<aside className="heading-wrapper">
 					<h1>
-						SZKOŁA JĘZYKA POLSKIEGO IM. ŚW. SIOSTRY FAUSTYNY W SLOUGH
+						Szkoła Języka Polskiego Im. Św. Siostry Faustyny w Slough
 					</h1>
 				</aside>
 
@@ -67,7 +67,7 @@ export default function Home() {
 				<section className="content-wrapper content-wrapper--center">
 
 					<h4>
-						NASZA MISJA - WYCHOWANIE DZIECI I MŁODZIEŻY W DUCHU WARTOŚCI CHRZEŚCIJANSKICH ORAZ, KULTYWOWANIE POLSKIEJ TOŻSAMOŚCI A PRZEDE WSZYSTKIM NAUCZANIE JĘZYKA POLSKIEGO, HISTORII POLSKI Z ELEMENTAMI GEOGRAFII I RELIGII. CHCEMY PIELĘGNOWAĆ POLSKIE TRADYCJE, OBYCZAJE ORAZ PIĘKNĄ I BOGATĄ KULTURE.
+						Nasza misja - wychowanie dzieci i młodzieży w duchu wartości chrześcijańskich oraz, kultywowanie polskiej tożsamości a przede wszystkim nauczanie języka polskiego, historii Polskii z elementami geografii i religii. Chcemy pielęgnować polskie tradycje, obyczaje oraz piękną i bogatą kulture.
 					</h4>
 
 				</section>

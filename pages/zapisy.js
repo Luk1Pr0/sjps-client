@@ -34,7 +34,7 @@ export default function Zapisy() {
 					<h2>Zapisz dziecko</h2>
 
 					<p>
-						JEŚLI CHCĄ PAŃSTWO ZAPISAĆ SWOJE DZIECKO DO NASZEJ SZKOŁY, SERDECZNIE PROSIMY O WYDRUKOWANIE PONIŻSZEGO FORMULARZA, WYPEŁNIENIE GO ORAZ WYSŁANIE NA NASZ EMAIL: <span><a href="mailto:szkolajezykapolskiegoslough@gmail.com?subject=Zapisy do polskiej szkoly" className="link">szkolajezykapolskiegoslough@gmail.com</a></span>
+						Jeśli chcą Państwo zapisać swoje dziecko do naszej szkoły, serdecznie prosimy o wydrukowanie poniższego formularza, wypełnienie go oraz wysłanie na nasz e-mail: <span><a href="mailto:szkolajezykapolskiegoslough@gmail.com?subject=Zapisy do polskiej szkoly" className="link">szkolajezykapolskiegoslough@gmail.com</a></span>
 					</p>
 
 				</section>
