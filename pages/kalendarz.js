@@ -27,7 +27,17 @@ export default function Kalendarz() {
 	return (
 		<>
 			<Head>
+
 				<title> SJPS | Kalendarz</title>
+
+				<meta name="description" content="Kalendarz szkolny na lata 2022/23 znajdziesz na poniższych zdjęciach" />
+
+				<meta property="og:title" content="SJPS | Kalendarz" />
+
+				<meta property="og:description" content="Kalendarz szkolny na lata 2022/23 znajdziesz na poniższych zdjęciach" />
+
+				<meta property="og:url" content="https://szkolajezykapolskiegoslough.org/kalendarz" />
+
 			</Head>
 
 			<header className="header header--kalendarz">

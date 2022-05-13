@@ -4,7 +4,17 @@ export default function Podreczniki() {
 	return (
 		<>
 			<Head>
-				<title> SJPS | Podreczniki</title>
+
+				<title>SJPS | Podręczniki</title>
+
+				<meta name="description" content="Najlepszą formą pracy dla polskich szkół sobotnich są materiały napisane specjalnie dla ich potrzeb." />
+
+				<meta property="og:title" content="SJPS | Podręczniki" />
+
+				<meta property="og:description" content="Najlepszą formą pracy dla polskich szkół sobotnich są materiały napisane specjalnie dla ich potrzeb." />
+
+				<meta property="og:url" content="https://szkolajezykapolskiegoslough.org/podreczniki" />
+
 			</Head>
 
 			<header className="header header--podreczniki">

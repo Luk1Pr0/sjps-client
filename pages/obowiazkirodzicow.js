@@ -4,7 +4,17 @@ export default function ObowiazkiRodzicow() {
 	return (
 		<>
 			<Head>
-				<title> SJPS | Obowiazki rodzicow</title>
+
+				<title>SJPS | Obowiązki rodzicow</title>
+
+				<meta name="description" content="Obowiązki rodzicow dotyczą wszystkich tych, których dzieci uczęszczają do naszej szkoły." />
+
+				<meta property="og:title" content="SJPS | Obowiązki rodzicow" />
+
+				<meta property="og:description" content="Obowiązki rodzicow dotyczą wszystkich tych, których dzieci uczęszczają do naszej szkoły." />
+
+				<meta property="og:url" content="https://szkolajezykapolskiegoslough.org/obowiazkirodzicow" />
+
 			</Head>
 
 			<header className="header header--obowiazki-rodzicow">

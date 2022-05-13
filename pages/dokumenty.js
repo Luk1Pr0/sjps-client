@@ -4,7 +4,17 @@ export default function Dokumenty() {
 	return (
 		<>
 			<Head>
+
 				<title>SJPS | Dokumenty</title>
+
+				<meta name="description" content="Tutaj znajdziesz wszystkie potrzebne dokumenty." />
+
+				<meta property="og:title" content="SJPS | Dokumenty" />
+
+				<meta property="og:description" content="Tutaj znajdziesz wszystkie potrzebne dokumenty." />
+
+				<meta property="og:url" content="https://szkolajezykapolskiegoslough.org/dokumenty" />
+
 			</Head>
 
 			<header className="header header--dokumenty">

@@ -4,7 +4,17 @@ export default function Wizja() {
 	return (
 		<>
 			<Head>
-				<title> SJPS | Wizja</title>
+
+				<title>SJPS | Wizja</title>
+
+				<meta name="description" content="Pragniemt być zarówno atrakcyjnym jak i bezpiecznym miejscem dla dzieci. Gorąco wierzymy, że wszyscy twórcy naszek szkoły - nauczyciele, uczniowie i rodzice bedą mieli wpływ na jej funkcjonowanie." />
+
+				<meta property="og:title" content="SJPS | Wizja" />
+
+				<meta property="og:description" content="Pragniemt być zarówno atrakcyjnym jak i bezpiecznym miejscem dla dzieci. Gorąco wierzymy, że wszyscy twórcy naszek szkoły - nauczyciele, uczniowie i rodzice bedą mieli wpływ na jej funkcjonowanie." />
+
+				<meta property="og:url" content="https://szkolajezykapolskiegoslough.org/wizja" />
+
 			</Head>
 
 			<header className="header header--wizja">
@@ -24,7 +34,7 @@ export default function Wizja() {
 					<h2>Nasza Wizja</h2>
 
 					<p>
-						PRAGNIEMY BYĆ ZARÓWNO ATRAKCYJNYM JAK I BEZPIECZNYM MIEJSCEM DLA DZIECI. GORĄCO WIERZYMY, ŻE WSZYSCY TWÓRCY NASZEJ SZKOŁY – NAUCZYCIELE , UCZNIOWIE I RODZICE BĘDĄ MIELI WPŁYW NA JEJ FUNKCJONOWANIE. CHCEMY ABY PANOWAŁA W NIEJ ATMOSFERA POSZANOWANIA I WZAJEMNEJ AKCEPTACJI. W MIARĘ ROZWOJU SZKOŁY BĘDZIEMY WYCHODZIĆ NA PRZECIW WYZWANIOM EDUKACYJNYM UCZNIÓW I RODZICÓW.
+						PRAGNIEMY BYĆ ZARÓWNO ATRAKCYJNYM JAK I BEZPIECZNYM MIEJSCEM DLA DZIECI. GORĄCO WIERZYMY, ŻE WSZYSCY TWÓRCY NASZEJ SZKOŁY - NAUCZYCIELE, UCZNIOWIE I RODZICE BĘDĄ MIELI WPŁYW NA JEJ FUNKCJONOWANIE. CHCEMY ABY PANOWAŁA W NIEJ ATMOSFERA POSZANOWANIA I WZAJEMNEJ AKCEPTACJI. W MIARĘ ROZWOJU SZKOŁY BĘDZIEMY WYCHODZIĆ NA PRZECIW WYZWANIOM EDUKACYJNYM UCZNIÓW I RODZICÓW.
 					</p>
 
 					<br />

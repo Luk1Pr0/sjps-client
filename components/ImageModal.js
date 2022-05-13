@@ -21,7 +21,7 @@ export default function ImageModal({ image }) {
 					<button className="btn btn--close" onClick={handleClick}>Zamknij</button>
 				</div>
 
-				<img src={image} alt="" />
+				<img src={image} alt="This is a modal displaying images on this website once user clicks on one." />
 
 			</div>
 

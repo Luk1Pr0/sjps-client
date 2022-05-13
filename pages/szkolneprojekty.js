@@ -5,7 +5,17 @@ export default function SzkolneProjekty() {
 	return (
 		<>
 			<Head>
-				<title> SJPS | Szkolne projekty</title>
+
+				<title>SJPS | Szkolne projekty</title>
+
+				<meta name="description" content="Szkolne projekty w które bedzie angażowac sie nasza szkoła w nowym roku szkolnym." />
+
+				<meta property="og:title" content="SJPS | Szkolne projekty" />
+
+				<meta property="og:description" content="Szkolne projekty w które bedzie angażowac sie nasza szkoła w nowym roku szkolnym." />
+
+				<meta property="og:url" content="https://szkolajezykapolskiegoslough.org/szkolneprojekty" />
+
 			</Head>
 
 			<header className="header header--szkolne-projekty">
@@ -29,7 +39,7 @@ export default function SzkolneProjekty() {
 					<br />
 
 					<ul>
-						<li>MIĘDZYNARODOWY PROJEKT EDUKACYJNY WSPIERAJĄCY ROZWÓJ CZYTELNICTWA W KLASACH I-III ,,CZYTAM Z KLASĄ LEKTURKI SPOD CHMURKI’’</li>
+						<li>MIĘDZYNARODOWY PROJEKT EDUKACYJNY WSPIERAJĄCY ROZWÓJ CZYTELNICTWA W KLASACH I-III ,,CZYTAM Z KLASĄ LEKTURKI SPOD CHMURKI''</li>
 					</ul>
 
 					<br />

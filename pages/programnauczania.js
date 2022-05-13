@@ -4,7 +4,17 @@ export default function ProgramNauczania() {
 	return (
 		<>
 			<Head>
-				<title> SJPS | Program nauczania</title>
+
+				<title>SJPS | Program nauczania</title>
+
+				<meta name="description" content="Poza krajem dorasta i uczy sie w miejscowych szkołach wiele polskich dzieci, dlatego nasz program nauczania pomaga im kultywowac tradycje oraz język." />
+
+				<meta property="og:title" content="SJPS | Program nauczania" />
+
+				<meta property="og:description" content="Poza krajem dorasta i uczy sie w miejscowych szkołach wiele polskich dzieci, dlatego nasz program nauczania pomaga im kultywowac tradycje oraz język." />
+
+				<meta property="og:url" content="https://szkolajezykapolskiegoslough.org/programnauczania" />
+
 			</Head>
 
 			<header className="header header--program-nauczania">

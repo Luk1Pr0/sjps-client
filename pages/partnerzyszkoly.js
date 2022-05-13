@@ -4,7 +4,17 @@ export default function PartnerzySzkoly() {
 	return (
 		<>
 			<Head>
-				<title> SJPS | Partnerzy Szkoly</title>
+
+				<title>SJPS | Partnerzy szkoły</title>
+
+				<meta name="description" content="Zapraszamy organizacje oraz różne firmy do bycia sponsorem naszej szkoły." />
+
+				<meta property="og:title" content="SJPS | Partnerzy szkoły" />
+
+				<meta property="og:description" content="Zapraszamy organizacje oraz różne firmy do bycia sponsorem naszej szkoły." />
+
+				<meta property="og:url" content="https://szkolajezykapolskiegoslough.org/partnerzyszkoly" />
+
 			</Head>
 
 			<header className="header header--partnerzy-szkoly">

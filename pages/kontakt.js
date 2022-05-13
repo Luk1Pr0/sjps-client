@@ -7,7 +7,17 @@ export default function Kontakt() {
 	return (
 		<>
 			<Head>
-				<title> SJPS | Kontakt</title>
+
+				<title>SJPS | Kontakt</title>
+
+				<meta name="description" content="Skontaktuj sie z nami za pomocą formularza lub wysyłając e-mail no poniżej podany adres mailowy" />
+
+				<meta property="og:title" content="SJPS | Kontakt" />
+
+				<meta property="og:description" content="Skontaktuj sie z nami za pomocą formularza lub wysyłając e-mail no poniżej podany adres mailowy" />
+
+				<meta property="og:url" content="https://szkolajezykapolskiegoslough.org/kontakt" />
+
 			</Head>
 
 			<header className="header header--kontakt">

@@ -4,7 +4,17 @@ export default function Misja() {
 	return (
 		<>
 			<Head>
-				<title> SJPS | Misja</title>
+
+				<title>SJPS | Misja</title>
+
+				<meta name="description" content="Szkoła im. Św. Siostry Faustyny umożliwia uczniom podtrzymyanie poczucia tożsamości narodowej i językowej, wartości chrześcijańskich, naukę języka polskiego oraz historii i kultury polskiej" />
+
+				<meta property="og:title" content="SJPS | Misja" />
+
+				<meta property="og:description" content="Szkoła im. Św. Siostry Faustyny umożliwia uczniom podtrzymyanie poczucia tożsamości narodowej i językowej, wartości chrześcijańskich, naukę języka polskiego oraz historii i kultury polskiej" />
+
+				<meta property="og:url" content="https://szkolajezykapolskiegoslough.org/misja" />
+
 			</Head>
 
 			<header className="header header--misja">

@@ -4,7 +4,17 @@ export default function Patron() {
 	return (
 		<>
 			<Head>
-				<title> SJPS | Patron</title>
+
+				<title>SJPS | Patron</title>
+
+				<meta name="description" content="Z charyzmatu Św. Siostry Faustyny wyrosła nie tylko nowa szkoła duchowości, ale także apostolski ruch Bożego miłosierdzia." />
+
+				<meta property="og:title" content="SJPS | Patron" />
+
+				<meta property="og:description" content="Z charyzmatu Św. Siostry Faustyny wyrosła nie tylko nowa szkoła duchowości, ale także apostolski ruch Bożego miłosierdzia." />
+
+				<meta property="og:url" content="https://szkolajezykapolskiegoslough.org/patron" />
+
 			</Head>
 
 			<header className="header header--patron">

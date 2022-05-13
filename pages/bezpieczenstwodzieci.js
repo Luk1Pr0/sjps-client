@@ -4,7 +4,17 @@ export default function BezpieczenstwoDzieci() {
 	return (
 		<>
 			<Head>
-				<title> SJPS | Bezpieczenstwo Dzieci</title>
+
+				<title>SJPS | Bezpieczeństwo dzieci</title>
+
+				<meta name="description" content="Nasza szkoła dba o bezpieczeństwo dzieci." />
+
+				<meta property="og:title" content="SJPS | Bezpieczeństwo dzieci" />
+
+				<meta property="og:description" content="Nasza szkoła dba o bezpieczeństwo dzieci." />
+
+				<meta property="og:url" content="https://szkolajezykapolskiegoslough.org/bezpieczenstwodzieci" />
+
 			</Head>
 
 			<header className="header header--bezpieczenstwo-dzieci">

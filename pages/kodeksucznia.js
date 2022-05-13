@@ -4,7 +4,17 @@ export default function KodeksUcznia() {
 	return (
 		<>
 			<Head>
-				<title>SJPS | Kodeks Ucznia</title>
+
+				<title>SJPS | Kodeks ucznia</title>
+
+				<meta name="description" content="Kodeks ucznia zawiera prawa i obowiązki uczniów w szkole języka polskiego im. Św. Siostry Faustyny w Slough" />
+
+				<meta property="og:title" content="SJPS | Kodeks Ucznia" />
+
+				<meta property="og:description" content="Kodeks ucznia zawiera prawa i obowiązki uczniów w szkole języka polskiego im. Św. Siostry Faustyny w Slough" />
+
+				<meta property="og:url" content="https://szkolajezykapolskiegoslough.org/kodeksucznia" />
+
 			</Head>
 			<header className="header header--kodeks-ucznia">
 

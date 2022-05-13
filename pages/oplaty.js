@@ -4,7 +4,17 @@ export default function Oplaty() {
 	return (
 		<>
 			<Head>
-				<title> SJPS | Oplaty </title>
+
+				<title>SJPS | Opłaty</title>
+
+				<meta name="description" content="Tutaj znajdziesz informacje dotyczące wszystkich opłat jakie wiążą się z posłaniem dziecka do naszej szkoły." />
+
+				<meta property="og:title" content="SJPS | Opłaty" />
+
+				<meta property="og:description" content="Tutaj znajdziesz informacje dotyczące wszystkich opłat jakie wiążą się z posłaniem dziecka do naszej szkoły." />
+
+				<meta property="og:url" content="https://szkolajezykapolskiegoslough.org/oplaty" />
+
 			</Head>
 
 			<header className="header header--oplaty">

@@ -37,7 +37,19 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>SJPS | Strona Glowna</title>
+
+				<title>SJPS | Szkoła Języka Polskiego w Slough</title>
+
+				<meta property="og:title" content="SJPS | Szkoła Języka Polskiego w Slough" />
+
+				<meta name="description" content="Nasza misja to wychowanie dzieci i młodzieży w duchu wartości chrześcijańskich oraz, kultywowanie polskiej tożsamości." />
+
+				<meta property="og:title" content="SJPS | Szkola Jezyka Polskiego Slough" />
+
+				<meta property="og:description" content="Nasza misja to wychowanie dzieci i młodzieży w duchu wartości chrześcijańskich oraz, kultywowanie polskiej tożsamości." />
+
+				<meta property="og:url" content="https://szkolajezykapolskiegoslough.org" />
+
 			</Head>
 
 			<header className="header header--index">

@@ -4,7 +4,17 @@ export default function Zapisy() {
 	return (
 		<>
 			<Head>
-				<title> SJPS | Zapisy</title>
+
+				<title>SJPS | Zapisy</title>
+
+				<meta name="description" content="Formularz rejestracyjny dla uczniów, można pobrać na tej stronie, wypełnic, oraz odesłać na nasz email podany poniżej." />
+
+				<meta property="og:title" content="SJPS | Zapisy" />
+
+				<meta property="og:description" content="Formularz rejestracyjny dla uczniów, można pobrać na tej stronie, wypełnic, oraz odesłać na nasz email podany poniżej." />
+
+				<meta property="og:url" content="https://szkolajezykapolskiegoslough.org/zapisy" />
+
 			</Head>
 
 			<header className="header header--zapisy">
