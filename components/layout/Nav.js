@@ -69,6 +69,12 @@ export default function Nav() {
 
 					<ul className="subnav-ul">
 
+						<Link href='onas'>
+							<li className="subnav-li" onClick={closeNavigation}>
+								<a className="subnav-a">O nas</a>
+							</li>
+						</Link>
+
 						<Link href='kalendarz'>
 							<li className="subnav-li" onClick={closeNavigation}>
 								<a className="subnav-a">Kalendarz</a>
