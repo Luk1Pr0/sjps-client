@@ -105,6 +105,12 @@ export default function Nav() {
 							</li>
 						</Link>
 
+						<Link href='naszakadra'>
+							<li className="subnav-li" onClick={closeNavigation}>
+								<a className="subnav-a">Nasza kadra</a>
+							</li>
+						</Link>
+
 						<Link href='szkolneprojekty'>
 							<li className="subnav-li" onClick={closeNavigation}>
 								<a className="subnav-a">Szkolne projekty</a>
