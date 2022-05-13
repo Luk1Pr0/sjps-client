@@ -1,15 +1,15 @@
 import Head from 'next/head';
 
 // LOGOS
-import LogoEdukator from '../public/partnerzy-szkoly/logo-edukator.jpg';
-import LogoEveryBounceCounts from '../public/partnerzy-szkoly/logo-everybouncecounts.png';
-import LogoLasuch from '../public/partnerzy-szkoly/logo-lasuch.png';
-import LogoMyQueen from '../public/partnerzy-szkoly/logo-myqueen.jpg';
-import LogoOrpeg from '../public/partnerzy-szkoly/logo-orpeg.png';
-import LogoPes from '../public/partnerzy-szkoly/logo-pes.jpg';
-import LogoPolfolkUk from '../public/partnerzy-szkoly/logo-polfolkuk.jpg';
-import LogoAmbasada from '../public/partnerzy-szkoly/logo-polska-ambasada-londyn.jpg';
-import LogoVc from '../public/partnerzy-szkoly/logo-vc.png';
+import LogoEdukator from './../public/partnerzy-szkoly/logo-edukator.jpg';
+import LogoEveryBounceCounts from './../public/partnerzy-szkoly/logo-everybouncecounts.png';
+import LogoLasuch from './../public/partnerzy-szkoly/logo-lasuch.png';
+import LogoMyQueen from './../public/partnerzy-szkoly/logo-myqueen.jpg';
+import LogoOrpeg from './../public/partnerzy-szkoly/logo-orpeg.png';
+import LogoPes from './../public/partnerzy-szkoly/logo-pes.jpg';
+import LogoPolfolkUk from './../public/partnerzy-szkoly/logo-polfolkuk.jpg';
+import LogoAmbasada from './../public/partnerzy-szkoly/logo-polska-ambasada-londyn.jpg';
+import LogoVc from './../public/partnerzy-szkoly/logo-vc.png';
 
 export default function PartnerzySzkoly() {
 	return (
