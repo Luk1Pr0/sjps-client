@@ -1,16 +1,5 @@
 import Head from 'next/head';
 
-// LOGOS
-import LogoEdukator from './../public/partnerzy-szkoly/logo-edukator.jpg';
-import LogoEveryBounceCounts from './../public/partnerzy-szkoly/logo-everybouncecounts.png';
-import LogoLasuch from './../public/partnerzy-szkoly/logo-lasuch.png';
-import LogoMyQueen from './../public/partnerzy-szkoly/logo-myqueen.jpg';
-import LogoOrpeg from './../public/partnerzy-szkoly/logo-orpeg.png';
-import LogoPes from './../public/partnerzy-szkoly/logo-pes.jpg';
-import LogoPolfolkUk from './../public/partnerzy-szkoly/logo-polfolkuk.jpg';
-import LogoAmbasada from './../public/partnerzy-szkoly/logo-polska-ambasada-londyn.jpg';
-import LogoVc from './../public/partnerzy-szkoly/logo-vc.png';
-
 export default function PartnerzySzkoly() {
 	return (
 		<>
@@ -49,39 +38,39 @@ export default function PartnerzySzkoly() {
 				<section className="content-wrapper content-wrapper--center grid-wrapper grid-wrapper--images">
 
 					<div className="grid-img">
-						<img src={LogoEdukator.src} alt="Logo of edukator" className="img" />
+						<img src='/logo-edukator.jpg' alt="Logo of edukator" className="img" />
 					</div>
 
 					<div className="grid-img">
-						<img src={LogoEveryBounceCounts.src} alt="Logo of Every Bounce Counts" className="img" />
+						<img src='logo-everybouncecounts.png' alt="Logo of Every Bounce Counts" className="img" />
 					</div>
 
 					<div className="grid-img">
-						<img src={LogoLasuch.src} alt="Logo of Lasuch" className="img" />
+						<img src='logo-lasuch.png' alt="Logo of Lasuch" className="img" />
 					</div>
 
 					<div className="grid-img">
-						<img src={LogoMyQueen.src} alt="Logo of My Queen" className="img" />
+						<img src='/logo-myqueen.jpg' alt="Logo of My Queen" className="img" />
 					</div>
 
 					<div className="grid-img">
-						<img src={LogoOrpeg.src} alt="Logo of Orpeg" className="img" />
+						<img src='logo-orpeg.png' alt="Logo of Orpeg" className="img" />
 					</div>
 
 					<div className="grid-img">
-						<img src={LogoPes.src} alt="Logo of PES" className="img" />
+						<img src='/logo-pres.jpg' alt="Logo of PES" className="img" />
 					</div>
 
 					<div className="grid-img">
-						<img src={LogoPolfolkUk.src} alt="Logo of PolFolkUk" className="img" />
+						<img src='/logo-polfolkuk.jpg' alt="Logo of PolFolkUk" className="img" />
 					</div>
 
 					<div className="grid-img">
-						<img src={LogoAmbasada.src} alt="Logo of Polish Ambassay London" className="img" />
+						<img src='/logo-polska-ambasada-londyn.jpg' alt="Logo of Polish Ambassay London" className="img" />
 					</div>
 
 					<div className="grid-img">
-						<img src={LogoVc.src} alt="Logo of VC" className="img" />
+						<img src='/logo-vc.png' alt="Logo of VC" className="img" />
 					</div>
 
 				</section>
