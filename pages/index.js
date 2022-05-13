@@ -3,10 +3,11 @@ import Head from 'next/head';
 // COMPONENTS
 import Card from '../components/Card';
 
-// DOCUMENTS
-import DokumentyImg from '../public/index/dokumenty-img.svg'
-import KalendarzImg from '../public/index/kalendarz-img.svg'
-import ZapisyImg from '../public/index/zapisy-img.svg'
+// IMAGES
+import DokumentyImg from '../public/index/dokumenty-img.svg';
+import KalendarzImg from '../public/index/kalendarz-img.svg';
+import ZapisyImg from '../public/index/zapisy-img.svg';
+import Banner from '../public/index/banner.jpg';
 
 export default function Home() {
 
@@ -69,6 +70,12 @@ export default function Home() {
 					<h4>
 						Nasza misja - wychowanie dzieci i młodzieży w duchu wartości chrześcijańskich oraz, kultywowanie polskiej tożsamości a przede wszystkim nauczanie języka polskiego, historii Polskii z elementami geografii i religii. Chcemy pielęgnować polskie tradycje, obyczaje oraz piękną i bogatą kulture.
 					</h4>
+
+				</section>
+
+				<section className="content-wrapper content-wrapper--full-width">
+
+					<img src={Banner.src} alt="" className="img img--half-width" />
 
 				</section>
 

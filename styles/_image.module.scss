@@ -26,6 +26,10 @@
 	height: auto;
 
 	object-fit: contain;
+
+	&--half-width {
+		width: 50%;
+	}
 }
 
 .grid-img {
