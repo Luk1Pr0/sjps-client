@@ -25,7 +25,7 @@ export default function ContactForm() {
 			setShowLoader(true);
 
 			// POST FORM DATA
-			const data = fetch('http://192.168.0.101:5000/kontakt', {
+			const data = fetch('https://sjps-server.herokuapp.com/kontakt', {
 				method: 'POST',
 				mode: 'cors',
 				headers: {
