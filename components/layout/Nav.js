@@ -46,6 +46,10 @@ export default function Nav() {
 							<li className="subnav-li" onClick={closeNavigation}><a className="subnav-a">Główna</a></li>
 						</Link>
 
+						<Link href='/aktualnosci'>
+							<li className="subnav-li" onClick={closeNavigation}><a className="subnav-a">Aktualności</a></li>
+						</Link>
+
 						<Link href='dlaczegonaszaszkola'>
 							<li className="subnav-li" onClick={closeNavigation}><a className="subnav-a">Dlaczego nasza szkoła?</a></li>
 						</Link>
@@ -159,6 +163,10 @@ export default function Nav() {
 								<a className="subnav-a">Podręczniki</a>
 							</li>
 						</Link>
+
+						<li className="subnav-li" onClick={closeNavigation}>
+							<a href='/dokumenty/lista-lektur.pdf' target='_blank' className="subnav-a">Lista lektur</a>
+						</li>
 
 					</ul>
 
