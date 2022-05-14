@@ -29,9 +29,19 @@ export default function Footer() {
 				<Link href='/dlaczegonaszaszkola'>
 					<li>
 
-						<a>Dlaczego nasza szkola</a>
+						<a>Dlaczego nasza szkoła</a>
 
 					</li>
+				</Link>
+
+				<Link href='/onas'>
+
+					<li>
+
+						<a>O nas</a>
+
+					</li>
+
 				</Link>
 
 				<Link href='/kalendarz'>
@@ -77,6 +87,14 @@ export default function Footer() {
 					</li>
 				</Link>
 
+				<Link href='/naszakadra'>
+					<li>
+
+						<a>Nasza kadra</a>
+
+					</li>
+				</Link>
+
 				<Link href='/szkolneprojekty'>
 					<li>
 
@@ -96,7 +114,15 @@ export default function Footer() {
 				<Link href='/kodeksucznia'>
 					<li>
 
-						<a>Kodeks Ucznia</a>
+						<a>Kodeks ucznia</a>
+
+					</li>
+				</Link>
+
+				<Link href='/dekalogucznia'>
+					<li>
+
+						<a>Dekalog ucznia</a>
 
 					</li>
 				</Link>
@@ -112,7 +138,7 @@ export default function Footer() {
 				<Link href='/obowiazkirodzicow'>
 					<li>
 
-						<a>Obowiązki rodzicow</a>
+						<a>Obowiązki rodziców</a>
 
 					</li>
 				</Link>
