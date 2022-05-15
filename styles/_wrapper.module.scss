@@ -129,6 +129,11 @@
 
 	background: $background-secondary;
 
+	&--login {
+		flex-direction: column;
+		min-width: 100%;
+	}
+
 	// TABLET STYLE
 	@media screen and (max-width: $tablet-screen) {
 		width: 100%;
