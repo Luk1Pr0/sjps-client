@@ -13,7 +13,7 @@ export default function LoginForm() {
 	});
 
 	// AUTHCONTEXT
-	const { account, dispatchAuthEvent } = useContext(AuthContext);
+	const { dispatchAuthEvent } = useContext(AuthContext);
 
 	// HANDLE FORM SUBMIT
 	const handleSubmit = async (e) => {
@@ -22,7 +22,7 @@ export default function LoginForm() {
 		// TRY SENDING DATA
 		try {
 			// POST FORM DATA
-			const response = await fetch('http://localhost:5000/login', {
+			const response = await fetch('https://sjps-server.herokuapp.com/login', {
 				method: 'POST',
 				mode: 'cors',
 				headers: {
@@ -31,10 +31,10 @@ export default function LoginForm() {
 				body: JSON.stringify(credentials)
 			});
 
-			console.log(response);
+			const data = await response.json();
 
 			// DISPATCH THE RESPONSE TO THE CONTEXT FOR AUTHORISATION OF ADMIN
-			response.ok ? dispatchAuthEvent(actions.SIGN_IN, true) : dispatchAuthEvent(actions.SIGN_IN, false);
+			dispatchAuthEvent(actions.SIGN_IN, data);
 
 		} catch (error) {
 			// CONSOLE LOG ERROR WHENS SENDING FAILS

@@ -7,7 +7,6 @@ import Card from '../components/Card';
 import DokumentyImg from '../public/index/dokumenty-img.svg';
 import KalendarzImg from '../public/index/kalendarz-img.svg';
 import ZapisyImg from '../public/index/zapisy-img.svg';
-import Aktualnosci from '../components/AktualnosciItem';
 import AktualnosciList from '../components/AktualnosciList';
 
 export default function Home() {

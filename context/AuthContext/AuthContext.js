@@ -9,16 +9,16 @@ export const AuthContext = createContext();
 
 export const AuthProvider = (props) => {
 
-	const [account, setAccount] = useState(null);
+	const [account, setAccount] = useState({ email: '', userRole: '' });
 
 	// OPEN OR CLOSE AND SET MODAL SOURCE
-	const dispatchAuthEvent = (action, source) => {
+	const dispatchAuthEvent = (action, admin) => {
 		switch (action) {
 			case actions.SIGN_IN:
-				// SIGN USER IN
-				console.log(source)
+				// REDIRECT USER TO ADMINPANEL
 				Router.replace('/adminpanel');
-				return setAccount(source);
+				// SIGN USER IN
+				return setAccount(admin);
 			case actions.SIGN_OUT:
 				// SIGN USER OUT
 				return setAccount(source);

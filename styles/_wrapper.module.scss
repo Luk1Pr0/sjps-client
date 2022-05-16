@@ -62,6 +62,22 @@
 		}
 	}
 
+	&--space-between {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&--column {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&--column-reverse {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
 	h2,
 	h3 {
 		margin-bottom: $space-m;
@@ -144,11 +160,19 @@
 
 .aktualnosci-list-wrapper {
 	background: initial;
+	max-height: 50vh;
+	overflow: auto;
+	margin: 0 $space-xl;
+	padding: 0 $space-m;
+
+	@media screen and (max-width: $tablet-screen) {
+		margin: 0;
+		padding: 0 $space-xs;
+	}
 }
 
 .aktualnosci-item-wrapper {
-	border-top: 2px solid $color-highlight;
-	border-bottom: 2px solid $color-highlight;
+	// border-top: 2px solid $color-primary;
 	padding: $space-xm 0;
 
 	@media screen and (max-width: $tablet-screen) {
