@@ -1,22 +1,36 @@
-import { useEffect } from "react";
+import { useContext } from "react";
+
+// CONTEXT
+import { AuthContext } from '../context/AuthContext/AuthContext';
 
 export default function AdminPanel(props) {
 
-	useEffect(() => {
-		console.log(props);
-	}, []);
+	const { account } = useContext(AuthContext);
+
+	console.log(account);
 
 	return (
 
-		<main className="main">
+		account ? (
 
-			<section className="content-wrapper content-wrapper--center">
+			<main className="main">
 
-				<h2>Admin Panel </h2>
+				<section className="content-wrapper content-wrapper--center">
 
-			</section>
+					<h2>Admin Panel </h2>
 
-		</main>
+				</section>
 
+			</main>
+		) :
+			<main className="main">
+
+				<section className="content-wrapper content-wrapper--center">
+
+					<h2>Access denied</h2>
+
+				</section >
+
+			</main>
 	)
 }

@@ -1,14 +1,19 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 
-import Router from 'next/router';
+// CONTEXT
+import { AuthContext } from '../context/AuthContext/AuthContext';
+import actions from '../context/actions';
 
-export default function ContactForm() {
+export default function LoginForm() {
 
 	// LOGIN DATA
 	const [credentials, setCredentials] = useState({
 		email: '',
 		password: ''
 	});
+
+	// AUTHCONTEXT
+	const { account, dispatchAuthEvent } = useContext(AuthContext);
 
 	// HANDLE FORM SUBMIT
 	const handleSubmit = async (e) => {
@@ -26,15 +31,14 @@ export default function ContactForm() {
 				body: JSON.stringify(credentials)
 			});
 
-			const data = await response.json();
+			console.log(response);
 
-			console.log(data.accessDenied);
-
-			data.accessDenied ? 'Access denied' : Router.replace('/adminpanel');
+			// DISPATCH THE RESPONSE TO THE CONTEXT FOR AUTHORISATION OF ADMIN
+			response.ok ? dispatchAuthEvent(actions.SIGN_IN, true) : dispatchAuthEvent(actions.SIGN_IN, false);
 
 		} catch (error) {
 			// CONSOLE LOG ERROR WHENS SENDING FAILS
-			console.log('THIS IS AN ERROR', error);
+			console.log('Error connecting to the server', error);
 		}
 	}
 
