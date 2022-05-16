@@ -17,8 +17,9 @@ export default function AktualnosciList({ }) {
 
 			// SET STATE OF UPDATES
 			setUpdates(data);
+
 		} catch (error) {
-			return console.log('Error fetching updates', error);
+			return console.log('Error fetching updates from the server', error);
 		}
 	}
 
@@ -26,7 +27,6 @@ export default function AktualnosciList({ }) {
 		getUpdates();
 	}, [])
 
-	// console.log(aktualnosci);
 	return (
 		<section className="content-wrapper content-wrapper--center content-wrapper--full-width content-wrapper--column">
 
@@ -35,7 +35,7 @@ export default function AktualnosciList({ }) {
 			<div className="content-wrapper--column-reverse aktualnosci-list-wrapper">
 				{
 					!updates.length ?
-						<h5>Brak aktualnosci</h5>
+						<h5>Brak aktualności</h5>
 						:
 						updates.map((update) => (
 							<AktualnosciItem key={update._id} updateId={update._id} title={update.title} message={update.message} dateAdded={update.dateAdded} />

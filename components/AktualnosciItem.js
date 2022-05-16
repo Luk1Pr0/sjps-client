@@ -6,6 +6,7 @@ import { AuthContext } from '../context/AuthContext/AuthContext';
 
 export default function Aktualnosci({ updateId, title, message, dateAdded }) {
 
+	// ACCOUNT FROM CONTEXT
 	const { account } = useContext(AuthContext);
 
 	// FORMAT THE DATE ADDED TO DISPLAY FOR EACH UPDATE
@@ -13,6 +14,7 @@ export default function Aktualnosci({ updateId, title, message, dateAdded }) {
 
 	const handleClick = async (e) => {
 		try {
+			// ON CLICK DELETE THE POST WITH THE SPECIFIC ID
 			const response = await fetch(`https://sjps-server.herokuapp.com/aktualnosci/${updateId}`, {
 				method: 'DELETE',
 			})
@@ -44,11 +46,13 @@ export default function Aktualnosci({ updateId, title, message, dateAdded }) {
 					{message}
 				</p>
 
-				{account.userRole === 'admin' && (
-					<div className="btn-container">
-						<button className="btn btn--danger" onClick={handleClick}>USUN POST</button>
-					</div>
-				)}
+				{
+					account.userRole === 'admin' && (
+						<div className="btn-container">
+							<button className="btn btn--danger" onClick={handleClick}>Usuń post</button>
+						</div>
+					)
+				}
 
 			</aside>
 		</>

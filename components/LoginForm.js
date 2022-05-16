@@ -19,7 +19,6 @@ export default function LoginForm() {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 
-		// TRY SENDING DATA
 		try {
 			// POST FORM DATA
 			const response = await fetch('https://sjps-server.herokuapp.com/login', {
@@ -64,7 +63,7 @@ export default function LoginForm() {
 
 				<div className="btn-container">
 
-					<button type="submit">Wyślij</button>
+					<button type="submit">Zaloguj</button>
 
 					<button type="reset">Anuluj</button>
 

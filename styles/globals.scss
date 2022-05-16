@@ -125,4 +125,13 @@ textarea {
 	}
 }
 
+.btn {
+	&--danger {
+		background: $color-danger;
+		padding: $space-xs $space-s;
+		font-weight: 600;
+		color: $color-secondary;
+	}
+}
+
 @include scrollbar();

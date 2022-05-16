@@ -24,6 +24,10 @@ export default function UpdateForm() {
 				body: JSON.stringify(update)
 			});
 
+			alert('Dodano aktualizacje na stronę');
+
+			setUpdate({ title: '', message: '' });
+
 		} catch (error) {
 			// CONSOLE LOG ERROR WHENS SENDING FAILS
 			console.log('Error connecting to the server', error);
