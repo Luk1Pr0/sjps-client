@@ -69,9 +69,9 @@ export default function Home() {
 
 				<section className="content-wrapper content-wrapper--center">
 
-					<h4>
+					{/* <h4>
 						Nasza misja - wychowanie dzieci i młodzieży w duchu wartości chrześcijańskich oraz, kultywowanie polskiej tożsamości a przede wszystkim nauczanie języka polskiego, historii Polskii z elementami geografii i religii. Chcemy pielęgnować polskie tradycje, obyczaje oraz piękną i bogatą kulture.
-					</h4>
+					</h4> */}
 
 				</section>
 
