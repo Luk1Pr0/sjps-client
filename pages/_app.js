@@ -3,6 +3,7 @@ import '../styles/globals.scss';
 
 // CONTEXT
 import { ModalProvider } from '../context/ModalContext/ModalContext';
+import { AuthProvider } from '../context/AuthContext/AuthContext';
 
 // COMPONENTS
 import Nav from '../components/layout/Nav';
@@ -19,25 +20,29 @@ function MyApp({ Component, pageProps }) {
 		<>
 			<ModalProvider>
 
-				<Head>
+				<AuthProvider>
 
-					<title>SJPS | Szkola Jezyka Polskiego Slough</title>
+					<Head>
 
-					<link rel="icon" type="image/png" href={Favicon.src} />
+						<title>SJPS | Szkola Jezyka Polskiego Slough</title>
 
-					<meta name="author" content="Lukasz Pytel" />
+						<link rel="icon" type="image/png" href={Favicon.src} />
 
-					<meta name='keywords' content='szkoła, polska, slough, nauka, edukacja, polonia, historia, uk, wielka brytania, emigracja, imigracja, pomoc, zapisy, religia, kościół' />
+						<meta name="author" content="Lukasz Pytel" />
 
-					<meta property="og:image" content={CoverImage.src} />
+						<meta name='keywords' content='szkoła, polska, slough, nauka, edukacja, polonia, historia, uk, wielka brytania, emigracja, imigracja, pomoc, zapisy, religia, kościół' />
 
-				</Head>
+						<meta property="og:image" content={CoverImage.src} />
 
-				<Nav />
+					</Head>
 
-				<Component {...pageProps} />
+					<Nav />
 
-				<Footer />
+					<Component {...pageProps} />
+
+					<Footer />
+
+				</AuthProvider>
 
 			</ModalProvider>
 		</>
