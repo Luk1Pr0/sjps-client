@@ -278,5 +278,10 @@
 	&--date {
 		min-width: fit-content;
 		margin-left: $space-m;
+
+		@media screen and (max-width: $tablet-screen) {
+			margin-left: 0;
+
+		}
 	}
 }

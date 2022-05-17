@@ -30,6 +30,7 @@ export default function ContactForm() {
 				mode: 'cors',
 				headers: {
 					'Content-Type': 'application/json',
+					'Access-Control-Allow-Origin': '*'
 				},
 				body: JSON.stringify(formData)
 			});
@@ -47,7 +48,7 @@ export default function ContactForm() {
 			setFormData({ fullName: '', email: '', message: '' });
 
 		} catch (err) {
-			console.error('error', err);
+			console.error('Cannot connect to the server', err);
 		}
 
 		// HIDE THE RESPONSE NOTIFICATION

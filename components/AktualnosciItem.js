@@ -35,8 +35,9 @@ export default function Aktualnosci({ updateId, title, message, dateAdded }) {
 
 				<br />
 
-				<div className="content-wrapper content-wrapper--space-between">
+				<div className="content-wrapper content-wrapper--space-between content-wrapper--full-width text--left">
 					<h5 className="aktualnosci--title">{title}</h5>
+					<br />
 					<em className="aktualnosci--date">Dodano: {datePosted}</em>
 				</div>
 

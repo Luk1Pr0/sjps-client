@@ -19,6 +19,7 @@ export default function LoginForm() {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 
+		// https://sjps-server.herokuapp.com/login
 		try {
 			// POST FORM DATA
 			const response = await fetch('https://sjps-server.herokuapp.com/login', {
@@ -26,6 +27,7 @@ export default function LoginForm() {
 				mode: 'cors',
 				headers: {
 					'Content-Type': 'application/json',
+					'Access-Control-Allow-Origin': '*'
 				},
 				body: JSON.stringify(credentials)
 			});

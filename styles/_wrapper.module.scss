@@ -66,16 +66,15 @@
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
+
+		@media screen and (max-width: $tablet-screen) {
+			flex-direction: column;
+		}
 	}
 
 	&--column {
 		display: flex;
 		flex-direction: column;
-	}
-
-	&--column-reverse {
-		display: flex;
-		flex-direction: column-reverse;
 	}
 
 	h2,
@@ -159,11 +158,9 @@
 }
 
 .aktualnosci-list-wrapper {
-	background: initial;
-	max-height: 50vh;
+	max-height: 70vh;
+
 	overflow: auto;
-	margin: 0 $space-xl;
-	padding: 0 $space-m;
 
 	@media screen and (max-width: $tablet-screen) {
 		margin: 0;
@@ -173,7 +170,11 @@
 
 .aktualnosci-item-wrapper {
 	// border-top: 2px solid $color-primary;
-	padding: $space-xm 0;
+	padding: $space-xm $space-xs;
+
+	&:first-child {
+		padding-top: 0;
+	}
 
 	@media screen and (max-width: $tablet-screen) {
 		padding: $space-m 0;

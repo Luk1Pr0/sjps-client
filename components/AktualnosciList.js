@@ -10,16 +10,29 @@ export default function AktualnosciList({ }) {
 	const getUpdates = async () => {
 		try {
 			// FETCH UPDATES FROM SERVER
-			const response = await fetch('https://sjps-server.herokuapp.com/aktualnosci');
+			const response = await fetch('https://sjps-server.herokuapp.com/aktualnosci', {
+				method: 'GET',
+				headers: {
+					'Content-Type': 'application/json',
+					'Access-Control-Allow-Origin': '*'
+				},
+			});
 
 			// CONVERT FROM JSON TO READABLE
 			const data = await response.json();
 
+
+			// SORT RETRIEVE UPDATES BY DATE DESCENDING - NEWEST FIRST
+			const sortedUpdates = data.sort((a, b) => {
+				return Date.parse(b.dateAdded) - Date.parse(a.dateAdded);
+			})
+
+
 			// SET STATE OF UPDATES
-			setUpdates(data);
+			setUpdates(sortedUpdates);
 
 		} catch (error) {
-			return console.log('Error fetching updates from the server', error);
+			return 'Error fetching updates from the server';
 		}
 	}
 
@@ -28,11 +41,12 @@ export default function AktualnosciList({ }) {
 	}, [])
 
 	return (
-		<section className="content-wrapper content-wrapper--center content-wrapper--full-width content-wrapper--column">
+		<section className="content-wrapper content-wrapper--center content-wrapper--column">
 
 			<strong><h2>Aktualności</h2></strong>
 
-			<div className="content-wrapper--column-reverse aktualnosci-list-wrapper">
+			<div className="aktualnosci-list-wrapper">
+
 				{
 					!updates.length ?
 						<h5>Brak aktualności</h5>
@@ -41,6 +55,7 @@ export default function AktualnosciList({ }) {
 							<AktualnosciItem key={update._id} updateId={update._id} title={update.title} message={update.message} dateAdded={update.dateAdded} />
 						))
 				}
+
 			</div>
 
 		</section>
