@@ -77,6 +77,10 @@
 		flex-direction: column;
 	}
 
+	&--half-screen {
+		min-height: 50vh;
+	}
+
 	h2,
 	h3 {
 		margin-bottom: $space-m;
@@ -160,6 +164,8 @@
 .aktualnosci-list-wrapper {
 	max-height: 70vh;
 
+	position: relative;
+
 	overflow: auto;
 
 	@media screen and (max-width: $tablet-screen) {
@@ -169,7 +175,6 @@
 }
 
 .aktualnosci-item-wrapper {
-	// border-top: 2px solid $color-primary;
 	padding: $space-xm $space-xs;
 
 	&:first-child {
