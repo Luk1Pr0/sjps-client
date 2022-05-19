@@ -3,6 +3,9 @@ const actions = {
 	CLOSE_MODAL: 'CLOSE_MODAL',
 	SIGN_IN: 'SIGN_IN',
 	SIGN_OUT: 'SIGN_OUT',
+	SET_UPDATES: 'SET_UPDATES',
+	SELECT_UPDATE: 'SELECT_UPDATE',
+	EDIT_UPDATE: 'EDIT_UPDATE',
 }
 
 export default actions;

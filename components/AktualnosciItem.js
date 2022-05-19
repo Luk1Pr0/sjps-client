@@ -3,19 +3,30 @@ import Router from 'next/router';
 
 // CONTEXT
 import { AuthContext } from '../context/AuthContext/AuthContext';
+import { UpdateContext } from '../context/UpdateContext/UpdateContext';
+
+import actions from '../context/actions';
+
+// SERVERS
+const productionServer = 'https://sjps-server.herokuapp.com';
+const developmentServer = 'http://localhost:5000';
 
 export default function Aktualnosci({ updateId, title, message, dateAdded }) {
 
 	// ACCOUNT FROM CONTEXT
 	const { account } = useContext(AuthContext);
 
+	// UPDATE LIST CONTEXT
+	const { dispatchUpdatesEvent } = useContext(UpdateContext);
+
 	// FORMAT THE DATE ADDED TO DISPLAY FOR EACH UPDATE
 	const datePosted = dateAdded.split('T')[0].split('-').reverse().join('/');
 
-	const handleClick = async (e) => {
+	// DELETE THE SELECTED UPDATE FROM THE DATABASE
+	const deleteUpdate = async (e) => {
 		try {
 			// ON CLICK DELETE THE POST WITH THE SPECIFIC ID
-			const response = await fetch(`https://sjps-server.herokuapp.com/aktualnosci/${updateId}`, {
+			const response = await fetch(`${developmentServer}/aktualnosci/${updateId}`, {
 				method: 'DELETE',
 			})
 
@@ -29,9 +40,13 @@ export default function Aktualnosci({ updateId, title, message, dateAdded }) {
 		}
 	}
 
+	const editUpdate = () => {
+		dispatchUpdatesEvent(actions.SELECT_UPDATE, updateId);
+	}
+
 	return (
 		<>
-			<aside className="aktualnosci-item-wrapper">
+			<article className="aktualnosci-item-wrapper">
 
 				<br />
 
@@ -50,12 +65,14 @@ export default function Aktualnosci({ updateId, title, message, dateAdded }) {
 				{
 					account.userRole === 'admin' && (
 						<div className="btn-container">
-							<button className="btn btn--danger" onClick={handleClick}>Usuń post</button>
+							<button className="btn btn--primary" onClick={editUpdate}>Edytuj</button>
+
+							{/* <button className="btn btn--danger" onClick={deleteUpdate}>Usuń post</button> */}
 						</div>
 					)
 				}
 
-			</aside>
+			</article>
 		</>
 	)
 }

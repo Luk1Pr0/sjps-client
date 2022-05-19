@@ -1,4 +1,11 @@
-import { useState } from 'react';
+import { useState, useContext, useEffect } from 'react';
+
+// CONTEXT
+import { UpdateContext } from '../context/UpdateContext/UpdateContext';
+
+// SERVERS
+const productionServer = 'https://sjps-server.herokuapp.com';
+const developmentServer = 'http://localhost:5000';
 
 export default function UpdateForm() {
 
@@ -6,7 +13,11 @@ export default function UpdateForm() {
 	const [update, setUpdate] = useState({
 		title: '',
 		message: '',
+		file: '',
 	});
+
+	// UPDATE LIST CONTEXT
+	const { selectedUpdate } = useContext(UpdateContext);
 
 	// HANDLE FORM SUBMIT
 	const handleSubmit = async (e) => {
@@ -15,7 +26,7 @@ export default function UpdateForm() {
 		// TRY SENDING DATA
 		try {
 			// POST FORM DATA
-			const response = await fetch('https://sjps-server.herokuapp.com/aktualnosci', {
+			const response = await fetch(`${developmentServer}/aktualnosci`, {
 				method: 'POST',
 				mode: 'cors',
 				headers: {
@@ -27,7 +38,7 @@ export default function UpdateForm() {
 
 			alert('Dodano aktualizacje na stronę');
 
-			setUpdate({ title: '', message: '' });
+			setUpdate({ title: '', message: '', file: '' });
 
 		} catch (error) {
 			// CONSOLE LOG ERROR WHENS SENDING FAILS
@@ -40,19 +51,29 @@ export default function UpdateForm() {
 		setUpdate({ ...update, [e.target.name]: e.target.value });
 	}
 
+	useEffect(() => {
+		// setUpdate(selectedUpdate);
+		console.log('selected update', selectedUpdate);
+	}, []);
+
 	return (
 		<div className="form-wrapper">
 
-			<form id='form' className="form form--login" onSubmit={handleSubmit}>
+			<form id='form' className="form form--login" encType="multipart/form-data" onSubmit={handleSubmit}>
 
 				<label htmlFor="title" className='label'>
 					Tytul
-					<input id='title' name='title' type="text" className='input' placeholder='Tytul' required onChange={handleChange} />
+					<input id='title' name='title' type="text" className='input' placeholder='Tytul' onChange={handleChange} value={update.title} required />
 				</label>
 
 				<label htmlFor="message" className='label'>
 					Wiadomosc
-					<textarea id='message' name='message' type="text" className='textarea' placeholder='Wiadomosc' required onChange={handleChange} />
+					<textarea id='message' name='message' type="text" className='textarea' placeholder='Wiadomosc' onChange={handleChange} value={update.message} />
+				</label>
+
+				<label htmlFor="file" className='label'>
+					Zalacznik
+					<input id='file' name='file' type="file" className='file-input' placeholder='Plik' accept='image/*, .pdf' onChange={handleChange} value={update.file} />
 				</label>
 
 				<div className="btn-container">

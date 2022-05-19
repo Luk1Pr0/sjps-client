@@ -1,14 +1,24 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext } from 'react';
+
+// CONTEXT
+import { UpdateContext } from '../context/UpdateContext/UpdateContext';
 
 // COMPONENTS
 import AktualnosciItem from "./AktualnosciItem";
 import Loader from '../components/Loader';
+import actions from '../context/actions';
+
+// SERVERS
+const productionServer = 'https://sjps-server.herokuapp.com';
+const developmentServer = 'http://localhost:5000';
 
 export default function AktualnosciList({ }) {
 
 	// STATE
-	const [updates, setUpdates] = useState([]);
 	const [isLoading, setIsLoading] = useState(false);
+
+	// CONTEXT
+	const { dispatchUpdatesEvent, updatesList } = useContext(UpdateContext);
 
 	// FETCH UPDATES FROM THE SERVER
 	const getUpdates = async () => {
@@ -17,7 +27,7 @@ export default function AktualnosciList({ }) {
 			// SHOW LOADER
 
 			// FETCH UPDATES FROM SERVER
-			const response = await fetch('https://sjps-server.herokuapp.com/aktualnosci', {
+			const response = await fetch(`${developmentServer}/aktualnosci`, {
 				method: 'GET',
 				headers: {
 					'Content-Type': 'application/json',
@@ -33,8 +43,8 @@ export default function AktualnosciList({ }) {
 				return Date.parse(b.dateAdded) - Date.parse(a.dateAdded);
 			})
 
-			// SET STATE OF UPDATES
-			setUpdates(sortedUpdates);
+			// SET STATE OF UPDATES LIST
+			dispatchUpdatesEvent(actions.SET_UPDATES, sortedUpdates);
 
 		} catch (error) {
 			return 'Error fetching updates from the server';
@@ -59,12 +69,12 @@ export default function AktualnosciList({ }) {
 				{isLoading && <Loader />}
 
 				{
-					!updates.length ?
+					!updatesList.length ?
 						<section className="content-wrapper content-wrapper--half-screen">
 							<h5>Brak aktualności</h5>
 						</section>
 						:
-						updates.map((update) => (
+						updatesList.map((update) => (
 							<AktualnosciItem key={update._id} updateId={update._id} title={update.title} message={update.message} dateAdded={update.dateAdded} />
 						))
 

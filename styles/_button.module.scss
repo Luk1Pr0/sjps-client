@@ -1,0 +1,20 @@
+@use './variables' as *;
+
+.btn-container {
+	display: flex;
+	justify-content: space-around;
+}
+
+.btn {
+	&--primary {
+		padding: $space-xs $space-s;
+		border: 2px solid $color-highlight;
+	}
+
+	&--danger {
+		background: $color-danger;
+		padding: $space-xs $space-s;
+		font-weight: 600;
+		color: $color-secondary;
+	}
+}
