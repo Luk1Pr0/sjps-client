@@ -9,6 +9,7 @@
 @use './image.module';
 @use './form.module';
 @use './animation.module';
+@use './button.module';
 
 // GOOGLE FONTS
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
@@ -122,15 +123,6 @@ textarea {
 	&::placeholder {
 		color: inherit;
 		opacity: 0.6;
-	}
-}
-
-.btn {
-	&--danger {
-		background: $color-danger;
-		padding: $space-xs $space-s;
-		font-weight: 600;
-		color: $color-secondary;
 	}
 }
 
