@@ -114,6 +114,8 @@ export default function UpdateForm() {
 		if (editUpdate) {
 			setUpdate(updateToEdit);
 		}
+
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [editUpdate]);
 
 	return (

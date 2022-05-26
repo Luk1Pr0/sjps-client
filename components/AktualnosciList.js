@@ -62,11 +62,16 @@ export default function AktualnosciList({ }) {
 	// ON RENDER
 	useEffect(() => {
 		getUpdates();
+
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [])
 
 	// ON CONTEXT CHANGE
 	useEffect(() => {
+		// IF FETCH AGAIN IS TRUE THEN FETCH UPDATES
 		fetchAgain && getUpdates();
+
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [fetchAgain])
 
 	return (
