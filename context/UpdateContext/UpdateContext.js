@@ -10,24 +10,33 @@ export const UpdateProvider = (props) => {
 	// LIST OF UPDATES FORM THE DATABASE
 	const [updatesList, setUpdatesList] = useState([]);
 
-	// SELECTED UPDATE FOR EDITING
-	const [selectedUpdate, setSelectedUpdate] = useState({
-		title: '',
-		message: '',
-		file: '',
-	});
+	// UPDATE THAT NEEDS TO BE EDITED 
+	const [updateToEdit, setUpdateToEdit] = useState({ title: '', message: '' });
+
+	// FETCH UPDATES AGAIN
+	const [fetchAgain, setFetchAgain] = useState(false);
+
+	// UPDATE IS BEING EDITED STATE
+	const [editUpdate, setEditUpdate] = useState(false);
 
 	const dispatchUpdatesEvent = (action, payload) => {
+
 		switch (action) {
 			case actions.SET_UPDATES:
-
 				// SET UPDATE LIST TO EQUAL FETCHED UPDATES FROM SERVER
 				return setUpdatesList(payload);
 
-			case actions.SELECT_UPDATE:
+			case actions.FETCH_AGAIN:
+				// FETCH THE UPDATES AGAIN
+				return setFetchAgain(payload);
 
-				// FILTER THE LIST OF UPDATES AND RETURN THE ONE THAT MATCHES THE PAYLOAD ID
-				return setSelectedUpdate(updatesList.filter(update => update._id === payload)[0]);
+			case actions.EDIT_UPDATE:
+				// TOGGLE UPDATE TO EDIT
+				return setEditUpdate(payload);
+
+			case actions.UPDATE_TO_EDIT:
+				// SET THE SELECTED UPDATE THAT NEED TO BE EDITED
+				setUpdateToEdit(updatesList.filter(update => update._id === payload)[0]);
 
 			default:
 				return;
@@ -35,7 +44,7 @@ export const UpdateProvider = (props) => {
 	}
 
 	return (
-		<UpdateContext.Provider value={{ dispatchUpdatesEvent, updatesList, selectedUpdate }}>
+		<UpdateContext.Provider value={{ dispatchUpdatesEvent, updatesList, fetchAgain, editUpdate, updateToEdit }}>
 			{props.children}
 		</UpdateContext.Provider>
 	)

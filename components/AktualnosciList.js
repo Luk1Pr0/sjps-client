@@ -18,13 +18,15 @@ export default function AktualnosciList({ }) {
 	const [isLoading, setIsLoading] = useState(false);
 
 	// CONTEXT
-	const { dispatchUpdatesEvent, updatesList } = useContext(UpdateContext);
+	const { dispatchUpdatesEvent, updatesList, fetchAgain } = useContext(UpdateContext);
 
 	// FETCH UPDATES FROM THE SERVER
 	const getUpdates = async () => {
+
+		// SHOW LOADER
 		setIsLoading(true);
+
 		try {
-			// SHOW LOADER
 
 			// FETCH UPDATES FROM SERVER
 			const response = await fetch(`${developmentServer}/aktualnosci`, {
@@ -49,14 +51,23 @@ export default function AktualnosciList({ }) {
 		} catch (error) {
 			return 'Error fetching updates from the server';
 		}
+
 		// SHOW LOADER
 		setIsLoading(false);
+
+		// STOP FETCHING AGAIN AFTER FETCH HAS COMPLETED
+		dispatchUpdatesEvent(actions.FETCH_AGAIN, false);
 	}
 
 	// ON RENDER
 	useEffect(() => {
 		getUpdates();
 	}, [])
+
+	// ON CONTEXT CHANGE
+	useEffect(() => {
+		fetchAgain && getUpdates();
+	}, [fetchAgain])
 
 	return (
 		<section className="content-wrapper content-wrapper--center content-wrapper--column">

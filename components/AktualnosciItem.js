@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import Router from 'next/router';
 
 // CONTEXT
@@ -17,7 +17,7 @@ export default function Aktualnosci({ updateId, title, message, dateAdded }) {
 	const { account } = useContext(AuthContext);
 
 	// UPDATE LIST CONTEXT
-	const { dispatchUpdatesEvent } = useContext(UpdateContext);
+	const { dispatchUpdatesEvent, editUpdate } = useContext(UpdateContext);
 
 	// FORMAT THE DATE ADDED TO DISPLAY FOR EACH UPDATE
 	const datePosted = dateAdded.split('T')[0].split('-').reverse().join('/');
@@ -33,15 +33,35 @@ export default function Aktualnosci({ updateId, title, message, dateAdded }) {
 			const data = await response.json();
 
 			// Refresh the page to remove the update from the client
-			Router.reload('/');
+			Router.push('/adminpanel');
+
+			// FETCH THE UPDATES AFTER DELETING THE SELECTED ONE
+			dispatchUpdatesEvent(actions.FETCH_AGAIN, true);
 
 		} catch (error) {
 			console.log('Error connecting to the server', error);
 		}
 	}
 
-	const editUpdate = () => {
-		dispatchUpdatesEvent(actions.SELECT_UPDATE, updateId);
+	// EDIT SELECTED UPDATE
+	const handleEditUpdate = () => {
+
+		// SET EDITING MODE TO TRUE
+		dispatchUpdatesEvent(actions.EDIT_UPDATE, true);
+
+		// IF NO UPDATE IS EDITED THEN EDIT THE SELECTED UPDATE
+		if (!editUpdate) {
+			// SEND THE ID OF SELECTED UPDATE TO CONTEXT IF THE UPDATE TO EDIT IS EMPTY
+			dispatchUpdatesEvent(actions.UPDATE_TO_EDIT, updateId);
+		} else {
+			alert('Juz edytujesz, jesli chcesz zmienic, nacisnij Anuluj i wybierz nowy');
+		}
+
+		// Refresh the page to remove the update from the client
+		Router.push('/adminpanel');
+
+		// SCROLL TO TOP WHEN EDITING IN PROGRESS
+		window.scrollTo(0, 0);
 	}
 
 	return (
@@ -65,9 +85,10 @@ export default function Aktualnosci({ updateId, title, message, dateAdded }) {
 				{
 					account.userRole === 'admin' && (
 						<div className="btn-container">
-							<button className="btn btn--primary" onClick={editUpdate}>Edytuj</button>
 
-							{/* <button className="btn btn--danger" onClick={deleteUpdate}>Usuń post</button> */}
+							<button className="btn btn--primary" onClick={handleEditUpdate}>Edytuj</button>
+
+							<button className="btn btn--danger" onClick={deleteUpdate}>Usuń post</button>
 						</div>
 					)
 				}
