@@ -29,7 +29,7 @@ export default function AktualnosciList({ }) {
 		try {
 
 			// FETCH UPDATES FROM SERVER
-			const response = await fetch(`${developmentServer}/aktualnosci`, {
+			const response = await fetch(`${productionServer}/aktualnosci`, {
 				method: 'GET',
 				headers: {
 					'Content-Type': 'application/json',

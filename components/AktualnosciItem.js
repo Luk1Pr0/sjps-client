@@ -26,7 +26,7 @@ export default function Aktualnosci({ updateId, title, message, dateAdded }) {
 	const deleteUpdate = async (e) => {
 		try {
 			// ON CLICK DELETE THE POST WITH THE SPECIFIC ID
-			const response = await fetch(`${developmentServer}/aktualnosci/${updateId}`, {
+			const response = await fetch(`${productionServer}/aktualnosci/${updateId}`, {
 				method: 'DELETE',
 			})
 

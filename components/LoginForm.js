@@ -25,7 +25,7 @@ export default function LoginForm() {
 
 		try {
 			// POST FORM DATA
-			const response = await fetch(`${developmentServer}/login`, {
+			const response = await fetch(`${productionServer}/login`, {
 				method: 'POST',
 				mode: 'cors',
 				headers: {

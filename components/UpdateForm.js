@@ -36,7 +36,7 @@ export default function UpdateForm() {
 		// TRY SENDING DATA
 		try {
 			// POST FORM DATA
-			const response = await fetch(`${developmentServer}/aktualnosci`, {
+			const response = await fetch(`${productionServer}/aktualnosci`, {
 				method: 'POST',
 				mode: 'cors',
 				headers: {
@@ -67,7 +67,7 @@ export default function UpdateForm() {
 		// TRY SENDING DATA
 		try {
 			// UPDATE FORM DATA
-			const response = await fetch(`${developmentServer}/aktualnosci/${updateToEdit._id}`, {
+			const response = await fetch(`${productionServer}/aktualnosci/${updateToEdit._id}`, {
 				method: 'PUT',
 				mode: 'cors',
 				headers: {
