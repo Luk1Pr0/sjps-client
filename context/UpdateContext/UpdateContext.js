@@ -11,7 +11,7 @@ export const UpdateProvider = (props) => {
 	const [updatesList, setUpdatesList] = useState([]);
 
 	// UPDATE THAT NEEDS TO BE EDITED 
-	const [updateToEdit, setUpdateToEdit] = useState({ title: '', message: '' });
+	const [updateToEdit, setUpdateToEdit] = useState({ title: '', message: '', fileUrl: '' });
 
 	// FETCH UPDATES AGAIN
 	const [fetchAgain, setFetchAgain] = useState(false);

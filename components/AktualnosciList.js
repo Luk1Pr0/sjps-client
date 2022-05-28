@@ -10,7 +10,7 @@ import actions from '../context/actions';
 
 // SERVERS
 const productionServer = 'https://sjps-server.herokuapp.com';
-const developmentServer = 'http://localhost:5000';
+const developmentServer = 'http://192.168.0.101:5000';
 
 export default function AktualnosciList({ }) {
 
@@ -32,7 +32,6 @@ export default function AktualnosciList({ }) {
 			const response = await fetch(`${productionServer}/aktualnosci`, {
 				method: 'GET',
 				headers: {
-					'Content-Type': 'application/json',
 					'Access-Control-Allow-Origin': '*'
 				},
 			});
@@ -91,7 +90,7 @@ export default function AktualnosciList({ }) {
 						</section>
 						:
 						updatesList.map((update) => (
-							<AktualnosciItem key={update._id} updateId={update._id} title={update.title} message={update.message} dateAdded={update.dateAdded} />
+							<AktualnosciItem key={update._id} updateId={update._id} title={update.title} message={update.message} fileUrl={update.fileUrl} dateAdded={update.dateAdded} />
 						))
 
 				}

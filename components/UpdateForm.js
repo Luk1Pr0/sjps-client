@@ -1,4 +1,4 @@
-import { useState, useContext, useEffect } from 'react';
+import { useState, useContext, useEffect, useRef } from 'react';
 import Router from 'next/router';
 
 // CONTEXT
@@ -8,16 +8,20 @@ import actions from '../context/actions';
 
 // SERVERS
 const productionServer = 'https://sjps-server.herokuapp.com';
-const developmentServer = 'http://localhost:5000';
+const developmentServer = 'http://192.168.0.101:5000';
 
 export default function UpdateForm() {
 
 	const { dispatchUpdatesEvent, updateToEdit, editUpdate } = useContext(UpdateContext);
 
-	// LOGIN DATA
+	// UPDATE FORM REFERENCE
+	const updateForm = useRef(null);
+
+	// UPDATE DATA
 	const [update, setUpdate] = useState({
 		title: '',
 		message: '',
+		fileUrl: '',
 	});
 
 	// HANDLE FORM SUBMIT
@@ -33,6 +37,14 @@ export default function UpdateForm() {
 
 	const postNewUpdate = async () => {
 
+		// CREATE NEW FORM DATA
+		const formData = new FormData();
+
+		// LOOP THROUGH THE UPDATE AND APPEND EACH KEY AND RESPONDING VALUE TO THE FORM DATA
+		for (let [key, value] of Object.entries(update)) {
+			formData.append(key, value);
+		}
+
 		// TRY SENDING DATA
 		try {
 			// POST FORM DATA
@@ -40,15 +52,15 @@ export default function UpdateForm() {
 				method: 'POST',
 				mode: 'cors',
 				headers: {
-					'Content-Type': 'application/json',
 					'Access-Control-Allow-Origin': '*'
 				},
-				body: JSON.stringify(update)
+				body: formData
 			});
 
 			alert('Dodano aktualizacje na stronę');
 
-			setUpdate({ title: '', message: '', file: '' });
+			// RESET FORM VALUES
+			setUpdate({ title: '', message: '', fileUrl: '' });
 
 			// FETCH THE UPDATES AFTER ADDING THE NEW ONE
 			dispatchUpdatesEvent(actions.FETCH_AGAIN, true);
@@ -64,22 +76,29 @@ export default function UpdateForm() {
 
 	const updateExistingUpdate = async () => {
 
-		// TRY SENDING DATA
+		// CREATE NEW FORM DATA
+		const formData = new FormData();
+
+		// LOOP THROUGH THE UPDATE AND APPEND EACH KEY AND RESPONDING VALUE TO THE FORM DATA
+		for (let [key, value] of Object.entries(update)) {
+			formData.append(key, value);
+		}
+
 		try {
 			// UPDATE FORM DATA
 			const response = await fetch(`${productionServer}/aktualnosci/${updateToEdit._id}`, {
 				method: 'PUT',
 				mode: 'cors',
 				headers: {
-					'Content-Type': 'application/json',
 					'Access-Control-Allow-Origin': '*'
 				},
-				body: JSON.stringify(update)
+				body: formData
 			});
 
 			alert('Zmieniono akutalizacje');
 
-			setUpdate({ title: '', message: '', file: '' });
+			// RESET FORM VALUES
+			setUpdate({ title: '', message: '', fileUrl: '' });
 
 			// FETCH THE UPDATES AFTER ADDING THE NEW ONE
 			dispatchUpdatesEvent(actions.FETCH_AGAIN, true);
@@ -95,7 +114,13 @@ export default function UpdateForm() {
 
 	// HANDLE CHANGE OF FORM INPUTS
 	const handleChange = (e) => {
-		setUpdate({ ...update, [e.target.name]: e.target.value });
+		if (e.target.name === 'file') {
+			// SET THE FILE
+			setUpdate({ ...update, [e.target.name]: e.target.files[0] });
+		} else {
+			// SET THE TEXT INPUT FIELDS
+			setUpdate({ ...update, [e.target.name]: e.target.value });
+		}
 	}
 
 	// ON CANCEL REMOVE FORM DATA
@@ -103,7 +128,11 @@ export default function UpdateForm() {
 		setUpdate({
 			title: '',
 			message: '',
+			fileUrl: ''
 		});
+
+		// RESET THE VALUES IN THE UPDATE FORM
+		updateForm.current.reset();
 
 		// SET CONTEXT TO STOP EDITING MODE
 		dispatchUpdatesEvent(actions.EDIT_UPDATE, false);
@@ -121,7 +150,7 @@ export default function UpdateForm() {
 	return (
 		<div className="form-wrapper">
 
-			<form id='form' className="form form--login" encType="multipart/form-data" onSubmit={handleSubmit}>
+			<form id='form' ref={updateForm} className="form form--login" encType="multipart/form-data" onSubmit={handleSubmit}>
 
 				<label htmlFor="title" className='label'>
 					Tytul
@@ -133,10 +162,10 @@ export default function UpdateForm() {
 					<textarea id='message' name='message' type="text" className='textarea' placeholder='Wiadomosc' onChange={handleChange} value={update.message} />
 				</label>
 
-				{/* <label htmlFor="file" className='label'>
-					Zalacznik
-					<input id='file' name='file' type="file" className='file-input' placeholder='Plik' accept='image/*, .pdf' onChange={handleChange} value={update.file} />
-				</label> */}
+				<label htmlFor="file" className='label'>
+					Plik
+					<input id='file' name='file' type="file" className='file-input' placeholder='Plik' accept='image/*' onChange={handleChange} />
+				</label>
 
 				<div className="btn-container">
 
