@@ -5,7 +5,7 @@ import Loader from './Loader';
 
 // SERVERS
 const productionServer = 'https://sjps-server.herokuapp.com';
-const developmentServer = 'http://localhost:5000';
+const developmentServer = 'http://192.168.0.101:5000';
 
 export default function ContactForm() {
 

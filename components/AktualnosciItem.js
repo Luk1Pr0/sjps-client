@@ -9,14 +9,14 @@ import actions from '../context/actions';
 
 // SERVERS
 const productionServer = 'https://sjps-server.herokuapp.com';
-const developmentServer = 'http://localhost:5000';
+const developmentServer = 'http://192.168.0.101:5000';
 
-export default function Aktualnosci({ updateId, title, message, file, dateAdded }) {
+export default function Aktualnosci({ updateId, title, message, fileUrl, dateAdded }) {
 
 	// ACCOUNT FROM CONTEXT
 	const { account } = useContext(AuthContext);
 
-	// UPDATE LIST CONTEXT
+	// UPDATE LIST FROM CONTEXT
 	const { dispatchUpdatesEvent, editUpdate } = useContext(UpdateContext);
 
 	// FORMAT THE DATE ADDED TO DISPLAY FOR EACH UPDATE
@@ -82,7 +82,7 @@ export default function Aktualnosci({ updateId, title, message, file, dateAdded 
 					{message}
 				</p>
 
-				<img src={file} className='img img--aktualnosci-item' alt="" />
+				<img src={fileUrl} className='img img--aktualnosci-item' alt="" />
 
 				{
 					account.userRole === 'admin' && (

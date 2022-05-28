@@ -1,4 +1,4 @@
-import { useState, useContext, useEffect } from 'react';
+import { useState, useContext, useEffect, useRef } from 'react';
 import Router from 'next/router';
 
 // CONTEXT
@@ -8,17 +8,20 @@ import actions from '../context/actions';
 
 // SERVERS
 const productionServer = 'https://sjps-server.herokuapp.com';
-const developmentServer = 'http://localhost:5000';
+const developmentServer = 'http://192.168.0.101:5000';
 
 export default function UpdateForm() {
 
 	const { dispatchUpdatesEvent, updateToEdit, editUpdate } = useContext(UpdateContext);
 
+	// UPDATE FORM REFERENCE
+	const updateForm = useRef(null);
+
 	// UPDATE DATA
 	const [update, setUpdate] = useState({
 		title: '',
 		message: '',
-		filePath: null,
+		fileUrl: '',
 	});
 
 	// HANDLE FORM SUBMIT
@@ -56,7 +59,8 @@ export default function UpdateForm() {
 
 			alert('Dodano aktualizacje na stronę');
 
-			setUpdate({ title: '', message: '', file: null });
+			// RESET FORM VALUES
+			setUpdate({ title: '', message: '', fileUrl: '' });
 
 			// FETCH THE UPDATES AFTER ADDING THE NEW ONE
 			dispatchUpdatesEvent(actions.FETCH_AGAIN, true);
@@ -72,6 +76,14 @@ export default function UpdateForm() {
 
 	const updateExistingUpdate = async () => {
 
+		// CREATE NEW FORM DATA
+		const formData = new FormData();
+
+		// LOOP THROUGH THE UPDATE AND APPEND EACH KEY AND RESPONDING VALUE TO THE FORM DATA
+		for (let [key, value] of Object.entries(update)) {
+			formData.append(key, value);
+		}
+
 		try {
 			// UPDATE FORM DATA
 			const response = await fetch(`${developmentServer}/aktualnosci/${updateToEdit._id}`, {
@@ -80,12 +92,13 @@ export default function UpdateForm() {
 				headers: {
 					'Access-Control-Allow-Origin': '*'
 				},
-				body: JSON.stringify(update)
+				body: formData
 			});
 
 			alert('Zmieniono akutalizacje');
 
-			setUpdate({ title: '', message: '', file: 0 });
+			// RESET FORM VALUES
+			setUpdate({ title: '', message: '', fileUrl: '' });
 
 			// FETCH THE UPDATES AFTER ADDING THE NEW ONE
 			dispatchUpdatesEvent(actions.FETCH_AGAIN, true);
@@ -115,8 +128,11 @@ export default function UpdateForm() {
 		setUpdate({
 			title: '',
 			message: '',
-			file: 0
+			fileUrl: ''
 		});
+
+		// RESET THE VALUES IN THE UPDATE FORM
+		updateForm.current.reset();
 
 		// SET CONTEXT TO STOP EDITING MODE
 		dispatchUpdatesEvent(actions.EDIT_UPDATE, false);
@@ -134,7 +150,7 @@ export default function UpdateForm() {
 	return (
 		<div className="form-wrapper">
 
-			<form id='form' className="form form--login" encType="multipart/form-data" onSubmit={handleSubmit}>
+			<form id='form' ref={updateForm} className="form form--login" encType="multipart/form-data" onSubmit={handleSubmit}>
 
 				<label htmlFor="title" className='label'>
 					Tytul
