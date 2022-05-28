@@ -26,7 +26,7 @@ export default function Aktualnosci({ updateId, title, message, file, dateAdded 
 	const deleteUpdate = async (e) => {
 		try {
 			// ON CLICK DELETE THE POST WITH THE SPECIFIC ID
-			const response = await fetch(`${productionServer}/aktualnosci/${updateId}`, {
+			const response = await fetch(`${developmentServer}/aktualnosci/${updateId}`, {
 				method: 'DELETE',
 			})
 
@@ -64,8 +64,6 @@ export default function Aktualnosci({ updateId, title, message, file, dateAdded 
 		window.scrollTo(0, 0);
 	}
 
-	console.log(file);
-
 	return (
 		<>
 			<article className="aktualnosci-item-wrapper">
@@ -76,7 +74,6 @@ export default function Aktualnosci({ updateId, title, message, file, dateAdded 
 					<h5 className="aktualnosci--title">{title}</h5>
 					<br />
 					<em className="aktualnosci--date">Dodano: {datePosted}</em>
-					{/* <img src={ } alt="" /> */}
 				</div>
 
 				<br />
@@ -84,6 +81,8 @@ export default function Aktualnosci({ updateId, title, message, file, dateAdded 
 				<p>
 					{message}
 				</p>
+
+				<img src={file} className='img img--aktualnosci-item' alt="" />
 
 				{
 					account.userRole === 'admin' && (

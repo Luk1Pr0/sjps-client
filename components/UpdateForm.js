@@ -45,7 +45,7 @@ export default function UpdateForm() {
 		// TRY SENDING DATA
 		try {
 			// POST FORM DATA
-			const response = await fetch(`${productionServer}/aktualnosci`, {
+			const response = await fetch(`${developmentServer}/aktualnosci`, {
 				method: 'POST',
 				mode: 'cors',
 				headers: {
@@ -56,7 +56,7 @@ export default function UpdateForm() {
 
 			alert('Dodano aktualizacje na stronę');
 
-			// setUpdate({ title: '', message: '', file: null });
+			setUpdate({ title: '', message: '', file: null });
 
 			// FETCH THE UPDATES AFTER ADDING THE NEW ONE
 			dispatchUpdatesEvent(actions.FETCH_AGAIN, true);
@@ -74,7 +74,7 @@ export default function UpdateForm() {
 
 		try {
 			// UPDATE FORM DATA
-			const response = await fetch(`${productionServer}/aktualnosci/${updateToEdit._id}`, {
+			const response = await fetch(`${developmentServer}/aktualnosci/${updateToEdit._id}`, {
 				method: 'PUT',
 				mode: 'cors',
 				headers: {

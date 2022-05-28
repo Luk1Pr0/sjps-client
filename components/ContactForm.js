@@ -29,7 +29,7 @@ export default function ContactForm() {
 			setShowLoader(true);
 
 			// POST FORM DATA
-			const data = fetch(`${productionServer}/kontakt`, {
+			const data = fetch(`${developmentServer}/kontakt`, {
 				method: 'POST',
 				mode: 'cors',
 				headers: {
