@@ -11,7 +11,7 @@ import actions from '../context/actions';
 const productionServer = 'https://sjps-server.herokuapp.com';
 const developmentServer = 'http://localhost:5000';
 
-export default function Aktualnosci({ updateId, title, message, dateAdded }) {
+export default function Aktualnosci({ updateId, title, message, file, dateAdded }) {
 
 	// ACCOUNT FROM CONTEXT
 	const { account } = useContext(AuthContext);
@@ -64,6 +64,8 @@ export default function Aktualnosci({ updateId, title, message, dateAdded }) {
 		window.scrollTo(0, 0);
 	}
 
+	console.log(file);
+
 	return (
 		<>
 			<article className="aktualnosci-item-wrapper">
@@ -74,6 +76,7 @@ export default function Aktualnosci({ updateId, title, message, dateAdded }) {
 					<h5 className="aktualnosci--title">{title}</h5>
 					<br />
 					<em className="aktualnosci--date">Dodano: {datePosted}</em>
+					{/* <img src={ } alt="" /> */}
 				</div>
 
 				<br />

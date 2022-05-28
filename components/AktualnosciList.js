@@ -32,7 +32,7 @@ export default function AktualnosciList({ }) {
 			const response = await fetch(`${productionServer}/aktualnosci`, {
 				method: 'GET',
 				headers: {
-					'Content-Type': 'application/json',
+					// 'Content-Type': 'application/json',
 					'Access-Control-Allow-Origin': '*'
 				},
 			});
@@ -91,7 +91,7 @@ export default function AktualnosciList({ }) {
 						</section>
 						:
 						updatesList.map((update) => (
-							<AktualnosciItem key={update._id} updateId={update._id} title={update.title} message={update.message} dateAdded={update.dateAdded} />
+							<AktualnosciItem key={update._id} updateId={update._id} title={update.title} message={update.message} file={update.filePath} dateAdded={update.dateAdded} />
 						))
 
 				}

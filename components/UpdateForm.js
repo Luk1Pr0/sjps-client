@@ -14,10 +14,11 @@ export default function UpdateForm() {
 
 	const { dispatchUpdatesEvent, updateToEdit, editUpdate } = useContext(UpdateContext);
 
-	// LOGIN DATA
+	// UPDATE DATA
 	const [update, setUpdate] = useState({
 		title: '',
 		message: '',
+		filePath: null,
 	});
 
 	// HANDLE FORM SUBMIT
@@ -33,6 +34,14 @@ export default function UpdateForm() {
 
 	const postNewUpdate = async () => {
 
+		// CREATE NEW FORM DATA
+		const formData = new FormData();
+
+		// LOOP THROUGH THE UPDATE AND APPEND EACH KEY AND RESPONDING VALUE TO THE FORM DATA
+		for (let [key, value] of Object.entries(update)) {
+			formData.append(key, value);
+		}
+
 		// TRY SENDING DATA
 		try {
 			// POST FORM DATA
@@ -40,15 +49,14 @@ export default function UpdateForm() {
 				method: 'POST',
 				mode: 'cors',
 				headers: {
-					'Content-Type': 'application/json',
 					'Access-Control-Allow-Origin': '*'
 				},
-				body: JSON.stringify(update)
+				body: formData
 			});
 
 			alert('Dodano aktualizacje na stronę');
 
-			setUpdate({ title: '', message: '', file: '' });
+			// setUpdate({ title: '', message: '', file: null });
 
 			// FETCH THE UPDATES AFTER ADDING THE NEW ONE
 			dispatchUpdatesEvent(actions.FETCH_AGAIN, true);
@@ -64,14 +72,12 @@ export default function UpdateForm() {
 
 	const updateExistingUpdate = async () => {
 
-		// TRY SENDING DATA
 		try {
 			// UPDATE FORM DATA
 			const response = await fetch(`${productionServer}/aktualnosci/${updateToEdit._id}`, {
 				method: 'PUT',
 				mode: 'cors',
 				headers: {
-					'Content-Type': 'application/json',
 					'Access-Control-Allow-Origin': '*'
 				},
 				body: JSON.stringify(update)
@@ -79,7 +85,7 @@ export default function UpdateForm() {
 
 			alert('Zmieniono akutalizacje');
 
-			setUpdate({ title: '', message: '', file: '' });
+			setUpdate({ title: '', message: '', file: 0 });
 
 			// FETCH THE UPDATES AFTER ADDING THE NEW ONE
 			dispatchUpdatesEvent(actions.FETCH_AGAIN, true);
@@ -95,7 +101,13 @@ export default function UpdateForm() {
 
 	// HANDLE CHANGE OF FORM INPUTS
 	const handleChange = (e) => {
-		setUpdate({ ...update, [e.target.name]: e.target.value });
+		if (e.target.name === 'file') {
+			// SET THE FILE
+			setUpdate({ ...update, [e.target.name]: e.target.files[0] });
+		} else {
+			// SET THE TEXT INPUT FIELDS
+			setUpdate({ ...update, [e.target.name]: e.target.value });
+		}
 	}
 
 	// ON CANCEL REMOVE FORM DATA
@@ -103,6 +115,7 @@ export default function UpdateForm() {
 		setUpdate({
 			title: '',
 			message: '',
+			file: 0
 		});
 
 		// SET CONTEXT TO STOP EDITING MODE
@@ -133,10 +146,10 @@ export default function UpdateForm() {
 					<textarea id='message' name='message' type="text" className='textarea' placeholder='Wiadomosc' onChange={handleChange} value={update.message} />
 				</label>
 
-				{/* <label htmlFor="file" className='label'>
-					Zalacznik
-					<input id='file' name='file' type="file" className='file-input' placeholder='Plik' accept='image/*, .pdf' onChange={handleChange} value={update.file} />
-				</label> */}
+				<label htmlFor="file" className='label'>
+					Plik
+					<input id='file' name='file' type="file" className='file-input' placeholder='Plik' accept='image/*' onChange={handleChange} />
+				</label>
 
 				<div className="btn-container">
 
