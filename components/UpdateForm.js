@@ -43,7 +43,7 @@ export default function UpdateForm() {
 		// TRY SENDING DATA
 		try {
 			// POST FORM DATA
-			const response = await fetch(`${process.env.SERVER}/aktualnosci`, {
+			const response = await fetch(`${'https://sjps-server.herokuapp.com'}/aktualnosci`, {
 				method: 'POST',
 				mode: 'cors',
 				headers: {
@@ -81,7 +81,7 @@ export default function UpdateForm() {
 
 		try {
 			// UPDATE FORM DATA
-			const response = await fetch(`${process.env.SERVER}/aktualnosci/${updateToEdit._id}`, {
+			const response = await fetch(`${'https://sjps-server.herokuapp.com'}/aktualnosci/${updateToEdit._id}`, {
 				method: 'PUT',
 				mode: 'cors',
 				headers: {

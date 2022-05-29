@@ -22,7 +22,7 @@ export default function Aktualnosci({ updateId, title, message, fileUrl, dateAdd
 	const deleteUpdate = async (e) => {
 		try {
 			// ON CLICK DELETE THE POST WITH THE SPECIFIC ID
-			const response = await fetch(`${process.env.SERVER}/aktualnosci/${updateId}`, {
+			const response = await fetch(`${'https://sjps-server.herokuapp.com'}/aktualnosci/${updateId}`, {
 				method: 'DELETE',
 			})
 

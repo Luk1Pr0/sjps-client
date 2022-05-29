@@ -25,7 +25,7 @@ export default function AktualnosciList({ }) {
 		try {
 
 			// FETCH UPDATES FROM SERVER
-			const response = await fetch(`${process.env.SERVER}/aktualnosci`, {
+			const response = await fetch(`${'https://sjps-server.herokuapp.com'}/aktualnosci`, {
 				method: 'GET',
 				headers: {
 					'Access-Control-Allow-Origin': '*'
