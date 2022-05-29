@@ -1,14 +1,9 @@
 import { useState, useContext, useEffect, useRef } from 'react';
-import Router from 'next/router';
 
 // CONTEXT
 import { UpdateContext } from '../context/UpdateContext/UpdateContext';
 
 import actions from '../context/actions';
-
-// SERVERS
-const productionServer = 'https://sjps-server.herokuapp.com';
-const developmentServer = 'http://192.168.0.101:5000';
 
 export default function UpdateForm() {
 
@@ -48,7 +43,7 @@ export default function UpdateForm() {
 		// TRY SENDING DATA
 		try {
 			// POST FORM DATA
-			const response = await fetch(`${productionServer}/aktualnosci`, {
+			const response = await fetch(`${process.env.SERVER}/aktualnosci`, {
 				method: 'POST',
 				mode: 'cors',
 				headers: {
@@ -86,7 +81,7 @@ export default function UpdateForm() {
 
 		try {
 			// UPDATE FORM DATA
-			const response = await fetch(`${productionServer}/aktualnosci/${updateToEdit._id}`, {
+			const response = await fetch(`${process.env.SERVER}/aktualnosci/${updateToEdit._id}`, {
 				method: 'PUT',
 				mode: 'cors',
 				headers: {

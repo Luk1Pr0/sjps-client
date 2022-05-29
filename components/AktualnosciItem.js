@@ -7,10 +7,6 @@ import { UpdateContext } from '../context/UpdateContext/UpdateContext';
 
 import actions from '../context/actions';
 
-// SERVERS
-const productionServer = 'https://sjps-server.herokuapp.com';
-const developmentServer = 'http://192.168.0.101:5000';
-
 export default function Aktualnosci({ updateId, title, message, fileUrl, dateAdded }) {
 
 	// ACCOUNT FROM CONTEXT
@@ -26,7 +22,7 @@ export default function Aktualnosci({ updateId, title, message, fileUrl, dateAdd
 	const deleteUpdate = async (e) => {
 		try {
 			// ON CLICK DELETE THE POST WITH THE SPECIFIC ID
-			const response = await fetch(`${productionServer}/aktualnosci/${updateId}`, {
+			const response = await fetch(`${process.env.SERVER}/aktualnosci/${updateId}`, {
 				method: 'DELETE',
 			})
 

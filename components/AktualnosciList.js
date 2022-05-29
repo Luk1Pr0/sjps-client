@@ -8,10 +8,6 @@ import AktualnosciItem from "./AktualnosciItem";
 import Loader from '../components/Loader';
 import actions from '../context/actions';
 
-// SERVERS
-const productionServer = 'https://sjps-server.herokuapp.com';
-const developmentServer = 'http://192.168.0.101:5000';
-
 export default function AktualnosciList({ }) {
 
 	// STATE
@@ -29,7 +25,7 @@ export default function AktualnosciList({ }) {
 		try {
 
 			// FETCH UPDATES FROM SERVER
-			const response = await fetch(`${productionServer}/aktualnosci`, {
+			const response = await fetch(`${process.env.SERVER}/aktualnosci`, {
 				method: 'GET',
 				headers: {
 					'Access-Control-Allow-Origin': '*'

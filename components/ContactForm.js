@@ -3,10 +3,6 @@ import { useState } from 'react';
 // COMPONENTS
 import Loader from './Loader';
 
-// SERVERS
-const productionServer = 'https://sjps-server.herokuapp.com';
-const developmentServer = 'http://192.168.0.101:5000';
-
 export default function ContactForm() {
 
 	const [formData, setFormData] = useState({
@@ -29,7 +25,7 @@ export default function ContactForm() {
 			setShowLoader(true);
 
 			// POST FORM DATA
-			const data = fetch(`${productionServer}/kontakt`, {
+			const data = fetch(`${process.env.SERVER}/kontakt`, {
 				method: 'POST',
 				mode: 'cors',
 				headers: {

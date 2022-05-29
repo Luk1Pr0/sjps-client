@@ -4,10 +4,6 @@ import { useState, useContext } from 'react';
 import { AuthContext } from '../context/AuthContext/AuthContext';
 import actions from '../context/actions';
 
-// SERVERS
-const productionServer = 'https://sjps-server.herokuapp.com';
-const developmentServer = 'http://192.168.0.101:5000';
-
 export default function LoginForm() {
 
 	// LOGIN DATA
@@ -25,7 +21,7 @@ export default function LoginForm() {
 
 		try {
 			// POST FORM DATA
-			const response = await fetch(`${productionServer}/login`, {
+			const response = await fetch(`${process.env.SERVER}/login`, {
 				method: 'POST',
 				mode: 'cors',
 				headers: {
