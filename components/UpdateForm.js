@@ -5,11 +5,14 @@ import { UpdateContext } from '../context/UpdateContext/UpdateContext';
 
 import actions from '../context/actions';
 
+// COMPONENTS
+import Loader from './Loader';
+
 export default function UpdateForm() {
 
 	const { dispatchUpdatesEvent, updateToEdit, editUpdate } = useContext(UpdateContext);
 
-	// UPDATE FORM REFERENCE
+	// REFERENCE TO UPDATE FORM
 	const updateForm = useRef(null);
 
 	// UPDATE DATA
@@ -19,9 +22,15 @@ export default function UpdateForm() {
 		fileUrl: '',
 	});
 
+	// LOADER
+	const [isLoading, setIsLoading] = useState(false);
+
 	// HANDLE FORM SUBMIT
 	const handleSubmit = async (e) => {
 		e.preventDefault();
+
+		// SHOW LOADER
+		setIsLoading(true);
 
 		// IF EDIT UPDATE IS TRUE THEN DO PUT REQ ELSE DO POST REQ
 		editUpdate ?
@@ -43,7 +52,7 @@ export default function UpdateForm() {
 		// TRY SENDING DATA
 		try {
 			// POST FORM DATA
-			const response = await fetch(`${'https://sjps-server.herokuapp.com'}/aktualnosci`, {
+			const response = await fetch(`${process.env.NEXT_PUBLIC_SERVER}/aktualnosci`, {
 				method: 'POST',
 				mode: 'cors',
 				headers: {
@@ -52,21 +61,33 @@ export default function UpdateForm() {
 				body: formData
 			});
 
-			alert('Dodano aktualizacje na stronę');
+			// IF RESPONSE FROM THE SERVER IS OK THEN CONTINUE
+			if (response.status === 200) {
 
-			// RESET FORM VALUES
-			setUpdate({ title: '', message: '', fileUrl: '' });
+				alert('Dodano aktualizacje na stronę');
 
-			// FETCH THE UPDATES AFTER ADDING THE NEW ONE
-			dispatchUpdatesEvent(actions.FETCH_AGAIN, true);
+				// RESET FORM VALUES
+				setUpdate({ title: '', message: '', file: null, fileUrl: '' });
 
-			// SET CONTEXT TO STOP EDITING MODE
-			dispatchUpdatesEvent(actions.EDIT_UPDATE, false);
+				// FETCH THE UPDATES AFTER ADDING THE NEW ONE
+				dispatchUpdatesEvent(actions.FETCH_AGAIN, true);
+
+				// SET CONTEXT TO STOP EDITING MODE
+				dispatchUpdatesEvent(actions.EDIT_UPDATE, false);
+
+				// RESET THE VALUES IN THE UPDATE FORM
+				updateForm.current.reset();
+
+			} else {
+				alert('Aktualność z takim tytułem już istnieje, ZMIEŃ TYTUŁ');
+			}
 
 		} catch (error) {
 			// CONSOLE LOG ERROR WHENS SENDING FAILS
 			console.log('Error connecting to the server', error);
 		}
+		// HIDE LOADER
+		setIsLoading(false);
 	}
 
 	const updateExistingUpdate = async () => {
@@ -81,7 +102,7 @@ export default function UpdateForm() {
 
 		try {
 			// UPDATE FORM DATA
-			const response = await fetch(`${'https://sjps-server.herokuapp.com'}/aktualnosci/${updateToEdit._id}`, {
+			const response = await fetch(`${process.env.NEXT_PUBLIC_SERVER}/aktualnosci/${updateToEdit._id}`, {
 				method: 'PUT',
 				mode: 'cors',
 				headers: {
@@ -90,21 +111,32 @@ export default function UpdateForm() {
 				body: formData
 			});
 
-			alert('Zmieniono akutalizacje');
+			// IF RESPONSE FROM THE SERVER IS OK THEN CONTINUE
+			if (response.status === 200) {
 
-			// RESET FORM VALUES
-			setUpdate({ title: '', message: '', fileUrl: '' });
+				alert('Dodano edycje stronę');
 
-			// FETCH THE UPDATES AFTER ADDING THE NEW ONE
-			dispatchUpdatesEvent(actions.FETCH_AGAIN, true);
+				// RESET FORM VALUES
+				setUpdate({ title: '', message: '', file: null, fileUrl: '' });
 
-			// SET CONTEXT TO STOP EDITING MODE
-			dispatchUpdatesEvent(actions.EDIT_UPDATE, false);
+				// FETCH THE UPDATES AFTER ADDING THE NEW ONE
+				dispatchUpdatesEvent(actions.FETCH_AGAIN, true);
+
+				// SET CONTEXT TO STOP EDITING MODE
+				dispatchUpdatesEvent(actions.EDIT_UPDATE, false);
+
+				// RESET THE VALUES IN THE UPDATE FORM
+				updateForm.current.reset();
+			} else {
+				alert('Aktualność z takim tytułem już istnieje, ZMIEŃ TYTUŁ');
+			}
 
 		} catch (error) {
 			// CONSOLE LOG ERROR WHENS SENDING FAILS
 			console.log('Error connecting to the server', error);
 		}
+		// HIDE LOADER
+		setIsLoading(false);
 	}
 
 	// HANDLE CHANGE OF FORM INPUTS
@@ -123,6 +155,7 @@ export default function UpdateForm() {
 		setUpdate({
 			title: '',
 			message: '',
+			file: null,
 			fileUrl: ''
 		});
 
@@ -144,6 +177,8 @@ export default function UpdateForm() {
 
 	return (
 		<div className="form-wrapper">
+
+			{isLoading && <Loader />}
 
 			<form id='form' ref={updateForm} className="form form--login" encType="multipart/form-data" onSubmit={handleSubmit}>
 

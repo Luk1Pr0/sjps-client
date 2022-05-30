@@ -7,7 +7,7 @@ import { UpdateContext } from '../context/UpdateContext/UpdateContext';
 
 import actions from '../context/actions';
 
-export default function Aktualnosci({ updateId, title, message, fileUrl, dateAdded }) {
+export default function Aktualnosci({ updateId, title, message, file, fileUrl, dateAdded }) {
 
 	// ACCOUNT FROM CONTEXT
 	const { account } = useContext(AuthContext);
@@ -22,7 +22,7 @@ export default function Aktualnosci({ updateId, title, message, fileUrl, dateAdd
 	const deleteUpdate = async (e) => {
 		try {
 			// ON CLICK DELETE THE POST WITH THE SPECIFIC ID
-			const response = await fetch(`${'https://sjps-server.herokuapp.com'}/aktualnosci/${updateId}`, {
+			const response = await fetch(`${process.env.NEXT_PUBLIC_SERVER}/aktualnosci/${updateId}`, {
 				method: 'DELETE',
 			})
 
@@ -78,7 +78,12 @@ export default function Aktualnosci({ updateId, title, message, fileUrl, dateAdd
 					{message}
 				</p>
 
-				<img src={fileUrl} className='img img--aktualnosci-item' alt="" />
+
+				{
+					// IF FILE IS NOT EMPTY THEN SHOW THE IMG
+					file !== '' &&
+					<img src={fileUrl} className='img img--aktualnosci-item' alt="Plakat promujący aktualność" />
+				}
 
 				{
 					account.userRole === 'admin' && (

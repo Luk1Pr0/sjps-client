@@ -25,7 +25,7 @@ export default function AktualnosciList({ }) {
 		try {
 
 			// FETCH UPDATES FROM SERVER
-			const response = await fetch(`${'https://sjps-server.herokuapp.com'}/aktualnosci`, {
+			const response = await fetch(`${process.env.NEXT_PUBLIC_SERVER}/aktualnosci`, {
 				method: 'GET',
 				headers: {
 					'Access-Control-Allow-Origin': '*'
@@ -86,7 +86,7 @@ export default function AktualnosciList({ }) {
 						</section>
 						:
 						updatesList.map((update) => (
-							<AktualnosciItem key={update._id} updateId={update._id} title={update.title} message={update.message} fileUrl={update.fileUrl} dateAdded={update.dateAdded} />
+							<AktualnosciItem key={update._id} updateId={update._id} title={update.title} message={update.message} file={update.file} fileUrl={update.fileUrl} dateAdded={update.dateAdded} />
 						))
 
 				}

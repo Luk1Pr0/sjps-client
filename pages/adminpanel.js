@@ -1,4 +1,5 @@
-import { useContext } from "react";
+import { useContext, useRef, useEffect } from "react";
+import Link from 'next/link';
 
 // COMPONENTS
 import AktualnosciList from "../components/AktualnosciList";
@@ -39,8 +40,17 @@ export default function AdminPanel() {
 
 					<h2>Access denied</h2>
 
+					<Link href='/login'>
+
+						<button className="btn btn--primary">
+							<a>Zaloguj się</a>
+
+						</button>
+
+					</Link>
+
 				</section >
 
-			</main>
+			</main >
 	)
 }

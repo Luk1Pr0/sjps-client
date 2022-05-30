@@ -21,7 +21,7 @@ export default function LoginForm() {
 
 		try {
 			// POST FORM DATA
-			const response = await fetch(`${'https://sjps-server.herokuapp.com'}/login`, {
+			const response = await fetch(`${process.env.NEXT_PUBLIC_SERVER}/login`, {
 				method: 'POST',
 				mode: 'cors',
 				headers: {
