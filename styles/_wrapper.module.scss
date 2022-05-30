@@ -162,7 +162,8 @@
 }
 
 .aktualnosci-list-wrapper {
-	max-height: 70vh;
+	min-height: fit-content;
+	max-height: 120vh;
 
 	position: relative;
 

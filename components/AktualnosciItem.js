@@ -78,7 +78,6 @@ export default function Aktualnosci({ updateId, title, message, fileName, fileUr
 					{message}
 				</p>
 
-
 				{
 					// IF FILE IS NOT EMPTY THEN SHOW THE IMG
 					fileName !== '' &&
