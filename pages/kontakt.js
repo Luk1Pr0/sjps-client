@@ -36,6 +36,11 @@ export default function Kontakt() {
 					<h2>Kontakt</h2>
 
 					<p>Jesli poniższy formularz nie zadziała, prosimy o kontakt na e-mail: <span><a href="mailto:szkolajezykapolskiegoslough@gmail.com?subject=Kontakt" className="link">szkolajezykapolskiegoslough@gmail.com</a></span></p>
+
+					<br />
+
+					<p>Jesteśmy również dostępni pod następującym numerem telefonu: <a href='tel:+447723646812' className='link'>07723 646 812</a></p>
+
 				</section>
 
 				<section className="content-wrapper content-wrapper--center content-wrapper--full-width">
@@ -46,7 +51,7 @@ export default function Kontakt() {
 
 				<section className="content-wrapper content-wrapper--center content-wrapper--full-width flex--column">
 
-					<h3>Gdzie nas znaleść?</h3>
+					<h3>Gdzie nas znaleźć?</h3>
 
 					<h5>
 						Znajdujemy się w Polskim kościele pod adresem:

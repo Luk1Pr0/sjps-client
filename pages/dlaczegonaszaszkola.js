@@ -36,7 +36,7 @@ export default function DlaczegoNaszaSzkola() {
 					<ol>
 
 						<li>
-							Przyjmujemy dzieci od 5 roku życia. Maluchy najszybciej uczą się kilku języków na raz.
+							Przyjmujemy dzieci od 5 roku życia. Maluchy najszybciej uczą się kilku języków naraz.
 						</li>
 
 						<li>
