@@ -161,7 +161,7 @@ export default function Nav() {
 						</Link>
 
 						<li className="subnav-li" onClick={closeNavigation}>
-							<a href='/dokumenty/lista-lektur.pdf' target='_blank' className="subnav-a">Lista lektur</a>
+							<a href='/dokumenty/lista_lektur.pdf' target='_blank' className="subnav-a">Lista lektur</a>
 						</li>
 
 					</ul>
