@@ -7,7 +7,7 @@ import { UpdateContext } from '../context/UpdateContext/UpdateContext';
 
 import actions from '../context/actions';
 
-export default function Aktualnosci({ updateId, title, message, fileName, fileUrl, dateAdded }) {
+export default function Aktualnosci({ updateId, title, message, fileUrl, dateAdded }) {
 
 	// ACCOUNT FROM CONTEXT
 	const { account } = useContext(AuthContext);
@@ -80,7 +80,7 @@ export default function Aktualnosci({ updateId, title, message, fileName, fileUr
 
 				{
 					// IF FILE IS NOT EMPTY THEN SHOW THE IMG
-					fileName !== '' &&
+					fileUrl !== '' &&
 					<img src={fileUrl} className='img img--aktualnosci-item' alt="Plakat promujący aktualność" />
 				}
 

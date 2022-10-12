@@ -19,7 +19,6 @@ export default function UpdateForm() {
 	const [update, setUpdate] = useState({
 		title: '',
 		message: '',
-		fileUrl: '',
 	});
 
 	// LOADER
@@ -67,7 +66,7 @@ export default function UpdateForm() {
 				alert('Dodano aktualizacje na stronę');
 
 				// RESET FORM VALUES
-				setUpdate({ title: '', message: '', file: null, fileUrl: '' });
+				setUpdate({ title: '', message: '' });
 
 				// FETCH THE UPDATES AFTER ADDING THE NEW ONE
 				dispatchUpdatesEvent(actions.FETCH_AGAIN, true);
