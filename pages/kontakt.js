@@ -43,11 +43,11 @@ export default function Kontakt() {
 
 				</section>
 
-				<section className="content-wrapper content-wrapper--center content-wrapper--full-width">
+				{/* <section className="content-wrapper content-wrapper--center content-wrapper--full-width">
 
 					<ContactForm />
 
-				</section>
+				</section> */}
 
 				<section className="content-wrapper content-wrapper--center content-wrapper--full-width flex--column">
 

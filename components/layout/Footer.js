@@ -11,7 +11,7 @@ export default function Footer() {
 			</p>
 
 			<h6 className="footer-heading footer-heading--copyright">
-				© 2022 Szkoła Języka Polskiego Slough
+				© {new Date().getFullYear()} Szkoła Języka Polskiego Slough
 			</h6>
 
 			<h3 className="footer-heading footer-heading--more">Więcej</h3>

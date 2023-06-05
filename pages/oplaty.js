@@ -34,18 +34,18 @@ export default function Oplaty() {
 					<h2>Czesne i Terminy Płatności</h2>
 
 					<div className='text--left'>
-						<h4>Opłaty za szkołę w roku szkolnym 2022/23 wynoszą:</h4>
+						<h4>Opłaty za szkołę w roku szkolnym 2023/24 wynoszą:</h4>
 					</div>
 
 					<br />
 
 					<ul>
 
-						<li>Pierwsze dziecko <strong>£295 / rok</strong>
+						<li>Pierwsze dziecko <strong>£370 / rok</strong>
 						</li>
-						<li>Drugie dziecko <strong>£250 / rok</strong>
+						<li>Drugie dziecko <strong>£340 / rok</strong>
 						</li>
-						<li>Trzecie i każde kolejne dziecko <strong>£200 / rok</strong>
+						<li>Trzecie i każde kolejne dziecko <strong>£300 / rok</strong>
 						</li>
 
 					</ul>
@@ -53,13 +53,15 @@ export default function Oplaty() {
 					<br />
 
 					<p>
-						Zapisując dziecko do szkoły należy wpłacić depozyt w wysokości £50 do 20 sierpnia 2022 roku, opłata za czesne będzie pomniejszona o kwotę wcześniej wpłaconego depozytu.
+						Zapisując dziecko do
+						szkoły należy wpłacić depozyt w wysokości £50 do dnia rozpoczęcia roku szkolnego , aby zapewnić dziecku
+						miejsce w szkole.
 					</p>
 
 					<br />
 
 					<p>
-						Warunkiem kontynuowania nauki w szkole jest uregulowanie całej kwoty za pierwsze dziecko do końca września 2022, a za drugie i trzecie dziecko do 31 października 2022. W przypadku rezygnacji ze szkoły w trakcie roku szkolnego, opłaty nie będą zwracane.
+						Warunkiem kontynuowania nauki w szkole jest uregulowanie całej kwoty za pierwsze dziecko do 30 września 2023, a za drugie i trzecie dziecko do 31 października 2023. W przypadku rezygnacji ze szkoły w trakcie roku szkolnego, opłaty nie będą zwracane.
 					</p>
 
 					<br />
