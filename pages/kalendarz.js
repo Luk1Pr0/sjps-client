@@ -11,8 +11,8 @@ import actions from '../context/actions';
 import ImageModal from '../components/ImageModal';
 
 // IMAGES
-import Kalendarz1 from '../public/kalendarz/kalendarz-part_1.png';
-import Kalendarz2 from '../public/kalendarz/kalendarz-part_2.png';
+import Kalendarz1 from '../public/kalendarz/calendar-1.jpg';
+import Kalendarz2 from '../public/kalendarz/calendar-1.jpg';
 
 export default function Kalendarz() {
 
