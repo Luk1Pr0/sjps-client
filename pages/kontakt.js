@@ -35,7 +35,7 @@ export default function Kontakt() {
 				<section className="content-wrapper content-wrapper--center">
 					<h2>Kontakt</h2>
 
-					<p>Jesli poniższy formularz nie zadziała, prosimy o kontakt na e-mail: <span><a href="mailto:szkolajezykapolskiegoslough@gmail.com?subject=Kontakt" className="link">szkolajezykapolskiegoslough@gmail.com</a></span></p>
+					<p>Prosimy o kontakt na e-mail: <span><a href="mailto:szkolajezykapolskiegoslough@gmail.com?subject=Kontakt" className="link">szkolajezykapolskiegoslough@gmail.com</a></span></p>
 
 					<br />
 

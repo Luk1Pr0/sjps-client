@@ -7,6 +7,9 @@ import Image from 'next/image';
 import { ModalContext } from '../context/ModalContext/ModalContext';
 import actions from '../context/actions';
 
+// UTILS
+import returnYearAsString from '../utils/returnYearAsString';
+
 // COMPONENTS
 import ImageModal from '../components/ImageModal';
 
@@ -23,6 +26,8 @@ export default function Kalendarz() {
 		const selectedImage = e.target.src;
 		dispatchModalEvent(actions.OPEN_MODAL, selectedImage);
 	}
+
+	console.log(returnYearAsString());
 
 	return (
 		<>
@@ -54,11 +59,11 @@ export default function Kalendarz() {
 
 				<section className="content-wrapper content-wrapper--center">
 
-					<h2>KALENDARZ 2022/23</h2>
+					<h2>KALENDARZ {returnYearAsString()}</h2>
 
 					<p>
-						Zajęcia w roku szkolnym <strong>2022/23 </strong> rozpoczynamy <strong> 10 września 2021 r. </strong>
-						Zajęcia na grupę poranną rozpoczynają się o godz. <strong>8:50</strong>, a kończą o <strong>12:20</strong>. W nowym roku szkolnym mamy 35 sobót. Kalendarz na rok szkolny 2022/23 zamieszczamy poniżej.
+						Zajęcia w roku szkolnym <strong>{returnYearAsString()} </strong> rozpoczynamy <strong> 9 września 2023 r. </strong>
+						Zajęcia na grupę poranną rozpoczynają się o godz. <strong>8:50</strong>, a kończą o <strong>12:20</strong>. W nowym roku szkolnym mamy 35 sobót. Kalendarz na rok szkolny {returnYearAsString()} zamieszczamy poniżej.
 
 					</p>
 
