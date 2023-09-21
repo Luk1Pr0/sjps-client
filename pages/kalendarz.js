@@ -15,7 +15,7 @@ import ImageModal from '../components/ImageModal';
 
 // IMAGES
 import Kalendarz1 from '../public/kalendarz/calendar-1.jpg';
-import Kalendarz2 from '../public/kalendarz/calendar-1.jpg';
+import Kalendarz2 from '../public/kalendarz/calendar-2.jpg';
 
 export default function Kalendarz() {
 
