@@ -65,7 +65,7 @@ export default function Home() {
 
 			<main className='main main--index'>
 
-				<AktualnosciList />
+				{/* <AktualnosciList /> */}
 
 				<section className="content-wrapper content-wrapper--center">
 
