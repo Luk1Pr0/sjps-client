@@ -1,9 +1,17 @@
 import Head from 'next/head';
+import { useEffect, useState } from 'react';
 
 // COMPONENTS
 import ContactForm from '../components/ContactForm';
 
 export default function Kontakt() {
+
+	const [phoneNumber, setPhoneNumber] = useState();
+
+	useEffect(() => {
+		setPhoneNumber(process.env.NEXT_PUBLIC_CONTACT_PHONE_NUMBER);
+	}, [])
+
 	return (
 		<>
 			<Head>
@@ -39,7 +47,7 @@ export default function Kontakt() {
 
 					<br />
 
-					<p>Jesteśmy również dostępni pod następującym numerem telefonu: <a href='tel:+447723646812' className='link'>07723 646 812</a></p>
+					<p>Jesteśmy również dostępni pod następującym numerem telefonu: <a href='tel:+447723646812' className='link'>{phoneNumber}</a></p>
 
 				</section>
 
