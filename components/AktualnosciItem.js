@@ -1,65 +1,18 @@
-import { useContext, useEffect } from 'react';
-import Router from 'next/router';
+import { useContext } from 'react';
+
 
 // CONTEXT
 import { AuthContext } from '../context/AuthContext/AuthContext';
-import { UpdateContext } from '../context/UpdateContext/UpdateContext';
 
-import actions from '../context/actions';
-
-export default function Aktualnosci({ updateId, title, message, fileUrl, dateAdded }) {
+export default function Aktualnosci({ id, title, description, imageURL, createdAt }) {
 
 	// ACCOUNT FROM CONTEXT
 	const { account } = useContext(AuthContext);
 
-	// UPDATE LIST FROM CONTEXT
-	const { dispatchUpdatesEvent, editUpdate } = useContext(UpdateContext);
-
 	// FORMAT THE DATE ADDED TO DISPLAY FOR EACH UPDATE
-	const datePosted = dateAdded.split('T')[0].split('-').reverse().join('/');
+	const datePosted = createdAt.split('T')[0].split('-').reverse().join('/');
 
-	// DELETE THE SELECTED UPDATE FROM THE DATABASE
-	const deleteUpdate = async (e) => {
-		try {
-			// ON CLICK DELETE THE POST WITH THE SPECIFIC ID
-			const response = await fetch(`${process.env.NEXT_PUBLIC_SERVER}/aktualnosci/${updateId}`, {
-				method: 'DELETE',
-			})
-
-			const data = await response.json();
-
-			// Refresh the page to remove the update from the client
-			Router.push('/adminpanel');
-
-			// FETCH THE UPDATES AFTER DELETING THE SELECTED ONE
-			dispatchUpdatesEvent(actions.FETCH_AGAIN, true);
-
-		} catch (error) {
-			console.log('Error connecting to the server', error);
-		}
-	}
-
-	// EDIT SELECTED UPDATE
-	const handleEditUpdate = () => {
-
-		// SET EDITING MODE TO TRUE
-		dispatchUpdatesEvent(actions.EDIT_UPDATE, true);
-
-		// IF NO UPDATE IS EDITED THEN EDIT THE SELECTED UPDATE
-		if (!editUpdate) {
-			// SEND THE ID OF SELECTED UPDATE TO CONTEXT IF THE UPDATE TO EDIT IS EMPTY
-			dispatchUpdatesEvent(actions.UPDATE_TO_EDIT, updateId);
-		} else {
-			alert('Juz edytujesz, jesli chcesz zmienic, nacisnij Anuluj i wybierz nowy');
-		}
-
-		// Refresh the page to remove the update from the client
-		Router.push('/adminpanel');
-
-		// SCROLL TO TOP WHEN EDITING IN PROGRESS
-		window.scrollTo(0, 0);
-	}
-
+	console.log(datePosted)
 	return (
 		<>
 			<article className="aktualnosci-item-wrapper">
@@ -75,13 +28,13 @@ export default function Aktualnosci({ updateId, title, message, fileUrl, dateAdd
 				<br />
 
 				<p>
-					{message}
+					{description}
 				</p>
 
 				{
 					// IF FILE IS NOT EMPTY THEN SHOW THE IMG
-					fileUrl !== '' &&
-					<img src={fileUrl} className='img img--aktualnosci-item' alt="Plakat promujący aktualność" />
+					imageURL !== '' &&
+					<img src={imageURL} className='img img--aktualnosci-item' alt="Plakat promujący aktualność" />
 				}
 
 				{

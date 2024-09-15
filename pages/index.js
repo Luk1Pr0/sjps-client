@@ -65,7 +65,7 @@ export default function Home() {
 
 			<main className='main main--index'>
 
-				{/* <AktualnosciList /> */}
+				<AktualnosciList />
 
 				<section className="content-wrapper content-wrapper--center">
 
@@ -80,7 +80,7 @@ export default function Home() {
 					{
 						cardArr.map(card => (
 							<Card
-								key={card.id}
+							key={card.id}
 								title={card.title}
 								link={card.link}
 								image={card.image}

@@ -25,23 +25,28 @@ export default function AktualnosciList({ }) {
 		try {
 
 			// FETCH UPDATES FROM SERVER
-			const response = await fetch(`${process.env.NEXT_PUBLIC_SERVER}/aktualnosci`, {
+			const response = await fetch(`${process.env.NEXT_PUBLIC_STRAPI_SERVER}/api/posts`, {
 				method: 'GET',
 				headers: {
-					'Access-Control-Allow-Origin': '*'
+					// 'Access-Control-Allow-Origin': '*',
+					'Authorization': `bearer ${process.env.NEXT_PUBLIC_STRAPI_API_TOKEN}`
 				},
 			});
 
 			// CONVERT FROM JSON TO READABLE
-			const data = await response.json();
+			const postsData = await response.json();
+
 
 			// SORT RETRIEVE UPDATES BY DATE DESCENDING - NEWEST FIRST
-			const sortedUpdates = data.sort((a, b) => {
-				return Date.parse(b.dateAdded) - Date.parse(a.dateAdded);
+			const sortedPosts = postsData.data.sort((a, b) => {
+				return (b.id) - (a.id);
 			})
 
+			console.log('sortedPosts', sortedPosts)
+
+
 			// SET STATE OF UPDATES LIST
-			dispatchUpdatesEvent(actions.SET_UPDATES, sortedUpdates);
+			dispatchUpdatesEvent(actions.SET_UPDATES, sortedPosts);
 
 		} catch (error) {
 			return 'Error fetching updates from the server';
@@ -70,7 +75,7 @@ export default function AktualnosciList({ }) {
 	}, [fetchAgain])
 
 	return (
-		<section className="content-wrapper content-wrapper--center content-wrapper--column">
+		<section className="content-wrapper content-wrapper--center content-wrapper--column aktualnosci--list">
 
 			<strong><h2>Aktualności</h2></strong>
 
@@ -81,12 +86,12 @@ export default function AktualnosciList({ }) {
 
 				{
 					!updatesList.length ?
-						<section className="content-wrapper content-wrapper--half-screen">
-							<h5>Brak aktualności</h5>
+						<section className="no-posts">
+							<h5><em>Brak aktualności</em></h5>
 						</section>
 						:
 						updatesList.map((update) => (
-							<AktualnosciItem key={update._id} updateId={update._id} title={update.title} message={update.message} fileUrl={update.fileUrl} dateAdded={update.dateAdded} />
+							<AktualnosciItem key={update.attributes.id} title={update.attributes.title} description={update.attributes.description} imageURL={update.attributes.imageURL} createdAt={update.attributes.createdAt} />
 						))
 				}
 

@@ -239,9 +239,9 @@
 }
 
 .loader {
-	width: 15rem;
-	height: 15rem;
-	border: $space-m solid $background-secondary;
+	width: 5rem;
+	height: 5rem;
+	border: $space-xs solid $background-secondary;
 	border-radius: 50%;
 
 	animation: loader 1s infinite;
@@ -281,6 +281,15 @@
 
 		@media screen and (max-width: $tablet-screen) {
 			margin-left: 0;
+
+		}
+	}
+
+	&--list {
+		max-height: 200vh;
+
+		@media screen and (max-width: $tablet-screen) {
+			max-height: 150vh;
 
 		}
 	}
