@@ -91,7 +91,7 @@ export default function AktualnosciList({ }) {
 						</section>
 						:
 						updatesList.map((update) => (
-							<AktualnosciItem key={update.attributes.id} title={update.attributes.title} description={update.attributes.description} imageURL={update.attributes.imageURL} createdAt={update.attributes.createdAt} />
+							<AktualnosciItem key={update.id} title={update.title} description={update.description} imageURL={update.imageURL} createdAt={update.createdAt} />
 						))
 				}
 

@@ -66,18 +66,7 @@ export default function Home() {
 
 			<main className='main main--index'>
 
-				<section className='content-wrapper'>
-					Z przyjemnoscia informujemy, że nasza szkoła Szkoła Języka Polskiego im. św.  Siostry Faustyny w Slough otrzymała za pośrednictwem Stowarzyszenia „Wspólnota Polska” dofinansowanie od Instytut Rozwoju Języka Polskiego Instytutu Rozwoju Języka Polskiego im. Św. Maksymiliana Marii Kolbego ze środków Ministra Edukacji Narodowej w ramach konkursu „Wsparcie nauczania języka polskiego za granicą poprzez dofinansowanie zakupu podręczników, sprzętu biurowego, sprzętu komputerowego oraz oprogramowania
-					Nazwa zadania publicznego: Wsparcie nauczania języka polskiego za granicą szkół na terenie Wielkiej Brytanii (1)
-					Kwota dotacji w 2024 r. :  33 700 PLN
-					Całkowita wartość zadania publicznego:  461 833,33 PL.
-					Zadanie publiczne „Wsparcie nauczania języka polskiego za granicą szkół na terenie Wielkiej Brytanii”  dotyczy dofinansowania kosztów zakupu podręczników, sprzętu biurowego, sprzętu komputerowego oraz oprogramowania.
-					
-					<img src={IRJPImg.src} className='img'/>
-
-				</section>
-
-				{/* <AktualnosciList /> */}
+				<AktualnosciList />
 
 				<section className="content-wrapper content-wrapper--center">
 

@@ -12,7 +12,6 @@ export default function Aktualnosci({ id, title, description, imageURL, createdA
 	// FORMAT THE DATE ADDED TO DISPLAY FOR EACH UPDATE
 	const datePosted = createdAt.split('T')[0].split('-').reverse().join('/');
 
-	console.log(datePosted)
 	return (
 		<>
 			<article className="aktualnosci-item-wrapper">
@@ -33,7 +32,7 @@ export default function Aktualnosci({ id, title, description, imageURL, createdA
 
 				{
 					// IF FILE IS NOT EMPTY THEN SHOW THE IMG
-					imageURL !== '' &&
+					imageURL !== null &&
 					<img src={imageURL} className='img img--aktualnosci-item' alt="Plakat promujący aktualność" />
 				}
 
