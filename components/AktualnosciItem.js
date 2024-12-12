@@ -1,6 +1,5 @@
 import { useContext } from 'react';
 
-
 // CONTEXT
 import { AuthContext } from '../context/AuthContext/AuthContext';
 

@@ -2,15 +2,39 @@ import Head from 'next/head';
 
 // COMPONENTS
 import Card from '../components/Card';
+import AktualnosciList from '../components/AktualnosciList.js';
 
 // IMAGES
 import DokumentyImg from '../public/index/dokumenty-img.svg';
 import KalendarzImg from '../public/index/kalendarz-img.svg';
 import ZapisyImg from '../public/index/zapisy-img.svg';
-import IRJPImg from '../public/index/irjp.jpg';
-import AktualnosciList from '../components/AktualnosciList';
 
-export default function Home() {
+export async function getServerSideProps() {
+
+	// FETCH UPDATES FROM SERVER
+	const response = await fetch(`${process.env.STRAPI_SERVER}/api/posts`, {
+		method: 'GET',
+		headers: {
+			// 'Access-Control-Allow-Origin': '*',
+			'Authorization': `bearer ${process.env.STRAPI_API_TOKEN}`
+		},
+	});
+
+	// CONVERT FROM JSON TO READABLE
+	const postsData = await response.json();
+
+	// SORT RETRIEVE UPDATES BY DATE DESCENDING - NEWEST FIRST
+	const sortedPosts = postsData.data.sort((a, b) => {
+		return (b.id) - (a.id);
+	})
+
+	return {
+		props: {sortedPosts}
+	}
+}
+
+
+export default function Home({sortedPosts}) {
 
 	const cardArr = [
 		{
@@ -66,7 +90,7 @@ export default function Home() {
 
 			<main className='main main--index'>
 
-				<AktualnosciList />
+				<AktualnosciList posts={sortedPosts}/>
 
 				<section className="content-wrapper content-wrapper--center">
 
