@@ -286,11 +286,10 @@
 	}
 
 	&--list {
-		max-height: 200vh;
+		// max-height: 200vh;
 
 		@media screen and (max-width: $tablet-screen) {
-			max-height: 150vh;
-
+			// max-height: 150vh;
 		}
 	}
 }

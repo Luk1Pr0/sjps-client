@@ -1,7 +1,7 @@
 // COMPONENTS
 import AktualnosciItem from "./AktualnosciItem";
 
-export default function AktualnosciList({posts}) {
+export default function AktualnosciList({ posts }) {
 	return (
 		<section className="content-wrapper content-wrapper--center content-wrapper--column aktualnosci--list">
 
@@ -10,10 +10,9 @@ export default function AktualnosciList({posts}) {
 			<div className="aktualnosci-list-wrapper">
 
 				{
-					!posts.length ?
-						<section className="no-posts">
-							<h5><em>Brak aktualności</em></h5>
-						</section>
+					(posts != null && !posts.length) ? <section className="no-posts">
+						<h5><em>Brak aktualności</em></h5>
+					</section>
 						:
 						posts.map((post) => (
 							<AktualnosciItem key={post.id} title={post.title} description={post.description} imageURL={post.imageURL} createdAt={post.createdAt} />

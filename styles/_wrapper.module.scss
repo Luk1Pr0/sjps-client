@@ -171,7 +171,8 @@
 
 	@media screen and (max-width: $tablet-screen) {
 		margin: 0;
-		padding: 0 $space-xs;
+		padding: 0;
+		max-height: unset;
 	}
 }
 
@@ -184,14 +185,18 @@
 }
 
 .aktualnosci-item-wrapper {
-	padding: $space-xm $space-xs;
+	padding: $space-xm $space-m;
+	border-radius: 8px;
+	background: $background-item;
+	margin-top: $space-m;
 
 	&:first-child {
 		padding-top: 0;
+		margin-top: 0;
 	}
 
 	@media screen and (max-width: $tablet-screen) {
-		padding: $space-m 0;
+		padding: $space-s;
 	}
 }
 

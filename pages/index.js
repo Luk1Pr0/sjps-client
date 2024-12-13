@@ -10,6 +10,7 @@ import KalendarzImg from '../public/index/kalendarz-img.svg';
 import ZapisyImg from '../public/index/zapisy-img.svg';
 
 export async function getServerSideProps() {
+	let sortedPosts = {};
 
 	// FETCH UPDATES FROM SERVER
 	const response = await fetch(`${process.env.STRAPI_SERVER}/api/posts`, {
@@ -24,18 +25,17 @@ export async function getServerSideProps() {
 	const postsData = await response.json();
 
 	// SORT RETRIEVE UPDATES BY DATE DESCENDING - NEWEST FIRST
-	const sortedPosts = postsData.data.sort((a, b) => {
+	sortedPosts = postsData.data.sort((a, b) => {
 		return (b.id) - (a.id);
 	})
-
+	
 	return {
-		props: {sortedPosts}
+		props: { sortedPosts }
 	}
 }
 
 
-export default function Home({sortedPosts}) {
-
+export default function Home({ sortedPosts }) {
 	const cardArr = [
 		{
 			id: 0,
@@ -90,15 +90,15 @@ export default function Home({sortedPosts}) {
 
 			<main className='main main--index'>
 
-				<AktualnosciList posts={sortedPosts}/>
+				<AktualnosciList posts={sortedPosts} />
 
-				<section className="content-wrapper content-wrapper--center">
+				{/* <section className="content-wrapper content-wrapper--center">
 
-					{/* <h4>
+					<h4>
 						Nasza misja - wychowanie dzieci i młodzieży w duchu wartości chrześcijańskich oraz, kultywowanie polskiej tożsamości a przede wszystkim nauczanie języka polskiego, historii Polskii z elementami geografii i religii. Chcemy pielęgnować polskie tradycje, obyczaje oraz piękną i bogatą kulture.
-					</h4> */}
+					</h4>
 
-				</section>
+				</section> */}
 
 				<section className="card-wrapper">
 
