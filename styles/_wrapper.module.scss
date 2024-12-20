@@ -185,13 +185,12 @@
 }
 
 .aktualnosci-item-wrapper {
-	padding: $space-xm $space-m;
+	padding: 0 $space-m $space-m $space-m;
 	border-radius: 8px;
 	background: $background-item;
 	margin-top: $space-m;
 
 	&:first-child {
-		padding-top: 0;
 		margin-top: 0;
 	}
 

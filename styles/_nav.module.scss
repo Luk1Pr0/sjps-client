@@ -1,7 +1,7 @@
 @use './variables' as *;
 
 .nav {
-	height: 5rem;
+	height: 4rem;
 	width: 100%;
 
 	position: fixed;
@@ -30,7 +30,7 @@
 
 // NAV LOGO CONTAINER
 .logo-container {
-	height: 4rem;
+	height: 3rem;
 	width: 10%;
 
 	object-fit: cover;
@@ -278,8 +278,6 @@ input[type=checkbox] {
 
 // SUBNAVIGATION LIST ITEM
 .subnav-li {
-	padding: $space-xs;
-
 	// TABLET STYLING
 	@media screen and (max-width: $tablet-screen) {
 		text-align: center;
