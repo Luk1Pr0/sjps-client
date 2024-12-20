@@ -12,22 +12,27 @@ import ZapisyImg from '../public/index/zapisy-img.svg';
 export async function getServerSideProps() {
 	let sortedPosts = {};
 
-	// FETCH UPDATES FROM SERVER
-	const response = await fetch(`${process.env.STRAPI_SERVER}/api/posts`, {
-		method: 'GET',
-		headers: {
-			// 'Access-Control-Allow-Origin': '*',
-			'Authorization': `bearer ${process.env.STRAPI_API_TOKEN}`
-		},
-	});
+	try {
+		// FETCH UPDATES FROM SERVER
+		const response = await fetch(`${process.env.STRAPI_SERVER}/api/posts`, {
+			method: 'GET',
+			headers: {
+				// 'Access-Control-Allow-Origin': '*',
+				'Authorization': `bearer ${process.env.STRAPI_API_TOKEN}`
+			},
+		});
 
-	// CONVERT FROM JSON TO READABLE
-	const postsData = await response.json();
+		// CONVERT FROM JSON TO READABLE
+		const postsData = await response.json();
 
-	// SORT RETRIEVE UPDATES BY DATE DESCENDING - NEWEST FIRST
-	sortedPosts = postsData.data.sort((a, b) => {
-		return (b.id) - (a.id);
-	})
+		// SORT RETRIEVE UPDATES BY DATE DESCENDING - NEWEST FIRST
+		sortedPosts = postsData.data.sort((a, b) => {
+			return (b.id) - (a.id);
+		})
+	}
+	catch (error) {
+		console.log(error);
+	}
 	
 	return {
 		props: { sortedPosts }
