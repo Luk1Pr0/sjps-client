@@ -72,6 +72,16 @@
 		}
 	}
 
+	&--aktualnosci {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+
+		@media screen and (max-width: $mobile-screen) {
+			flex-direction: column;
+		}
+	}
+
 	&--column {
 		display: flex;
 		flex-direction: column;

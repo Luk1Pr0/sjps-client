@@ -17,10 +17,10 @@ export default function Aktualnosci({ id, title, description, imageURL, createdA
 
 				<br />
 
-				<div className="content-wrapper content-wrapper--space-between content-wrapper--full-width text--left">
+				<div className="content-wrapper content-wrapper--aktualnosci text--left">
 					<h5 className="aktualnosci--title">{title}</h5>
 					<br />
-					<em className="aktualnosci--date">Dodano: {datePosted}</em>
+					<em className="aktualnosci--date">{datePosted}</em>
 				</div>
 
 				<br />
